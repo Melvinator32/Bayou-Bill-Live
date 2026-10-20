@@ -1,0 +1,331 @@
+{
+  "generated_at": "2026-10-20T18:40:02",
+  "currency": "USD",
+  "window": {
+    "start": "2026-09-23",
+    "end": "2026-10-20",
+    "days": 28
+  },
+  "kpis": {
+    "revenue": {
+      "value": 251.61,
+      "prior": 209.44
+    },
+    "orders": {
+      "value": 12,
+      "prior": 15
+    },
+    "avg_order_value": {
+      "value": 20.97,
+      "prior": 13.96
+    },
+    "product_cost": {
+      "value": 130.78,
+      "prior": 107.96
+    },
+    "fees": {
+      "value": 29.5,
+      "prior": 26.85
+    },
+    "profit": {
+      "value": 91.33,
+      "prior": 74.63
+    },
+    "margin": {
+      "value": 36.3,
+      "prior": 35.6
+    }
+  },
+  "daily_revenue": [
+    {
+      "date": "2026-09-23",
+      "revenue": 0
+    },
+    {
+      "date": "2026-09-24",
+      "revenue": 0
+    },
+    {
+      "date": "2026-09-25",
+      "revenue": 0
+    },
+    {
+      "date": "2026-09-26",
+      "revenue": 0
+    },
+    {
+      "date": "2026-09-27",
+      "revenue": 42.49
+    },
+    {
+      "date": "2026-09-28",
+      "revenue": 0
+    },
+    {
+      "date": "2026-09-29",
+      "revenue": 0
+    },
+    {
+      "date": "2026-09-30",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-01",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-02",
+      "revenue": 40.07
+    },
+    {
+      "date": "2026-10-03",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-04",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-05",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-06",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-07",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-08",
+      "revenue": 10.97
+    },
+    {
+      "date": "2026-10-09",
+      "revenue": 39.99
+    },
+    {
+      "date": "2026-10-10",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-11",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-12",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-13",
+      "revenue": 28.72
+    },
+    {
+      "date": "2026-10-14",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-15",
+      "revenue": 39.99
+    },
+    {
+      "date": "2026-10-16",
+      "revenue": 43.8
+    },
+    {
+      "date": "2026-10-17",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-18",
+      "revenue": 5.58
+    },
+    {
+      "date": "2026-10-19",
+      "revenue": 0
+    },
+    {
+      "date": "2026-10-20",
+      "revenue": 0
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2025-11",
+      "revenue": 310.74,
+      "profit": 199.96
+    },
+    {
+      "month": "2025-12",
+      "revenue": 573.21,
+      "profit": 372.47
+    },
+    {
+      "month": "2026-01",
+      "revenue": 151.36,
+      "profit": 93.97
+    },
+    {
+      "month": "2026-02",
+      "revenue": 188.93,
+      "profit": 96.61
+    },
+    {
+      "month": "2026-03",
+      "revenue": 332.64,
+      "profit": 188.69
+    },
+    {
+      "month": "2026-04",
+      "revenue": 296.58,
+      "profit": 130.3
+    },
+    {
+      "month": "2026-05",
+      "revenue": 268.89,
+      "profit": 163.33
+    },
+    {
+      "month": "2026-06",
+      "revenue": 255.28,
+      "profit": 120.07
+    },
+    {
+      "month": "2026-07",
+      "revenue": 355.04,
+      "profit": 175.89
+    },
+    {
+      "month": "2026-08",
+      "revenue": 323.27,
+      "profit": 142.18
+    },
+    {
+      "month": "2026-09",
+      "revenue": 171.01,
+      "profit": 58.11
+    },
+    {
+      "month": "2026-10",
+      "revenue": 209.12,
+      "profit": 78.2
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+      "revenue": 79.98,
+      "profit": 29.54,
+      "units": 2
+    },
+    {
+      "name": "Best Clockmaker on Mars Shirt Comfort Colors",
+      "revenue": 38.22,
+      "profit": 15.9,
+      "units": 1
+    },
+    {
+      "name": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+      "revenue": 32.99,
+      "profit": 11.09,
+      "units": 1
+    },
+    {
+      "name": "Mid Profile Phish Fish Cap",
+      "revenue": 29.99,
+      "profit": 9.77,
+      "units": 1
+    },
+    {
+      "name": "BMFS Train Graphic T-Shirt, Billy Strings Inspired Design, Unisex Tee, Casual Wear, Gift for Train Lovers, Everyday Comfort,",
+      "revenue": 28.72,
+      "profit": 11.9,
+      "units": 1
+    },
+    {
+      "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+      "revenue": 15.08,
+      "profit": 7.89,
+      "units": 3
+    }
+  ],
+  "fulfillment": {
+    "shipped": 11,
+    "paid": 1,
+    "unpaid": 0
+  },
+  "recent_orders": [
+    {
+      "date": "2026-10-18",
+      "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+      "units": 1,
+      "status": "shipped",
+      "amount": 9.36
+    },
+    {
+      "date": "2026-10-16",
+      "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+      "units": 1,
+      "status": "paid",
+      "amount": 10.47
+    },
+    {
+      "date": "2026-10-16",
+      "products": "Best Clockmaker on Mars Shirt Comfort Colors",
+      "units": 1,
+      "status": "shipped",
+      "amount": 46.73
+    },
+    {
+      "date": "2026-10-15",
+      "products": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+      "units": 1,
+      "status": "shipped",
+      "amount": 39.28
+    },
+    {
+      "date": "2026-10-13",
+      "products": "BMFS Train Graphic T-Shirt, Billy Strings Inspired Design, Unisex Tee, Casual Wear, Gift for Train Lovers, Everyday Comfort,",
+      "units": 1,
+      "status": "shipped",
+      "amount": 25.85
+    },
+    {
+      "date": "2026-10-09",
+      "products": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+      "units": 1,
+      "status": "shipped",
+      "amount": 47.73
+    },
+    {
+      "date": "2026-10-08",
+      "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+      "units": 1,
+      "status": "shipped",
+      "amount": 9.54
+    },
+    {
+      "date": "2026-10-08",
+      "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+      "units": 1,
+      "status": "shipped",
+      "amount": 11.19
+    },
+    {
+      "date": "2026-10-02",
+      "products": "Phish Turtle Playing Banjo Sticker | Kiss-Cut Vinyl Decal",
+      "units": 1,
+      "status": "shipped",
+      "amount": 16.25
+    },
+    {
+      "date": "2026-10-02",
+      "products": "Mid Profile Phish Fish Cap",
+      "units": 1,
+      "status": "shipped",
+      "amount": 36.88
+    }
+  ],
+  "unmapped_units": 0
+}
