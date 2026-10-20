@@ -70,7 +70,7 @@ test('Louisiana places for parish lookup', () => {
 test('filing periods: months, quarters and years, newest first', () => {
   const p = T.periods(ORDERS);
   const keys = p.map(x => x.key);
-  assert.deepEqual(keys, ['2026-10', '2026-09', '2026-Q4', '2026-Q3', '2026']);
+  assert.deepEqual(keys, ['2026-10', '2026-09', '2026-Q4', '2026-Q3', '2026', 'all']);
   const q4 = p.find(x => x.key === '2026-Q4');
   assert.deepEqual([q4.from, q4.to, q4.label], ['2026-10-01', '2026-12-31', 'Q4 2026']);
   assert.equal(p[0].label, 'October 2026');
@@ -79,4 +79,13 @@ test('filing periods: months, quarters and years, newest first', () => {
 test('CSV quotes commas, quotes and newlines', () => {
   assert.equal(T.toCSV([['a', 'b,c', 'say "hi"', 'x\ny', 1.5]]),
                'a,"b,c","say ""hi""","x\ny",1.5\r\n');
+});
+
+test('all-time period spans the first to the last order', () => {
+  const all = T.periods(ORDERS).find(x => x.key === 'all');
+  assert.deepEqual([all.kind, all.label, all.from, all.to], ['all', 'All time', '2026-09-30', '2026-10-19']);
+  const r = T.worksheet(ORDERS, all.from, all.to, 0.05, null);
+  assert.equal(r.list.length, 4);
+  assert.equal(r.total, 96);        // October's 86 + September's 10 (tax isn't sales)
+  assert.equal(r.mf, 38);           // 28 + 10
 });

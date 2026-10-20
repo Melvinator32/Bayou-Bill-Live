@@ -649,7 +649,7 @@ function renderTax(d){
   const $ = id => document.getElementById(id);
   const periodEl = $('taxPeriod'), stateEl = $('taxStateRate'), localEl = $('taxLocalRate');
   const periods = T.periods(orders);
-  const groups = [['month', 'Months'], ['quarter', 'Quarters'], ['year', 'Years']];
+  const groups = [['month', 'Months'], ['quarter', 'Quarters'], ['year', 'Years'], ['all', 'All time']];
   periodEl.innerHTML = groups.map(([kind, label]) =>
     `<optgroup label="${label}">${periods.filter(p => p.kind === kind)
       .map(p => `<option value="${p.key}">${p.label}</option>`).join('')}</optgroup>`).join('');

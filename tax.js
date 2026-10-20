@@ -81,7 +81,7 @@
   const lastDay = (y, m) => new Date(Date.UTC(y, m, 0)).getUTCDate();   // m is 1-based
   const pad = n => String(n).padStart(2, '0');
 
-  // Filing periods that contain orders: months, then quarters, then years.
+  // Filing periods that contain orders: months, quarters, years, then all time.
   function periods(orders) {
     const months = new Set(), quarters = new Set(), years = new Set();
     for (const o of orders) {
@@ -92,6 +92,7 @@
       years.add(String(y));
     }
     const desc = s => [...s].sort().reverse();
+    const dates = orders.map(o => o.date).filter(Boolean).sort();
     return [
       ...desc(months).map(k => {
         const y = +k.slice(0, 4), m = +k.slice(5);
@@ -104,6 +105,7 @@
                 from: `${y}-${pad(m1)}-01`, to: `${y}-${pad(m3)}-${pad(lastDay(y, m3))}`};
       }),
       ...desc(years).map(k => ({key: k, kind: 'year', label: k, from: `${k}-01-01`, to: `${k}-12-31`})),
+      ...(dates.length ? [{key: 'all', kind: 'all', label: 'All time', from: dates[0], to: dates[dates.length - 1]}] : []),
     ];
   }
 
