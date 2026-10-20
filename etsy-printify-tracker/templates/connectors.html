@@ -1,0 +1,50 @@
+{% extends "base.html" %}{% block title %}Connectors · Bayou Bill{% endblock %}
+{% block body %}
+<h1>Connectors</h1>
+<p class="muted">Pull orders from Etsy and costs from Printify.</p>
+{% for c in cards %}
+<div class="connector">
+  <h3>{{ c.label }}
+    {% if c.configured %}<span class="tag printify">configured</span>
+    {% elif not c.implemented %}<span class="tag warn">template</span>
+    {% else %}<span class="tag">not set up</span>{% endif %}
+  </h3>
+  <p class="muted" style="margin:.1rem 0 .5rem">
+    {% if c.kind=='sales' %}Brings in orders.{% else %}Brings in product costs.{% endif %}
+    {% if c.docs_url %}· <a href="{{ c.docs_url }}" target="_blank">docs</a>{% endif %}
+  </p>
+
+  {% if c.key=='etsy_api' %}
+    <p>Etsy uses a one-time sign-in. Set it up on its own page:</p>
+    <a class="btn primary" href="/etsy/setup">Open Etsy setup →</a>
+    {% if c.configured %}
+      <form method="post" style="display:inline">
+        <input type="hidden" name="connector" value="{{ c.key }}">
+        <button class="cyan" name="action" value="sync" type="submit">Sync now</button>
+        <button class="ghost" name="action" value="test" type="submit">Test</button>
+      </form>
+    {% endif %}
+  {% elif not c.implemented %}
+    <p class="muted">Not implemented yet — placeholder for when you get this API.</p>
+  {% else %}
+    <form method="post">
+      <input type="hidden" name="connector" value="{{ c.key }}">
+      <div class="fields">
+        {% for f in c.fields %}
+          <div><label>{{ f.label }}{% if f.set %} <span class="muted">(saved)</span>{% endif %}</label>
+            <input type="{{ 'password' if f.kind=='password' else 'text' }}" name="{{ f.key }}"
+                   placeholder="{{ '••••••' if f.set and f.kind=='password' else '' }}">
+            {% if f.help %}<div class="muted" style="font-size:.78rem">{{ f.help }}</div>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <div style="margin-top:.7rem">
+        <button class="primary" name="action" value="save" type="submit">Save</button>
+        <button class="ghost" name="action" value="test" type="submit">Test</button>
+        <button class="cyan" name="action" value="sync" type="submit">Sync now</button>
+      </div>
+    </form>
+  {% endif %}
+</div>
+{% endfor %}
+{% endblock %}

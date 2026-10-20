@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% block title %}Orders · Bayou Bill{% endblock %}
+{% block body %}
+<h1>Recent orders</h1>
+{% if not orders %}<div class="panel empty"><p>No orders yet. Sync Etsy on the
+  <a href="{{ url_for('connectors_page') }}">Connectors</a> page.</p></div>
+{% else %}
+<div class="panel"><table>
+  <thead><tr><th>Date</th><th>Order</th><th>Channel</th><th>Buyer</th>
+    <th class="num">Lines</th><th class="num">Units</th><th class="num">Total</th></tr></thead>
+  <tbody>{% for o in orders %}<tr>
+    <td>{{ o.sale_date }}</td><td>{{ o.order_id }}</td>
+    <td><span class="tag">{{ o.channel }}</span></td><td>{{ o.buyer }}</td>
+    <td class="num">{{ o.lines }}</td><td class="num">{{ o.units }}</td>
+    <td class="num">${{ '%.2f'|format(o.order_total or 0) }}</td></tr>{% endfor %}</tbody>
+</table></div>
+{% endif %}
+{% endblock %}

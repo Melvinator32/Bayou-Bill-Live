@@ -1,0 +1,27 @@
+{% extends "base.html" %}{% block title %}Import · Bayou Bill{% endblock %}
+{% block body %}
+<h1>Import CSV <span class="tag">optional</span></h1>
+<p class="muted">You don't need this if you use the Etsy/Printify connectors — it's
+  just a fallback for loading a file directly.</p>
+<div class="panel">
+  <h3>Etsy order items CSV</h3>
+  <form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="kind" value="etsy">
+    <input type="file" name="file" accept=".csv">
+    <button class="primary" type="submit">Import orders</button>
+  </form>
+</div>
+<div class="panel">
+  <h3>SKU costs CSV <span class="muted">(sku, product_name, unit_cost, ship_cost, notes)</span></h3>
+  <form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="kind" value="costs">
+    <input type="file" name="file" accept=".csv">
+    <button class="sage" type="submit">Import costs</button>
+  </form>
+</div>
+{% if log %}<div class="panel"><h3>Recent imports</h3><table>
+  <thead><tr><th>When</th><th>Source</th><th>File</th><th class="num">Seen</th><th class="num">New</th><th class="num">Updated</th></tr></thead>
+  <tbody>{% for l in log %}<tr><td>{{ l.imported_at }}</td><td>{{ l.source }}</td><td>{{ l.filename }}</td>
+    <td class="num">{{ l.rows_seen }}</td><td class="num">{{ l.rows_new }}</td><td class="num">{{ l.rows_updated }}</td></tr>{% endfor %}</tbody>
+</table></div>{% endif %}
+{% endblock %}

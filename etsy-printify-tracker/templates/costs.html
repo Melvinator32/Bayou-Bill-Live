@@ -1,0 +1,32 @@
+{% extends "base.html" %}{% block title %}Costs · Bayou Bill{% endblock %}
+{% block body %}
+<h1>SKU / Listing costs</h1>
+<p class="muted">Printify sync fills these automatically — matched to your Etsy
+  sales by <strong>listing</strong> (so blank SKUs still line up). You can override any row by hand.</p>
+<div class="panel"><table>
+  <thead><tr><th>Product</th><th class="num">Sold</th><th class="num">Unit cost</th>
+    <th class="num">Ship</th><th>Source</th><th></th></tr></thead>
+  <tbody>{% for r in rows %}<tr>
+    <form method="post">
+      {% if r.key_kind == 'sku' and r.sku %}
+        <input type="hidden" name="sku" value="{{ r.sku }}">
+      {% else %}
+        <input type="hidden" name="listing_id" value="{{ r.listing_id }}">
+      {% endif %}
+      <input type="hidden" name="product_name" value="{{ r.name }}">
+      <td>{{ r.name }}<div class="muted" style="font-size:.74rem">
+        {% if r.sku %}SKU {{ r.sku }}{% else %}listing {{ r.listing_id }}{% endif %}</div></td>
+      <td class="num">{{ r.units }}</td>
+      <td class="num"><input type="number" step="0.01" name="unit_cost"
+          value="{{ '%.2f'|format(r.unit_cost) if r.unit_cost is not none else '' }}" placeholder="—"></td>
+      <td class="num"><input type="number" step="0.01" name="ship_cost"
+          value="{{ '%.2f'|format(r.ship_cost) if r.ship_cost is not none else '' }}"></td>
+      <td>{% if not r.mapped %}<span class="tag warn">no cost</span>
+          {% elif r.source == 'printify' %}<span class="tag printify">printify</span>
+          {% else %}<span class="tag">{{ r.source }}</span>{% endif %}</td>
+      <td><button class="cyan" name="action" value="save" type="submit">Save</button></td>
+    </form>
+  </tr>{% endfor %}</tbody>
+</table></div>
+{% if not rows %}<div class="panel empty"><p>No sales yet — sync Etsy, then Printify.</p></div>{% endif %}
+{% endblock %}

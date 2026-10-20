@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Bayou Bill Tracker{% endblock %}</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ build }}">
+</head><body>
+<header><nav class="nav">
+  <span class="brand">Bayou Bill</span>
+  <a href="{{ url_for('dashboard') }}" class="{{ 'active' if active=='dashboard' }}">Dashboard</a>
+  <a href="{{ url_for('orders') }}" class="{{ 'active' if active=='orders' }}">Orders</a>
+  <a href="{{ url_for('costs') }}" class="{{ 'active' if active=='costs' }}">Costs</a>
+  <a href="{{ url_for('listing_health.listings_page') }}" class="{{ 'active' if active=='listings' }}">Listings</a>
+  <a href="{{ url_for('erank.erank_page') }}" class="{{ 'active' if active=='erank' }}">eRank</a>
+  <a href="{{ url_for('connectors_page') }}" class="{{ 'active' if active=='connectors' }}">Connectors</a>
+  <a href="{{ url_for('settings') }}" class="{{ 'active' if active=='settings' }}">Settings</a>
+  <a href="{{ url_for('import_data') }}" class="{{ 'active' if active=='import' }}">Import</a>
+</nav></header>
+<div class="wrap">
+  {% with msgs = get_flashed_messages(with_categories=true) %}
+    {% for cat,msg in msgs %}<div class="flash {{cat}}">{{msg}}</div>{% endfor %}
+  {% endwith %}
+  {% block body %}{% endblock %}
+</div></body></html>

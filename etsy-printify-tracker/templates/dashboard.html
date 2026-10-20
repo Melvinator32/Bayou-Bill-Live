@@ -1,0 +1,75 @@
+{% extends "base.html" %}{% block title %}Dashboard · Bayou Bill{% endblock %}
+{% block body %}
+<h1>Dashboard</h1>
+{% if s.items == 0 %}
+  <div class="panel empty">
+    <h2>No orders yet</h2>
+    <p>Connect your stores and pull in data to see profit here.</p>
+    <p style="margin-top:1rem">
+      <a class="btn primary" href="{{ url_for('connectors_page') }}">Go to Connectors</a>
+    </p>
+    <p class="muted" style="margin-top:.8rem">
+      Sync <strong>Etsy</strong> for orders and <strong>Printify</strong> for costs.
+    </p>
+  </div>
+{% else %}
+  <form method="get" class="row" style="margin-bottom:.4rem">
+    <div><label>From</label><input type="text" name="start" value="{{start}}" placeholder="{{min_date or 'YYYY-MM-DD'}}"></div>
+    <div><label>To</label><input type="text" name="end" value="{{end}}" placeholder="{{max_date or 'YYYY-MM-DD'}}"></div>
+    <button class="primary" type="submit">Apply</button>
+    {% if start or end %}<a class="btn ghost" href="{{ url_for('dashboard') }}">Reset</a>{% endif %}
+  </form>
+
+  <div class="cards">
+    <div class="kpi"><div class="label">Revenue</div><div class="value">${{ '%.2f'|format(s.revenue) }}</div></div>
+    <div class="kpi"><div class="label">Product cost</div><div class="value">${{ '%.2f'|format(s.product_cost) }}</div></div>
+    <div class="kpi"><div class="label">Est. fees</div><div class="value">${{ '%.2f'|format(s.fees) }}</div></div>
+    <div class="kpi {{ 'good' if s.profit>=0 else 'bad' }}"><div class="label">Profit</div><div class="value">${{ '%.2f'|format(s.profit) }}</div></div>
+    <div class="kpi"><div class="label">Margin</div><div class="value">{{ s.margin }}%</div></div>
+    <div class="kpi"><div class="label">Orders / Units</div><div class="value">{{ s.orders }}/{{ s.units }}</div></div>
+  </div>
+
+  {% if s.unmapped_units %}
+    <div class="flash error">{{ s.unmapped_units }} sold unit(s) have no SKU cost yet — profit treats their cost as $0.
+      <a href="{{ url_for('costs') }}">Add costs</a> or sync Printify.</div>
+  {% endif %}
+
+  <div class="panel">
+    <h3>Monthly revenue &amp; profit</h3>
+    <canvas id="chart" height="90"></canvas>
+  </div>
+
+  <div class="panel">
+    <h3>Top listings</h3>
+    <table><thead><tr><th>Listing</th><th class="num">Units</th><th class="num">Revenue</th><th class="num">Profit</th></tr></thead><tbody>
+      {% for l in listings %}<tr><td>{{ l.name }}</td><td class="num">{{ l.units }}</td>
+        <td class="num">${{ '%.2f'|format(l.revenue) }}</td>
+        <td class="num {{ 'pos' if l.profit>=0 else 'neg' }}">${{ '%.2f'|format(l.profit) }}</td></tr>{% endfor %}
+    </tbody></table>
+  </div>
+
+  <div class="panel">
+    <h3>Profit by SKU</h3>
+    <table><thead><tr><th>SKU</th><th class="num">Units</th><th class="num">Revenue</th><th class="num">Profit</th><th></th></tr></thead><tbody>
+      {% for k in skus %}<tr><td>{{ k.sku }}</td><td class="num">{{ k.units }}</td>
+        <td class="num">${{ '%.2f'|format(k.revenue) }}</td>
+        <td class="num {{ 'pos' if k.profit>=0 else 'neg' }}">${{ '%.2f'|format(k.profit) }}</td>
+        <td>{% if not k.mapped %}<span class="tag warn">no cost</span>{% endif %}</td></tr>{% endfor %}
+    </tbody></table>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script>
+    const series = {{ series|tojson }};
+    new Chart(document.getElementById('chart'), {
+      type:'bar',
+      data:{ labels: series.map(d=>d.month),
+        datasets:[
+          {label:'Revenue', data:series.map(d=>d.revenue), backgroundColor:'#00bfb8'},
+          {label:'Profit', data:series.map(d=>d.profit), backgroundColor:'#38a66f'}
+        ]},
+      options:{responsive:true, plugins:{legend:{position:'bottom'}}, scales:{y:{beginAtZero:true}}}
+    });
+  </script>
+{% endif %}
+{% endblock %}
