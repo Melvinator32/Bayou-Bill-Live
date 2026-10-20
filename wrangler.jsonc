@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bayou-bill-live",
+  "compatibility_date": "2026-08-31",
+  // Static site: serves index.html and data.json from the repo root.
+  // .assetsignore keeps the tracker app's source out of the deployment.
+  "assets": {
+    "directory": "."
+  }
+}

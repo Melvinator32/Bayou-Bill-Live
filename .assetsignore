@@ -1,0 +1,9 @@
+.git
+.gitignore
+.assetsignore
+.nojekyll
+wrangler.jsonc
+README.md
+etsy-printify-tracker
+node_modules
+.wrangler

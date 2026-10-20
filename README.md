@@ -5,7 +5,8 @@ page showing the shop's real numbers. The portfolio demo at
 jamesmcknight.me/demos/bayou-bill-shop-tracker/ stays on made-up data.
 
 - `etsy-printify-tracker/`: the Flask app. It runs on your PC and syncs Etsy and Printify into `tracker.db`.
-- `index.html`: the public dashboard, served by GitHub Pages. It reads `data.json`.
+- `index.html`: the public dashboard, deployed as a Cloudflare Worker (`wrangler.jsonc`). It reads `data.json`.
+- `.assetsignore`: keeps the app source and repo files out of the deployment; only the page and `data.json` are served.
 - `data.json`: written by `publish_snapshot.py`. Never edit it by hand.
 
 ## Never commit tracker.db
