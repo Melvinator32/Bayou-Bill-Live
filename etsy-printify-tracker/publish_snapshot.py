@@ -89,6 +89,67 @@ def _products(names):
     return ", ".join(seen) or "(untitled)"
 
 
+def _history():
+    """Per-day and per-product totals so the page can total any date range.
+
+    Uses analytics' own per-item cost and fee math; the fixed per-order fee is
+    added to the day the order was placed, as analytics.summary() does.
+    """
+    settings = get_settings()
+    pct, listing_fee, fixed = analytics._fee_rates(settings)
+    conn = get_db()
+    rows = analytics._rows(conn, None, None)
+    conn.close()
+
+    days, products, product_ids, product_days = {}, [], {}, {}
+    orders_by_day = {}
+    for r in rows:
+        date_ = r["sale_date"] or ""
+        if not date_:
+            continue
+        rev, cost, fee, mapped = analytics._item_calc(r, pct, listing_fee)
+        units = r["quantity"] or 0
+        d = days.setdefault(date_, {"date": date_, "revenue": 0, "cost": 0, "fees": 0,
+                                    "orders": 0, "units": 0, "unmapped_units": 0,
+                                    "shipped": 0, "paid": 0, "unpaid": 0})
+        d["revenue"] += rev; d["cost"] += cost; d["fees"] += fee; d["units"] += units
+        if not mapped:
+            d["unmapped_units"] += units
+        orders_by_day.setdefault(date_, set()).add(r["order_id"])
+
+        key = r["listing_id"] or r["item_name"] or "?"
+        if key not in product_ids:
+            product_ids[key] = len(products)
+            products.append(r["item_name"] or "(untitled)")
+        p = product_days.setdefault((date_, product_ids[key]), [0, 0, 0])
+        p[0] += rev; p[1] += rev - cost - fee; p[2] += units
+
+    for date_, ids in orders_by_day.items():
+        days[date_]["orders"] = len(ids)
+        days[date_]["fees"] += fixed * len(ids)
+    for r in _orders():
+        if r["sale_date"] in days:
+            days[r["sale_date"]][_status(r)] += 1
+
+    for d in days.values():
+        for k in ("revenue", "cost", "fees"):
+            d[k] = round(d[k], 2)
+
+    orders = [{"date": r["sale_date"], "products": _products(r["names"]),
+               "units": r["units"], "status": _status(r),
+               "amount": round(r["order_total"] or 0, 2)}
+              for r in _orders()]
+
+    return {
+        "days": [days[k] for k in sorted(days)],
+        "products": products,
+        # [date, product index, revenue, profit, units]
+        "product_days": [[date_, i, round(v[0], 2), round(v[1], 2), v[2]]
+                         for (date_, i), v in sorted(product_days.items())],
+        "orders": orders,
+    }
+
+
 def build_snapshot(today=None):
     today = today or date.today()
     start, end = _window(today)
@@ -144,6 +205,7 @@ def build_snapshot(today=None):
         "fulfillment": fulfillment,
         "recent_orders": recent,
         "unmapped_units": cur["unmapped_units"],
+        "history": _history(),
     }
 
 

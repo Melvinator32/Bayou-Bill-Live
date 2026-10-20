@@ -54,6 +54,24 @@
   .range-pill strong{color:var(--ink);font-weight:600;}
   .updated{font-size:11.5px;color:var(--ink-faint);}
 
+  /* period picker */
+  .controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px;}
+  .seg{display:inline-flex;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:3px;gap:2px;flex-wrap:wrap;}
+  .seg button{
+    font:inherit;font-size:12.5px;font-weight:600;color:var(--ink-muted);background:none;border:0;
+    padding:6px 11px;border-radius:7px;cursor:pointer;min-height:32px;
+  }
+  .seg button:hover{color:var(--ink);background:var(--owgreen);}
+  .seg button[aria-pressed="true"]{background:var(--dteal);color:#fff;}
+  .seg button:focus-visible,.custom input:focus-visible{outline:2px solid var(--cteal);outline-offset:1px;}
+  .custom{display:none;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-muted);flex-wrap:wrap;}
+  .custom.show{display:inline-flex;}
+  .custom input{
+    font:inherit;font-size:12.5px;color:var(--ink);background:var(--card);
+    border:1px solid var(--border);border-radius:8px;padding:6px 8px;min-height:32px;
+  }
+  .custom .err{color:#8a6a2f;}
+
   /* kpi row */
   .kpi-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:20px;}
   @media (max-width:980px){ .kpi-grid{grid-template-columns:repeat(3,1fr);} }
@@ -164,6 +182,23 @@
     </div>
   </div>
 
+  <div class="controls" id="controls" hidden>
+    <div class="seg" role="group" aria-label="Time period" id="presets">
+      <button type="button" data-p="7d">7D</button>
+      <button type="button" data-p="28d">28D</button>
+      <button type="button" data-p="90d">90D</button>
+      <button type="button" data-p="ytd">YTD</button>
+      <button type="button" data-p="12m">12M</button>
+      <button type="button" data-p="all">All</button>
+      <button type="button" data-p="custom">Custom</button>
+    </div>
+    <div class="custom" id="custom">
+      <label>From <input type="date" id="from"></label>
+      <label>to <input type="date" id="to"></label>
+      <span class="err" id="customErr" role="status"></span>
+    </div>
+  </div>
+
   <div id="app"></div>
 
   <div class="foot-note">
@@ -187,7 +222,7 @@ function delta(cur, prior, {higherIsGood = true, unit = '%'} = {}){
     const d = cur - prior;
     return {text: `${d >= 0 ? '+' : ''}${d.toFixed(1)}pt`, dir: d, good: higherIsGood ? d >= 0 : d <= 0};
   }
-  if (!prior) return {text: cur ? 'new vs prior' : 'no change', dir: 0, good: true};
+  if (!prior) return {text: cur ? 'no prior data' : 'no change', dir: 0, good: true, none: true};
   const pct = (cur - prior) / Math.abs(prior) * 100;
   return {text: `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%`, dir: pct, good: higherIsGood ? pct >= 0 : pct <= 0};
 }
@@ -203,28 +238,30 @@ function renderKpis(k){
   ];
   return `<div class="kpi-grid">${tiles.map(t => {
     const arrow = t.d.dir >= 0 ? '<path d="M5 0L10 6H0Z"/>' : '<path d="M5 10L0 4H10Z"/>';
+    const cls = t.d.none ? '' : (t.d.good ? 'good' : 'bad');
+    const icon = t.d.none ? '' : `<svg viewBox="0 0 10 10">${arrow}</svg>`;
     return `<div class="kpi">
       <div class="label">${esc(t.label)}</div>
       <div class="value">${esc(t.value)}</div>
-      <div class="delta ${t.d.good ? 'good' : 'bad'}"><svg viewBox="0 0 10 10">${arrow}</svg><span>${esc(t.d.text)}</span></div>
+      <div class="delta ${cls}">${icon}<span>${esc(t.d.text)}</span></div>
     </div>`;
   }).join('')}</div>`;
 }
 
-function renderLayout(d){
-  const f = d.fulfillment;
+function renderLayout(v){
+  const f = v.fulfillment;
   const nOrders = f.shipped + f.paid + f.unpaid;
-  const note = d.unmapped_units
-    ? `<div class="note">${d.unmapped_units} unit${d.unmapped_units === 1 ? '' : 's'} sold in this period
-       ${d.unmapped_units === 1 ? 'has' : 'have'} no product cost on file yet, so profit is slightly overstated.</div>`
+  const note = v.unmapped_units
+    ? `<div class="note">${v.unmapped_units} unit${v.unmapped_units === 1 ? '' : 's'} sold in this period
+       ${v.unmapped_units === 1 ? 'has' : 'have'} no product cost on file yet, so profit is slightly overstated.</div>`
     : '';
   return `
-    ${renderKpis(d.kpis)}
+    ${renderKpis(v.kpis)}
     ${note}
     <div class="row">
       <div class="card">
-        <h3>Revenue, last ${d.window.days} days</h3>
-        <div class="card-sub">Daily item revenue &middot; hover for detail</div>
+        <h3>Revenue</h3>
+        <div class="card-sub">${v.weekly ? 'Weekly' : 'Daily'} item revenue &middot; ${esc(v.label)} &middot; hover for detail</div>
         <div class="chart-wrap"><svg id="lineChart" viewBox="0 0 700 220" role="img" aria-label="Daily revenue chart"></svg><div class="tooltip" id="lineTooltip"></div></div>
       </div>
       <div class="card">
@@ -236,19 +273,19 @@ function renderLayout(d){
     <div class="row2">
       <div class="card">
         <h3>Top Products by Revenue</h3>
-        <div class="card-sub">Last ${d.window.days} days &middot; revenue and estimated profit</div>
+        <div class="card-sub">${esc(v.label)} &middot; revenue and estimated profit</div>
         <div id="barChart"></div>
       </div>
       <div class="card">
         <h3>Monthly Revenue &amp; Profit</h3>
-        <div class="card-sub">Last 12 months</div>
+        <div class="card-sub">${esc(v.monthLabel)}</div>
         <div class="chart-wrap"><svg id="monthChart" viewBox="0 0 420 200" role="img" aria-label="Monthly revenue and profit"></svg><div class="tooltip" id="monthTooltip"></div></div>
         <div class="key"><span><i style="background:var(--dteal)"></i>Revenue</span><span><i style="background:var(--lygreen)"></i>Profit</span></div>
       </div>
     </div>
     <div class="card">
       <h3>Recent Orders</h3>
-      <div class="card-sub">Most recent ${d.recent_orders.length} orders</div>
+      <div class="card-sub">${v.orders.length ? `Most recent ${v.orders.length} of ${v.orderCount} in this period` : 'None in this period'}</div>
       <div class="table-scroll"><table>
         <thead><tr><th>Date</th><th>Products</th><th class="num col-units">Units</th><th>Status</th><th class="num">Total</th></tr></thead>
         <tbody id="ordersBody"></tbody>
@@ -272,7 +309,7 @@ function renderLine(days){
   const W=widthOf(svg),H=220,padL=48,padR=10,padT=14,padB=24;
   const plotW=W-padL-padR, plotH=H-padT-padB;
   const max = niceMax(Math.max(...vals));
-  const xFor = i => padL + (i/(vals.length-1))*plotW;
+  const xFor = i => padL + (vals.length > 1 ? i/(vals.length-1) : 0.5)*plotW;
   const yFor = v => padT + plotH - (v/max)*plotH;
   let h = `<defs><linearGradient id="revGradient" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#00bfb8" stop-opacity="0.32"/><stop offset="100%" stop-color="#00bfb8" stop-opacity="0.02"/></linearGradient></defs>`;
@@ -281,8 +318,9 @@ function renderLine(days){
     h += `<line class="gridline" x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}"/>`;
     h += `<text class="axis-label" x="${padL-8}" y="${y+3}" text-anchor="end">${money0(v)}</text>`;
   }
+  const every = Math.max(1, Math.ceil(days.length / Math.max(2, Math.floor(plotW / 72))));
   days.forEach((x,i) => {
-    if (i%7===0 || (i===days.length-1 && W > 480))
+    if (i % every === 0 || (i === days.length-1 && days.length - 1 - i < every && W > 480 && (days.length-1) % every > every/2))
       h += `<text class="axis-label" x="${xFor(i)}" y="${H-6}" text-anchor="middle">${fmtDay(x.date,{month:'short',day:'numeric'})}</text>`;
   });
   let area = `M ${xFor(0)} ${yFor(0)} `, line = '';
@@ -304,7 +342,10 @@ function renderLine(days){
     cross.setAttribute('x1',x); cross.setAttribute('x2',x); cross.style.opacity = 1;
     dot.setAttribute('cx',x); dot.setAttribute('cy',y); dot.style.opacity = 1;
     tooltip.style.left = (x*rect.width/W)+'px'; tooltip.style.top = (y*rect.height/H - 10)+'px'; tooltip.style.opacity = 1;
-    tooltip.innerHTML = `<span class="t-label">${fmtDay(days[i].date,{weekday:'short',month:'short',day:'numeric'})}</span><br><b>${money(vals[i])}</b> revenue`;
+    const when = days[i].week
+      ? 'Week of ' + fmtDay(days[i].date,{month:'short',day:'numeric',year:'numeric'})
+      : fmtDay(days[i].date,{weekday:'short',month:'short',day:'numeric',year:'numeric'});
+    tooltip.innerHTML = `<span class="t-label">${when}</span><br><b>${money(vals[i])}</b> revenue`;
   });
   capture.addEventListener('mouseleave', () => { cross.style.opacity = 0; dot.style.opacity = 0; tooltip.style.opacity = 0; });
 }
@@ -375,7 +416,7 @@ function renderMonthly(months){
     h += `<g class="m-group" data-i="${i}">${bar(m.revenue, -bw-1, 'm-rev')}${bar(m.profit, 1, 'm-profit')}
           <rect x="${padL + slot*i}" y="${padT}" width="${slot}" height="${plotH}" fill="transparent"/></g>`;
     if (i % every === 0 || i === months.length-1)
-      h += `<text class="axis-label" x="${x}" y="${H-6}" text-anchor="middle">${fmtDay(m.month+'-01',{month:'short'})}</text>`;
+      h += `<text class="axis-label" x="${x}" y="${H-6}" text-anchor="middle">${fmtDay(m.month+'-01', months.length > 12 ? {month:'short',year:'2-digit'} : {month:'short'})}</text>`;
   });
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
   svg.innerHTML = h;
@@ -403,6 +444,103 @@ function renderOrders(orders){
   }).join('') || '<tr><td colspan="5" class="empty">No orders yet.</td></tr>';
 }
 
+// ---- time period -----------------------------------------------------------
+const DAY = 864e5;
+const iso = t => new Date(t).toISOString().slice(0, 10);
+const addDays = (s, n) => iso(parseDay(s).getTime() + n * DAY);
+const spanDays = (a, b) => Math.round((parseDay(b) - parseDay(a)) / DAY) + 1;
+
+function presetRange(p, first, last){
+  switch (p){
+    case '7d':  return [addDays(last, -6), last];
+    case '90d': return [addDays(last, -89), last];
+    case 'ytd': return [last.slice(0, 4) + '-01-01', last];
+    case '12m': return [addDays(last, -364), last];
+    case 'all': return [first, last];
+    default:    return [addDays(last, -27), last];   // 28d
+  }
+}
+const PRESET_LABEL = {'7d':'Last 7 days','28d':'Last 28 days','90d':'Last 90 days','ytd':'Year to date','12m':'Last 12 months','all':'All time'};
+
+function fmtRange(a, b){
+  const sameYear = a.slice(0, 4) === b.slice(0, 4);
+  return `${fmtDay(a, sameYear ? {month:'short',day:'numeric'} : {month:'short',day:'numeric',year:'numeric'})}–${fmtDay(b,{month:'short',day:'numeric',year:'numeric'})}`;
+}
+
+// Totals for [from, to] from the published per-day history.
+function totals(h, from, to){
+  const t = {revenue:0, cost:0, fees:0, orders:0, units:0, unmapped_units:0, shipped:0, paid:0, unpaid:0};
+  for (const d of h.days) if (d.date >= from && d.date <= to) for (const k in t) t[k] += d[k] || 0;
+  t.profit = t.revenue - t.cost - t.fees;
+  t.margin = t.revenue ? t.profit / t.revenue * 100 : 0;
+  t.aov = t.orders ? t.revenue / t.orders : 0;
+  return t;
+}
+
+function view(d, from, to, label){
+  const h = d.history;
+  const n = spanDays(from, to);
+  const cur = totals(h, from, to);
+  const prior = totals(h, addDays(from, -n), addDays(from, -1));
+  const kv = (a, b) => ({value: a, prior: b});
+
+  // daily series, weekly buckets past ~4 months so the line stays readable
+  const byDay = Object.fromEntries(h.days.map(x => [x.date, x.revenue]));
+  let series = [];
+  for (let i = 0; i < n; i++){ const ds = addDays(from, i); series.push({date: ds, revenue: byDay[ds] || 0}); }
+  const weekly = n > 120;
+  if (weekly){
+    const w = [];
+    series.forEach((x, i) => { if (i % 7 === 0) w.push({date: x.date, revenue: 0, week: true}); w[w.length-1].revenue += x.revenue; });
+    series = w;
+  }
+
+  const agg = new Map();
+  for (const [ds, i, rev, profit, units] of h.product_days){
+    if (ds < from || ds > to) continue;
+    const a = agg.get(i) || {name: h.products[i], revenue: 0, profit: 0, units: 0};
+    a.revenue += rev; a.profit += profit; a.units += units; agg.set(i, a);
+  }
+  const top = [...agg.values()].sort((a, b) => b.revenue - a.revenue).slice(0, 6);
+
+  // months: the selected period when it spans 3+ months, else the last 12
+  const [ty, tm] = to.split('-').map(Number);
+  const back = new Date(Date.UTC(ty, tm - 1 - 11, 1));
+  const mFrom = n >= 90 ? from.slice(0, 7) : iso(back).slice(0, 7);
+  const months = new Map();
+  for (const x of h.days){
+    const m = x.date.slice(0, 7);
+    if (m < mFrom || x.date > to || (n >= 90 && x.date < from)) continue;
+    const a = months.get(m) || {month: m, revenue: 0, profit: 0};
+    a.revenue += x.revenue; a.profit += x.revenue - x.cost - x.fees; months.set(m, a);
+  }
+  const monthList = [...months.values()].sort((a, b) => a.month < b.month ? -1 : 1);
+
+  const inRange = h.orders.filter(o => o.date >= from && o.date <= to);
+  return {
+    label, weekly, series, top,
+    monthly: monthList,
+    monthLabel: n >= 90 ? label : 'Last 12 months',
+    kpis: {
+      revenue: kv(cur.revenue, prior.revenue), orders: kv(cur.orders, prior.orders),
+      avg_order_value: kv(cur.aov, prior.aov), product_cost: kv(cur.cost, prior.cost),
+      fees: kv(cur.fees, prior.fees), profit: kv(cur.profit, prior.profit), margin: kv(cur.margin, prior.margin),
+    },
+    fulfillment: {shipped: cur.shipped, paid: cur.paid, unpaid: cur.unpaid},
+    unmapped_units: cur.unmapped_units,
+    orders: inRange.slice(0, 10), orderCount: inRange.length,
+  };
+}
+
+function readHash(first, last){
+  const h = decodeURIComponent(location.hash.slice(1));
+  const m = h.match(/^(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})$/);
+  if (m && m[1] <= m[2]) return {p: 'custom', from: m[1], to: m[2]};
+  const p = PRESET_LABEL[h] ? h : '28d';
+  const [from, to] = presetRange(p, first, last);
+  return {p, from, to};
+}
+
 async function main(){
   const app = document.getElementById('app');
   let d;
@@ -416,23 +554,69 @@ async function main(){
     return;
   }
   CUR = d.currency || 'USD';
-  const w = d.window;
-  document.getElementById('rangePill').innerHTML =
-    `${fmtDay(w.start,{month:'short',day:'numeric'})}&ndash;${fmtDay(w.end,{month:'short',day:'numeric',year:'numeric'})} &nbsp;&middot;&nbsp; vs. prior ${w.days} days`;
+  if (!d.history){
+    document.getElementById('rangePill').textContent = 'Updating';
+    app.innerHTML = '<div class="error">The shop numbers are being refreshed. Check back in a few minutes.</div>';
+    return;
+  }
   const gen = new Date(d.generated_at);
   if (!isNaN(gen)) document.getElementById('updated').textContent =
     'Updated ' + gen.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
-  app.innerHTML = renderLayout(d);
-  renderLine(d.daily_revenue);
-  renderDonut(d.fulfillment);
-  renderProducts(d.top_products);
-  renderMonthly(d.monthly);
-  renderOrders(d.recent_orders);
+
+  const last = d.window.end;
+  const first = d.history.days.length ? d.history.days[0].date : d.window.start;
+  const fromIn = document.getElementById('from'), toIn = document.getElementById('to');
+  const custom = document.getElementById('custom'), err = document.getElementById('customErr');
+  for (const el of [fromIn, toIn]){ el.min = first; el.max = last; }
+  document.getElementById('controls').hidden = false;
+
+  let state = readHash(first, last), v;
+  function render(){
+    const {p, from, to} = state;
+    const label = p === 'custom' ? fmtRange(from, to) : PRESET_LABEL[p];
+    document.querySelectorAll('#presets button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.p === p)));
+    custom.classList.toggle('show', p === 'custom');
+    fromIn.value = from; toIn.value = to; err.textContent = '';
+    const n = spanDays(from, to);
+    document.getElementById('rangePill').innerHTML =
+      `${fmtRange(from, to)} &nbsp;&middot;&nbsp; vs. prior ${n} day${n === 1 ? '' : 's'}`;
+    v = view(d, from, to, label);
+    app.innerHTML = renderLayout(v);
+    renderLine(v.series);
+    renderDonut(v.fulfillment);
+    renderProducts(v.top);
+    renderMonthly(v.monthly);
+    renderOrders(v.orders);
+  }
+  function go(next){
+    state = next;
+    const hash = next.p === 'custom' ? `${next.from}..${next.to}` : next.p;
+    history.replaceState(null, '', '#' + hash);
+    render();
+  }
+
+  document.getElementById('presets').addEventListener('click', e => {
+    const p = e.target.closest('button')?.dataset.p;
+    if (!p) return;
+    if (p === 'custom') return go({p, from: state.from, to: state.to});
+    const [from, to] = presetRange(p, first, last);
+    go({p, from, to});
+  });
+  const onDate = () => {
+    if (!fromIn.value || !toIn.value) return;
+    if (fromIn.value > toIn.value){ err.textContent = 'Start date is after end date.'; return; }
+    go({p: 'custom', from: fromIn.value, to: toIn.value});
+  };
+  fromIn.addEventListener('change', onDate);
+  toIn.addEventListener('change', onDate);
+  addEventListener('hashchange', () => { state = readHash(first, last); render(); });
+
+  render();
   let lastW = innerWidth, t;
   addEventListener('resize', () => {
     if (innerWidth === lastW) return;
     lastW = innerWidth; clearTimeout(t);
-    t = setTimeout(() => { renderLine(d.daily_revenue); renderMonthly(d.monthly); }, 150);
+    t = setTimeout(() => { renderLine(v.series); renderMonthly(v.monthly); }, 150);
   });
 }
 main();

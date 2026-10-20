@@ -148,3 +148,53 @@ def test_write_snapshot_saves_data_json(tmp_path):
     out = publish_snapshot.write_snapshot(snap(), tmp_path)
     assert out == tmp_path / "data.json"
     assert json.loads(out.read_text())["kpis"]["orders"]["value"] == 3
+
+
+# ---- history: lets the page total any date range the viewer picks ----------
+
+def day(s, date_):
+    return next(d for d in s["history"]["days"] if d["date"] == date_)
+
+
+def test_history_days_hold_each_days_totals():
+    s = snap()
+    days = s["history"]["days"]
+    assert [d["date"] for d in days] == sorted(o[1] for o in ORDERS)  # sales days only
+    mug = day(s, "2026-10-01")
+    # 37 revenue; cost (6+3)*2; fees 37*9.5% + 0.20 + 0.25 per-order
+    assert mug["revenue"] == pytest.approx(37.00)
+    assert mug["cost"] == pytest.approx(18.00)
+    assert mug["fees"] == pytest.approx(3.97, abs=0.011)
+    assert (mug["orders"], mug["units"], mug["unmapped_units"]) == (1, 2, 0)
+    assert (mug["shipped"], mug["paid"], mug["unpaid"]) == (0, 1, 0)
+    poster = day(s, "2026-10-10")
+    assert (poster["unmapped_units"], poster["unpaid"]) == (1, 1)
+
+
+def test_history_days_add_up_to_the_window_kpis():
+    s = snap()
+    w = [d for d in s["history"]["days"] if "2026-09-23" <= d["date"] <= "2026-10-20"]
+    k = s["kpis"]
+    assert sum(d["revenue"] for d in w) == pytest.approx(k["revenue"]["value"])
+    assert sum(d["cost"] for d in w) == pytest.approx(k["product_cost"]["value"])
+    assert sum(d["fees"] for d in w) == pytest.approx(k["fees"]["value"], abs=0.011)
+    assert sum(d["orders"] for d in w) == k["orders"]["value"]
+
+
+def test_history_product_days_attribute_sales_to_named_products():
+    h = snap()["history"]
+    names = h["products"]
+    assert sorted(names) == ["Bayou Mug", "Crawfish Poster", "Heron Tee"]
+    rows = {(r[0], names[r[1]]): r[2:] for r in h["product_days"]}
+    revenue, profit, units = rows[("2026-10-01", "Bayou Mug")]
+    assert (revenue, units) == (37.00, 2)
+    assert profit == pytest.approx(15.29, abs=0.01)   # 37 - 18 - (3.515 + 0.20)
+    assert sorted(d for d, n in rows if n == "Heron Tee") == ["2025-01-05", "2026-09-01", "2026-10-19"]
+
+
+def test_history_orders_list_every_order_newest_first():
+    orders = snap()["history"]["orders"]
+    assert len(orders) == len(ORDERS)
+    assert orders[0] == {"date": "2026-10-19", "products": "Heron Tee",
+                         "units": 1, "status": "shipped", "amount": 30.50}
+    assert orders[-1]["date"] == "2025-01-05"
