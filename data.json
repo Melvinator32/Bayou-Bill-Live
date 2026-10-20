@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T18:40:02",
+  "generated_at": "2026-10-20T18:54:20",
   "currency": "USD",
   "window": {
     "start": "2026-09-23",
@@ -8,31 +8,31 @@
   },
   "kpis": {
     "revenue": {
-      "value": 251.61,
+      "value": 257.19,
       "prior": 209.44
     },
     "orders": {
-      "value": 12,
+      "value": 13,
       "prior": 15
     },
     "avg_order_value": {
-      "value": 20.97,
+      "value": 19.78,
       "prior": 13.96
     },
     "product_cost": {
-      "value": 130.78,
+      "value": 137.37,
       "prior": 107.96
     },
     "fees": {
-      "value": 29.5,
+      "value": 30.48,
       "prior": 26.85
     },
     "profit": {
-      "value": 91.33,
+      "value": 89.34,
       "prior": 74.63
     },
     "margin": {
-      "value": 36.3,
+      "value": 34.7,
       "prior": 35.6
     }
   },
@@ -147,14 +147,14 @@
     },
     {
       "date": "2026-10-20",
-      "revenue": 0
+      "revenue": 5.58
     }
   ],
   "monthly": [
     {
       "month": "2025-11",
       "revenue": 310.74,
-      "profit": 199.96
+      "profit": 181.6
     },
     {
       "month": "2025-12",
@@ -164,7 +164,7 @@
     {
       "month": "2026-01",
       "revenue": 151.36,
-      "profit": 93.97
+      "profit": 89.38
     },
     {
       "month": "2026-02",
@@ -189,17 +189,17 @@
     {
       "month": "2026-06",
       "revenue": 255.28,
-      "profit": 120.07
+      "profit": 97.12
     },
     {
       "month": "2026-07",
       "revenue": 355.04,
-      "profit": 175.89
+      "profit": 166.71
     },
     {
       "month": "2026-08",
       "revenue": 323.27,
-      "profit": 142.18
+      "profit": 123.82
     },
     {
       "month": "2026-09",
@@ -208,8 +208,8 @@
     },
     {
       "month": "2026-10",
-      "revenue": 209.12,
-      "profit": 78.2
+      "revenue": 214.7,
+      "profit": 76.46
     }
   ],
   "top_products": [
@@ -252,10 +252,17 @@
   ],
   "fulfillment": {
     "shipped": 11,
-    "paid": 1,
+    "paid": 2,
     "unpaid": 0
   },
   "recent_orders": [
+    {
+      "date": "2026-10-20",
+      "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+      "units": 1,
+      "status": "paid",
+      "amount": 9.33
+    },
     {
       "date": "2026-10-18",
       "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
@@ -318,14 +325,7227 @@
       "units": 1,
       "status": "shipped",
       "amount": 16.25
-    },
-    {
-      "date": "2026-10-02",
-      "products": "Mid Profile Phish Fish Cap",
-      "units": 1,
-      "status": "shipped",
-      "amount": 36.88
     }
   ],
-  "unmapped_units": 0
+  "unmapped_units": 0,
+  "history": {
+    "days": [
+      {
+        "date": "2025-07-17",
+        "revenue": 5.0,
+        "cost": 2.0,
+        "fees": 0.93,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-07-23",
+        "revenue": 82.5,
+        "cost": 32.65,
+        "fees": 8.69,
+        "orders": 1,
+        "units": 11,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-07-24",
+        "revenue": 3.75,
+        "cost": 1.42,
+        "fees": 0.81,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-03",
+        "revenue": 43.25,
+        "cost": 16.89,
+        "fees": 4.96,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-05",
+        "revenue": 31.72,
+        "cost": 18.49,
+        "fees": 3.46,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-06",
+        "revenue": 5.47,
+        "cost": 2.0,
+        "fees": 0.97,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-07",
+        "revenue": 4.43,
+        "cost": 1.42,
+        "fees": 0.87,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-14",
+        "revenue": 12.07,
+        "cost": 4.64,
+        "fees": 1.8,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-20",
+        "revenue": 9.5,
+        "cost": 3.16,
+        "fees": 1.35,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-21",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-24",
+        "revenue": 50.09,
+        "cost": 19.75,
+        "fees": 5.86,
+        "orders": 2,
+        "units": 6,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-30",
+        "revenue": 16.74,
+        "cost": 6.0,
+        "fees": 2.49,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-08-31",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-03",
+        "revenue": 14.47,
+        "cost": 5.32,
+        "fees": 2.47,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-04",
+        "revenue": 14.25,
+        "cost": 4.74,
+        "fees": 2.2,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-05",
+        "revenue": 32.06,
+        "cost": 0,
+        "fees": 3.5,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 1,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-06",
+        "revenue": 40.45,
+        "cost": 14.65,
+        "fees": 4.74,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-08",
+        "revenue": 15.08,
+        "cost": 5.16,
+        "fees": 2.08,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-09",
+        "revenue": 32.36,
+        "cost": 18.49,
+        "fees": 3.52,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-11",
+        "revenue": 33.37,
+        "cost": 12.65,
+        "fees": 3.62,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-13",
+        "revenue": 4.85,
+        "cost": 2.0,
+        "fees": 0.91,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-16",
+        "revenue": 4.85,
+        "cost": 2.0,
+        "fees": 0.91,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-18",
+        "revenue": 24.78,
+        "cost": 9.16,
+        "fees": 3.2,
+        "orders": 1,
+        "units": 5,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-19",
+        "revenue": 33.48,
+        "cost": 13.28,
+        "fees": 4.88,
+        "orders": 2,
+        "units": 6,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-20",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-21",
+        "revenue": 8.45,
+        "cost": 3.0,
+        "fees": 1.7,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-22",
+        "revenue": 3.7,
+        "cost": 1.42,
+        "fees": 0.8,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-26",
+        "revenue": 69.83,
+        "cost": 33.62,
+        "fees": 7.28,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-27",
+        "revenue": 4.46,
+        "cost": 1.58,
+        "fees": 0.87,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-09-28",
+        "revenue": 4.11,
+        "cost": 1.42,
+        "fees": 0.84,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-10-01",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-10-02",
+        "revenue": 9.37,
+        "cost": 3.0,
+        "fees": 1.79,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-10-11",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-10-13",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-10-15",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-10-17",
+        "revenue": 32.36,
+        "cost": 18.49,
+        "fees": 3.52,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-10-21",
+        "revenue": 43.24,
+        "cost": 26.16,
+        "fees": 5.01,
+        "orders": 2,
+        "units": 5,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-10-27",
+        "revenue": 10.5,
+        "cost": 3.16,
+        "fees": 1.45,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-01",
+        "revenue": 46.05,
+        "cost": 15.8,
+        "fees": 5.02,
+        "orders": 1,
+        "units": 10,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-05",
+        "revenue": 10.13,
+        "cost": 3.58,
+        "fees": 1.86,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-06",
+        "revenue": 9.5,
+        "cost": 3.16,
+        "fees": 1.35,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-08",
+        "revenue": 22.11,
+        "cost": 7.9,
+        "fees": 3.65,
+        "orders": 3,
+        "units": 4,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-10",
+        "revenue": 9.37,
+        "cost": 3.0,
+        "fees": 1.79,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-11",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-12",
+        "revenue": 13.38,
+        "cost": 4.74,
+        "fees": 1.72,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-14",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-15",
+        "revenue": 12.33,
+        "cost": 4.26,
+        "fees": 1.62,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-16",
+        "revenue": 34.76,
+        "cost": 31.0,
+        "fees": 3.95,
+        "orders": 1,
+        "units": 6,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-23",
+        "revenue": 36.26,
+        "cost": 2.0,
+        "fees": 4.34,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 1,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-26",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-28",
+        "revenue": 12.12,
+        "cost": 3.9,
+        "fees": 2.05,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-29",
+        "revenue": 30.08,
+        "cost": 0,
+        "fees": 3.31,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 1,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-11-30",
+        "revenue": 58.31,
+        "cost": 8.48,
+        "fees": 7.99,
+        "orders": 5,
+        "units": 6,
+        "unmapped_units": 1,
+        "shipped": 5,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-01",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-02",
+        "revenue": 39.74,
+        "cost": 3.0,
+        "fees": 4.88,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 1,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-03",
+        "revenue": 46.8,
+        "cost": 5.9,
+        "fees": 6.25,
+        "orders": 4,
+        "units": 4,
+        "unmapped_units": 1,
+        "shipped": 4,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-04",
+        "revenue": 14.88,
+        "cost": 5.16,
+        "fees": 2.76,
+        "orders": 3,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-05",
+        "revenue": 91.9,
+        "cost": 9.32,
+        "fees": 10.93,
+        "orders": 4,
+        "units": 8,
+        "unmapped_units": 2,
+        "shipped": 4,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-07",
+        "revenue": 10.97,
+        "cost": 3.9,
+        "fees": 1.94,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-08",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-09",
+        "revenue": 28.07,
+        "cost": 9.9,
+        "fees": 4.47,
+        "orders": 4,
+        "units": 5,
+        "unmapped_units": 0,
+        "shipped": 4,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-10",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-11",
+        "revenue": 35.5,
+        "cost": 20.07,
+        "fees": 4.27,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-12",
+        "revenue": 42.39,
+        "cost": 3.58,
+        "fees": 5.38,
+        "orders": 3,
+        "units": 3,
+        "unmapped_units": 1,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-13",
+        "revenue": 39.58,
+        "cost": 3.16,
+        "fees": 4.66,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 1,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-15",
+        "revenue": 40.97,
+        "cost": 13.48,
+        "fees": 6.74,
+        "orders": 5,
+        "units": 8,
+        "unmapped_units": 0,
+        "shipped": 5,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-16",
+        "revenue": 38.28,
+        "cost": 2.32,
+        "fees": 4.54,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 1,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-17",
+        "revenue": 13.96,
+        "cost": 4.74,
+        "fees": 1.98,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-18",
+        "revenue": 28.78,
+        "cost": 19.55,
+        "fees": 3.63,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-20",
+        "revenue": 30.08,
+        "cost": 0,
+        "fees": 3.31,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 1,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-21",
+        "revenue": 8.92,
+        "cost": 3.16,
+        "fees": 1.3,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-22",
+        "revenue": 4.46,
+        "cost": 1.58,
+        "fees": 0.87,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-23",
+        "revenue": 4.91,
+        "cost": 1.42,
+        "fees": 0.92,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-27",
+        "revenue": 32.36,
+        "cost": 18.49,
+        "fees": 3.52,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2025-12-30",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-02",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-05",
+        "revenue": 6.87,
+        "cost": 2.32,
+        "fees": 1.1,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-10",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-12",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-14",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-16",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-17",
+        "revenue": 10.96,
+        "cost": 4.0,
+        "fees": 1.94,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-18",
+        "revenue": 42.08,
+        "cost": 13.29,
+        "fees": 5.1,
+        "orders": 2,
+        "units": 6,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-19",
+        "revenue": 5.58,
+        "cost": 6.59,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-23",
+        "revenue": 6.18,
+        "cost": 2.0,
+        "fees": 1.04,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-24",
+        "revenue": 6.87,
+        "cost": 2.32,
+        "fees": 1.1,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-27",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-28",
+        "revenue": 32.06,
+        "cost": 0,
+        "fees": 3.5,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 1,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-01-31",
+        "revenue": 10.13,
+        "cost": 3.58,
+        "fees": 1.86,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-02",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-03",
+        "revenue": 30.08,
+        "cost": 0,
+        "fees": 3.31,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 1,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-05",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-12",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-14",
+        "revenue": 32.06,
+        "cost": 0,
+        "fees": 3.5,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 1,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-16",
+        "revenue": 13.74,
+        "cost": 4.64,
+        "fees": 1.76,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-18",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-19",
+        "revenue": 69.6,
+        "cost": 52.65,
+        "fees": 7.06,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-23",
+        "revenue": 9.5,
+        "cost": 3.16,
+        "fees": 1.8,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-25",
+        "revenue": 4.11,
+        "cost": 1.42,
+        "fees": 0.84,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-02-27",
+        "revenue": 9.84,
+        "cost": 3.58,
+        "fees": 1.58,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-03",
+        "revenue": 30.08,
+        "cost": 0,
+        "fees": 3.31,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 1,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-04",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-05",
+        "revenue": 6.09,
+        "cost": 2.32,
+        "fees": 1.03,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-07",
+        "revenue": 17.94,
+        "cost": 6.0,
+        "fees": 2.6,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-08",
+        "revenue": 57.44,
+        "cost": 8.32,
+        "fees": 7.01,
+        "orders": 3,
+        "units": 6,
+        "unmapped_units": 1,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-09",
+        "revenue": 6.18,
+        "cost": 2.0,
+        "fees": 1.04,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-10",
+        "revenue": 16.31,
+        "cost": 5.58,
+        "fees": 2.9,
+        "orders": 3,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-12",
+        "revenue": 9.5,
+        "cost": 3.16,
+        "fees": 1.35,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-13",
+        "revenue": 6.22,
+        "cost": 2.32,
+        "fees": 1.04,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-15",
+        "revenue": 111.5,
+        "cost": 39.5,
+        "fees": 11.04,
+        "orders": 1,
+        "units": 25,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-17",
+        "revenue": 11.67,
+        "cost": 4.32,
+        "fees": 2.01,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-18",
+        "revenue": 4.46,
+        "cost": 1.58,
+        "fees": 0.87,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-19",
+        "revenue": 14.46,
+        "cost": 4.74,
+        "fees": 2.22,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-25",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-27",
+        "revenue": 4.46,
+        "cost": 1.58,
+        "fees": 0.87,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-03-30",
+        "revenue": 25.83,
+        "cost": 22.77,
+        "fees": 2.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-04",
+        "revenue": 24.22,
+        "cost": 15.44,
+        "fees": 2.75,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-07",
+        "revenue": 62.79,
+        "cost": 20.22,
+        "fees": 7.02,
+        "orders": 1,
+        "units": 12,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-12",
+        "revenue": 82.26,
+        "cost": 26.31,
+        "fees": 10.46,
+        "orders": 5,
+        "units": 7,
+        "unmapped_units": 1,
+        "shipped": 5,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-13",
+        "revenue": 43.4,
+        "cost": 23.31,
+        "fees": 5.02,
+        "orders": 2,
+        "units": 4,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-15",
+        "revenue": 6.22,
+        "cost": 2.32,
+        "fees": 1.04,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-17",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-18",
+        "revenue": 4.46,
+        "cost": 1.58,
+        "fees": 0.87,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-19",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-20",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-22",
+        "revenue": 6.18,
+        "cost": 2.0,
+        "fees": 1.04,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-27",
+        "revenue": 46.4,
+        "cost": 35.1,
+        "fees": 4.86,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-04-29",
+        "revenue": 4.11,
+        "cost": 1.42,
+        "fees": 0.84,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-01",
+        "revenue": 6.09,
+        "cost": 2.32,
+        "fees": 1.03,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-03",
+        "revenue": 10.96,
+        "cost": 4.0,
+        "fees": 1.94,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-08",
+        "revenue": 30.44,
+        "cost": 11.16,
+        "fees": 3.79,
+        "orders": 2,
+        "units": 6,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-12",
+        "revenue": 8.92,
+        "cost": 3.16,
+        "fees": 1.3,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-14",
+        "revenue": 12.18,
+        "cost": 4.64,
+        "fees": 1.61,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-16",
+        "revenue": 22.59,
+        "cost": 7.9,
+        "fees": 3.05,
+        "orders": 2,
+        "units": 5,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-17",
+        "revenue": 30.45,
+        "cost": 11.6,
+        "fees": 3.34,
+        "orders": 1,
+        "units": 5,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-18",
+        "revenue": 17.56,
+        "cost": 6.64,
+        "fees": 2.57,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-19",
+        "revenue": 52.59,
+        "cost": 8.22,
+        "fees": 6.55,
+        "orders": 3,
+        "units": 5,
+        "unmapped_units": 1,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-28",
+        "revenue": 18.63,
+        "cost": 6.32,
+        "fees": 2.87,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-29",
+        "revenue": 43.73,
+        "cost": 4.32,
+        "fees": 5.25,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 1,
+        "shipped": 1,
+        "paid": 1,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-30",
+        "revenue": 9.5,
+        "cost": 3.16,
+        "fees": 1.8,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-05-31",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-03",
+        "revenue": 4.46,
+        "cost": 1.58,
+        "fees": 0.87,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-04",
+        "revenue": 4.11,
+        "cost": 1.42,
+        "fees": 0.84,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-07",
+        "revenue": 6.18,
+        "cost": 2.0,
+        "fees": 1.04,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-08",
+        "revenue": 39.15,
+        "cost": 21.73,
+        "fees": 5.07,
+        "orders": 3,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-09",
+        "revenue": 10.84,
+        "cost": 3.9,
+        "fees": 1.93,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-11",
+        "revenue": 21.93,
+        "cost": 6.74,
+        "fees": 2.98,
+        "orders": 2,
+        "units": 4,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-12",
+        "revenue": 10.97,
+        "cost": 3.9,
+        "fees": 1.94,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-13",
+        "revenue": 10.04,
+        "cost": 8.17,
+        "fees": 1.85,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-16",
+        "revenue": 6.09,
+        "cost": 2.32,
+        "fees": 1.03,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-17",
+        "revenue": 14.25,
+        "cost": 4.74,
+        "fees": 2.25,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-21",
+        "revenue": 10.83,
+        "cost": 3.58,
+        "fees": 1.68,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-22",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-23",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-25",
+        "revenue": 5.58,
+        "cost": 6.59,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-26",
+        "revenue": 11.8,
+        "cost": 8.91,
+        "fees": 1.77,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-27",
+        "revenue": 40.55,
+        "cost": 22.85,
+        "fees": 4.75,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-28",
+        "revenue": 15.58,
+        "cost": 9.75,
+        "fees": 2.83,
+        "orders": 3,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-29",
+        "revenue": 18.67,
+        "cost": 11.23,
+        "fees": 3.12,
+        "orders": 3,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-06-30",
+        "revenue": 14.25,
+        "cost": 4.74,
+        "fees": 1.8,
+        "orders": 1,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-01",
+        "revenue": 29.15,
+        "cost": 18.57,
+        "fees": 3.22,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-02",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-03",
+        "revenue": 4.46,
+        "cost": 1.58,
+        "fees": 0.87,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-05",
+        "revenue": 10.13,
+        "cost": 3.58,
+        "fees": 1.86,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-06",
+        "revenue": 40.31,
+        "cost": 31.75,
+        "fees": 4.73,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-08",
+        "revenue": 14.12,
+        "cost": 4.58,
+        "fees": 2.69,
+        "orders": 3,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-10",
+        "revenue": 29.15,
+        "cost": 18.57,
+        "fees": 3.22,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-13",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-15",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-16",
+        "revenue": 46.4,
+        "cost": 21.22,
+        "fees": 4.86,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-18",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-21",
+        "revenue": 6.09,
+        "cost": 2.32,
+        "fees": 1.03,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-22",
+        "revenue": 9.71,
+        "cost": 3.16,
+        "fees": 1.57,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-23",
+        "revenue": 46.99,
+        "cost": 24.79,
+        "fees": 6.26,
+        "orders": 4,
+        "units": 4,
+        "unmapped_units": 0,
+        "shipped": 4,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-24",
+        "revenue": 41.56,
+        "cost": 3.16,
+        "fees": 4.85,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 1,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-27",
+        "revenue": 46.52,
+        "cost": 4.74,
+        "fees": 6.22,
+        "orders": 4,
+        "units": 4,
+        "unmapped_units": 1,
+        "shipped": 4,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-28",
+        "revenue": 4.11,
+        "cost": 1.42,
+        "fees": 0.84,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-07-30",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-02",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-05",
+        "revenue": 20.66,
+        "cost": 16.34,
+        "fees": 2.61,
+        "orders": 1,
+        "units": 4,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-06",
+        "revenue": 39.99,
+        "cost": 21.22,
+        "fees": 4.25,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-07",
+        "revenue": 4.11,
+        "cost": 1.42,
+        "fees": 0.84,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-10",
+        "revenue": 11.16,
+        "cost": 4.0,
+        "fees": 1.71,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-11",
+        "revenue": 39.99,
+        "cost": 21.22,
+        "fees": 4.25,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-14",
+        "revenue": 10.2,
+        "cost": 3.74,
+        "fees": 1.87,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-15",
+        "revenue": 26.22,
+        "cost": 12.65,
+        "fees": 2.94,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-16",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-17",
+        "revenue": 16.15,
+        "cost": 14.59,
+        "fees": 2.88,
+        "orders": 3,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-18",
+        "revenue": 19.0,
+        "cost": 6.32,
+        "fees": 2.25,
+        "orders": 1,
+        "units": 4,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-19",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-21",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-22",
+        "revenue": 5.58,
+        "cost": 6.59,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-25",
+        "revenue": 28.63,
+        "cost": 12.65,
+        "fees": 3.17,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-26",
+        "revenue": 19.83,
+        "cost": 6.74,
+        "fees": 3.23,
+        "orders": 3,
+        "units": 4,
+        "unmapped_units": 0,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-27",
+        "revenue": 5.38,
+        "cost": 2.0,
+        "fees": 0.96,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-29",
+        "revenue": 15.72,
+        "cost": 5.48,
+        "fees": 2.39,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-08-30",
+        "revenue": 39.99,
+        "cost": 21.22,
+        "fees": 4.25,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-04",
+        "revenue": 9.9,
+        "cost": 7.42,
+        "fees": 1.59,
+        "orders": 1,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-05",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-07",
+        "revenue": 29.15,
+        "cost": 18.57,
+        "fees": 3.22,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-08",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-10",
+        "revenue": 5.25,
+        "cost": 1.58,
+        "fees": 0.95,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-13",
+        "revenue": 4.75,
+        "cost": 1.58,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-14",
+        "revenue": 39.99,
+        "cost": 21.22,
+        "fees": 4.25,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-18",
+        "revenue": 29.15,
+        "cost": 18.57,
+        "fees": 3.22,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-09-27",
+        "revenue": 42.49,
+        "cost": 21.73,
+        "fees": 5.14,
+        "orders": 2,
+        "units": 3,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-02",
+        "revenue": 40.07,
+        "cost": 26.33,
+        "fees": 4.71,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-08",
+        "revenue": 10.97,
+        "cost": 3.9,
+        "fees": 1.94,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 2,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-09",
+        "revenue": 39.99,
+        "cost": 21.22,
+        "fees": 4.25,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-13",
+        "revenue": 28.72,
+        "cost": 13.89,
+        "fees": 3.18,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-15",
+        "revenue": 39.99,
+        "cost": 21.22,
+        "fees": 4.25,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-16",
+        "revenue": 43.8,
+        "cost": 20.49,
+        "fees": 5.06,
+        "orders": 2,
+        "units": 2,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 1,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-18",
+        "revenue": 5.58,
+        "cost": 2.0,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 1,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-20",
+        "revenue": 5.58,
+        "cost": 6.59,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 0,
+        "paid": 1,
+        "unpaid": 0
+      }
+    ],
+    "products": [
+      "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+      "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+      "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+      "Best Clockmaker on Mars Shirt Comfort Colors",
+      "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+      "BMFS Train Graphic T-Shirt, Billy Strings Inspired Design, Unisex Tee, Casual Wear, Gift for Train Lovers, Everyday Comfort,",
+      "Mid Profile Phish Fish Cap",
+      "Phish Turtle Playing Banjo Sticker | Kiss-Cut Vinyl Decal",
+      "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+      "Red Rocks Colorado Stained Glass Kiss-Cut Stickers, Nature Aesthetic, Laptop Decor, Eco-Friendly Art, Unique Gift Idea",
+      "Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift",
+      "Voodoo Alligator Vinyl Kiss-Cut Stickers | Fun Laptop D\u00e9cor, Unique Gift for Animal Lovers, Halloween Party Favors, Creative Scrapbooking",
+      "Dancing Cryptids - Grateful Dead Inspired",
+      "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+      "Music Lover Sticker, Grateful Dead Sticker, Skeleton Sticker, Widespread Panic Decal, Jam Band Gift, Hippie Sticker, Laptop Decal, Guitar",
+      "BMFS Train Graphic T-Shirt, Billy Strings Inspired Design, Unisex Tee, Casual Wear, Gift for Train Lovers, Everyday Comfort,",
+      "Jazz Band Alligator New Orleans Stickers, Fun Vinyl Decals for Music Lovers, Laptop Stickers, Unique Gift, Home Decor, Party Favors",
+      "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts (Left Facing)",
+      "Terrapin Station Banjo Master - inspired by Grateful Dead, Grateful dead sticker, Gift for Animal Lovers, Gift for music lovers, musician",
+      "BMFS Goat Sticker",
+      "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+      "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+      "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+      "Bigfoot &quot;Walkin&quot; WSP Decal Sticker Hiking Kiss-Cut Stickers, Widespread Panic Gifts, Widespread Panic Inspired Decal, Laptop Stickers",
+      "Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories",
+      "Donut Trout Surf Cap Embroidered Snapback Hat | Trout Flatbill",
+      "BMFS Billy Strings Train, Vintage Train Kiss-Cut Stickers | Colorful Railway Art, Laptop Decor, Gift for Train Lovers, Bluegrass Stickers",
+      "Rainbow Trout Sticker, Fly Fishing Vinyl Decal - Trout Lover Gift, Fishing Enthusiast, Outdoor Adventure, Fishing Gift Ideas, Fishing Decor,",
+      "Goose the band vinyl sticker - Kiss-Cut Stickers, Decal, Laptop Sticker, Water Bottle Sticker, Music Lover Gift, Vinyl Decal",
+      "Grateful Fisherman Sticker, Fly Fishing Sticker, Fly Fishing Decal, Grateful Dead Inspired, Outdoor Adventure, Laptop Decal",
+      "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+      "BMFS Goat Sticker",
+      "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
+      "Vintage Train BMFS Kiss-Cut Stickers, Retro Train Decals, Laptop Stickers, Gift for Train Lovers, Travel Decor",
+      "Grateful Dead Bigfoot Fly Fisherman T-Shirt | Deadhead Fishing Tee",
+      "Stella Blue Pint Glass, Grateful Dead Beer Glass, 16oz Drinking Glass, Perfect for Parties, Gifts for Beer Lovers, deadhead gift",
+      "Bluegrass Frog Violin Kiss-Cut Stickers - Cute Laptop, Journal, Water Bottle Decor, Ideal for Gifts, Nature Lovers",
+      "Deadhead Bigfoot Terrapin Coffee Lover Gift, 11oz 15oz Cup, Hippie Music Fan",
+      "Goose the Band Vinyl Kiss-Cut Stickers, Wysteria Lane Street Sign Sticker, Jam Band Decal, Vinyl Laptop Sticker, Music Lover Gift, Hippie",
+      "BMFS Red Rocking Chair - Billy Strings Inspired - Comfort Colors Shirt",
+      "Alligator Banjo Vinyl Kiss-Cut Stickers, Fun Laptop Decor, Unique Gift, Cool Art, Music Lovers&#39; Stickers",
+      "New Orleans Grateful Dead Streetcar Shirt - IKO IKO - Comfort Colors",
+      "Deadhead Streetcar Vinyl Sticker, Grateful Dead Fan Gift, New Orleans Retro Design, New Orleans Souvenir, Laptop Decals, Hydro Flask Sticker",
+      "Stella Blue Light Sticker - Grateful Dead Inspired",
+      "Deadhead Streetcar - Hell in a bucket - Grateful Dead Inspired Sticker",
+      "New Orleans Deadhead Whiskey Glass, Unique Gift for Deadheads, Fun Barware, Personalized Drinkware, Party Favorite",
+      "WSMFP (Waffle House Style) Comfort Colors Shirt",
+      "GOOSE Waffle House Sticker",
+      "Moonlit Alligator Banjo Swamp Serenade",
+      "Adorable Raccoon Musician Stickers - Perfect for Laptops, Water Bottles, Journals, Gifts, Bluegrass Gift, Mandolin Lovers Gift",
+      "BMFS (Waffle House - Style) Comfort Colors Shirt",
+      "New Orleans Swamp Festival T-Shirt, Vintage Jazz Fest Tee, Music Lover Gift, Unisex Graphic Shirt, Festival Apparel",
+      "WSMFP Sticker - Waffle House Style",
+      "BMFS Waffle House - Style Sticker",
+      "Drums to Space Kiss-Cut Stickers | Musical Space Art for Drummers |",
+      "WSMFP Patagonia Logo Parody Design, Casual Tee, Outdoor Adventure Shirt, Unisex Graphic Tee, Widespread Panic Lover Gift",
+      "BMFS Shirt Goat Comfort Colors"
+    ],
+    "product_days": [
+      [
+        "2025-07-17",
+        52,
+        5.0,
+        2.33,
+        1
+      ],
+      [
+        "2025-07-23",
+        46,
+        30.0,
+        14.3,
+        1
+      ],
+      [
+        "2025-07-23",
+        52,
+        25.0,
+        12.43,
+        5
+      ],
+      [
+        "2025-07-23",
+        53,
+        27.5,
+        14.69,
+        5
+      ],
+      [
+        "2025-07-24",
+        52,
+        3.75,
+        1.77,
+        1
+      ],
+      [
+        "2025-08-03",
+        19,
+        8.25,
+        4.07,
+        2
+      ],
+      [
+        "2025-08-03",
+        56,
+        35.0,
+        17.59,
+        1
+      ],
+      [
+        "2025-08-05",
+        55,
+        31.72,
+        10.02,
+        1
+      ],
+      [
+        "2025-08-06",
+        47,
+        5.47,
+        2.75,
+        1
+      ],
+      [
+        "2025-08-07",
+        54,
+        4.43,
+        2.39,
+        1
+      ],
+      [
+        "2025-08-14",
+        42,
+        6.07,
+        2.97,
+        1
+      ],
+      [
+        "2025-08-14",
+        52,
+        6.0,
+        2.91,
+        1
+      ],
+      [
+        "2025-08-20",
+        22,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2025-08-21",
+        22,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-08-24",
+        43,
+        11.13,
+        5.61,
+        3
+      ],
+      [
+        "2025-08-24",
+        50,
+        29.96,
+        14.26,
+        1
+      ],
+      [
+        "2025-08-24",
+        53,
+        9.0,
+        5.11,
+        2
+      ],
+      [
+        "2025-08-30",
+        1,
+        11.16,
+        5.9,
+        2
+      ],
+      [
+        "2025-08-30",
+        22,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-08-31",
+        31,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-09-03",
+        22,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2025-09-03",
+        52,
+        8.25,
+        4.07,
+        2
+      ],
+      [
+        "2025-09-04",
+        10,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-09-04",
+        13,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-09-04",
+        49,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-09-05",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2025-09-06",
+        23,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-09-06",
+        51,
+        34.87,
+        18.71,
+        1
+      ],
+      [
+        "2025-09-08",
+        22,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-09-08",
+        23,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2025-09-09",
+        39,
+        32.36,
+        10.6,
+        1
+      ],
+      [
+        "2025-09-11",
+        50,
+        33.37,
+        17.35,
+        1
+      ],
+      [
+        "2025-09-13",
+        33,
+        4.85,
+        2.19,
+        1
+      ],
+      [
+        "2025-09-16",
+        1,
+        4.85,
+        2.19,
+        1
+      ],
+      [
+        "2025-09-18",
+        10,
+        8.04,
+        3.92,
+        2
+      ],
+      [
+        "2025-09-18",
+        13,
+        11.16,
+        5.9,
+        2
+      ],
+      [
+        "2025-09-18",
+        49,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-09-19",
+        10,
+        5.49,
+        2.45,
+        1
+      ],
+      [
+        "2025-09-19",
+        22,
+        10.34,
+        4.64,
+        2
+      ],
+      [
+        "2025-09-19",
+        27,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-09-19",
+        42,
+        6.07,
+        2.97,
+        1
+      ],
+      [
+        "2025-09-19",
+        48,
+        6.0,
+        2.91,
+        1
+      ],
+      [
+        "2025-09-20",
+        13,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-09-21",
+        16,
+        4.43,
+        2.39,
+        1
+      ],
+      [
+        "2025-09-21",
+        22,
+        4.02,
+        1.86,
+        1
+      ],
+      [
+        "2025-09-22",
+        47,
+        3.7,
+        1.73,
+        1
+      ],
+      [
+        "2025-09-26",
+        41,
+        32.46,
+        9.45,
+        1
+      ],
+      [
+        "2025-09-26",
+        46,
+        37.37,
+        19.73,
+        1
+      ],
+      [
+        "2025-09-27",
+        33,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2025-09-28",
+        13,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2025-10-01",
+        9,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-10-02",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2025-10-02",
+        24,
+        4.91,
+        2.82,
+        1
+      ],
+      [
+        "2025-10-11",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-10-13",
+        42,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2025-10-15",
+        13,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2025-10-17",
+        39,
+        32.36,
+        10.6,
+        1
+      ],
+      [
+        "2025-10-21",
+        14,
+        22.32,
+        12.0,
+        4
+      ],
+      [
+        "2025-10-21",
+        45,
+        20.92,
+        0.57,
+        1
+      ],
+      [
+        "2025-10-27",
+        22,
+        10.5,
+        6.14,
+        2
+      ],
+      [
+        "2025-11-01",
+        1,
+        22.3,
+        12.08,
+        5
+      ],
+      [
+        "2025-11-01",
+        20,
+        23.75,
+        13.39,
+        5
+      ],
+      [
+        "2025-11-05",
+        19,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2025-11-05",
+        28,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-11-06",
+        28,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2025-11-08",
+        24,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2025-11-08",
+        33,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2025-11-08",
+        43,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2025-11-08",
+        44,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2025-11-10",
+        10,
+        4.91,
+        2.82,
+        1
+      ],
+      [
+        "2025-11-10",
+        42,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2025-11-11",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2025-11-12",
+        1,
+        13.38,
+        7.17,
+        3
+      ],
+      [
+        "2025-11-14",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2025-11-15",
+        16,
+        12.33,
+        6.7,
+        3
+      ],
+      [
+        "2025-11-16",
+        0,
+        34.76,
+        0.06,
+        6
+      ],
+      [
+        "2025-11-23",
+        22,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2025-11-23",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2025-11-26",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-11-28",
+        22,
+        12.12,
+        6.67,
+        2
+      ],
+      [
+        "2025-11-29",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2025-11-30",
+        1,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2025-11-30",
+        10,
+        4.91,
+        2.82,
+        1
+      ],
+      [
+        "2025-11-30",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-11-30",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2025-11-30",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2025-11-30",
+        26,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2025-12-01",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-12-02",
+        2,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-12-02",
+        24,
+        4.91,
+        2.82,
+        1
+      ],
+      [
+        "2025-12-02",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2025-12-03",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2025-12-03",
+        13,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2025-12-03",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2025-12-03",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2025-12-04",
+        2,
+        9.5,
+        5.04,
+        2
+      ],
+      [
+        "2025-12-04",
+        13,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2025-12-05",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-12-05",
+        1,
+        8.92,
+        4.71,
+        2
+      ],
+      [
+        "2025-12-05",
+        9,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-12-05",
+        18,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2025-12-05",
+        21,
+        64.12,
+        57.83,
+        2
+      ],
+      [
+        "2025-12-05",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2025-12-07",
+        2,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2025-12-07",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-12-08",
+        2,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-12-09",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2025-12-09",
+        2,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-12-09",
+        20,
+        11.16,
+        5.9,
+        2
+      ],
+      [
+        "2025-12-09",
+        22,
+        6.87,
+        3.7,
+        1
+      ],
+      [
+        "2025-12-10",
+        2,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-12-11",
+        2,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-12-11",
+        41,
+        30.75,
+        9.14,
+        1
+      ],
+      [
+        "2025-12-12",
+        2,
+        10.33,
+        5.37,
+        2
+      ],
+      [
+        "2025-12-12",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2025-12-13",
+        2,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2025-12-13",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2025-12-15",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-12-15",
+        2,
+        10.33,
+        5.37,
+        2
+      ],
+      [
+        "2025-12-15",
+        11,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2025-12-15",
+        16,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2025-12-15",
+        22,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2025-12-15",
+        38,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2025-12-15",
+        40,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2025-12-16",
+        2,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2025-12-16",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2025-12-17",
+        20,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2025-12-17",
+        27,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2025-12-18",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2025-12-18",
+        32,
+        23.2,
+        3.25,
+        1
+      ],
+      [
+        "2025-12-20",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2025-12-21",
+        31,
+        8.92,
+        4.71,
+        2
+      ],
+      [
+        "2025-12-22",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2025-12-23",
+        10,
+        4.91,
+        2.82,
+        1
+      ],
+      [
+        "2025-12-27",
+        39,
+        32.36,
+        10.6,
+        1
+      ],
+      [
+        "2025-12-30",
+        38,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-01-02",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-01-05",
+        22,
+        6.87,
+        3.7,
+        1
+      ],
+      [
+        "2026-01-10",
+        24,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-01-12",
+        2,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-01-14",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-01-16",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-01-17",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-01-17",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-01-18",
+        10,
+        14.73,
+        8.87,
+        3
+      ],
+      [
+        "2026-01-18",
+        22,
+        12.36,
+        6.99,
+        2
+      ],
+      [
+        "2026-01-18",
+        37,
+        14.99,
+        8.34,
+        1
+      ],
+      [
+        "2026-01-19",
+        0,
+        5.58,
+        -1.74,
+        1
+      ],
+      [
+        "2026-01-23",
+        22,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2026-01-24",
+        26,
+        6.87,
+        3.7,
+        1
+      ],
+      [
+        "2026-01-27",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-01-28",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2026-01-31",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-01-31",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-02-02",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-02-03",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2026-02-05",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-02-12",
+        9,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-02-14",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2026-02-16",
+        22,
+        13.74,
+        7.59,
+        2
+      ],
+      [
+        "2026-02-18",
+        24,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-02-19",
+        32,
+        69.6,
+        10.14,
+        3
+      ],
+      [
+        "2026-02-23",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-02-23",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-02-25",
+        13,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2026-02-27",
+        1,
+        9.84,
+        4.93,
+        2
+      ],
+      [
+        "2026-03-03",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2026-03-04",
+        26,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-03-05",
+        1,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2026-03-07",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-03-07",
+        22,
+        12.36,
+        6.99,
+        2
+      ],
+      [
+        "2026-03-08",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-03-08",
+        2,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2026-03-08",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2026-03-08",
+        26,
+        10.5,
+        6.14,
+        2
+      ],
+      [
+        "2026-03-09",
+        10,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2026-03-10",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-03-10",
+        22,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2026-03-10",
+        29,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-03-12",
+        0,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2026-03-13",
+        2,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2026-03-15",
+        1,
+        111.5,
+        61.21,
+        25
+      ],
+      [
+        "2026-03-17",
+        1,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2026-03-17",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-03-18",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-03-19",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-03-19",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-03-19",
+        23,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-03-25",
+        11,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-03-27",
+        36,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-03-30",
+        35,
+        25.83,
+        0.41,
+        1
+      ],
+      [
+        "2026-04-04",
+        34,
+        24.22,
+        6.28,
+        1
+      ],
+      [
+        "2026-04-07",
+        2,
+        14.25,
+        7.96,
+        3
+      ],
+      [
+        "2026-04-07",
+        20,
+        14.25,
+        7.96,
+        3
+      ],
+      [
+        "2026-04-07",
+        22,
+        18.54,
+        10.58,
+        3
+      ],
+      [
+        "2026-04-07",
+        24,
+        15.75,
+        9.31,
+        3
+      ],
+      [
+        "2026-04-12",
+        1,
+        8.92,
+        4.51,
+        2
+      ],
+      [
+        "2026-04-12",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-04-12",
+        9,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-04-12",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-04-12",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2026-04-12",
+        31,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2026-04-13",
+        2,
+        14.25,
+        7.96,
+        3
+      ],
+      [
+        "2026-04-13",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-04-15",
+        0,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2026-04-17",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-04-18",
+        33,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-04-19",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-04-20",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-04-22",
+        22,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2026-04-27",
+        32,
+        46.4,
+        6.69,
+        2
+      ],
+      [
+        "2026-04-29",
+        31,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2026-05-01",
+        1,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2026-05-03",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-05-03",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-05-08",
+        1,
+        8.92,
+        4.71,
+        2
+      ],
+      [
+        "2026-05-08",
+        19,
+        21.52,
+        11.28,
+        4
+      ],
+      [
+        "2026-05-12",
+        19,
+        8.92,
+        4.71,
+        2
+      ],
+      [
+        "2026-05-14",
+        1,
+        12.18,
+        6.18,
+        2
+      ],
+      [
+        "2026-05-16",
+        1,
+        17.84,
+        9.63,
+        4
+      ],
+      [
+        "2026-05-16",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-05-17",
+        1,
+        30.45,
+        15.76,
+        5
+      ],
+      [
+        "2026-05-18",
+        1,
+        17.56,
+        8.85,
+        3
+      ],
+      [
+        "2026-05-19",
+        1,
+        12.18,
+        6.18,
+        2
+      ],
+      [
+        "2026-05-19",
+        28,
+        10.33,
+        5.37,
+        2
+      ],
+      [
+        "2026-05-19",
+        30,
+        30.08,
+        27.02,
+        1
+      ],
+      [
+        "2026-05-28",
+        22,
+        13.05,
+        7.09,
+        2
+      ],
+      [
+        "2026-05-28",
+        29,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-05-29",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2026-05-29",
+        27,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2026-05-29",
+        28,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-05-30",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-05-30",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-05-31",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-06-03",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-06-04",
+        16,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2026-06-07",
+        22,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2026-06-08",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-06-08",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-06-08",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-06-09",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-06-09",
+        1,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2026-06-11",
+        22,
+        6.18,
+        3.39,
+        1
+      ],
+      [
+        "2026-06-11",
+        26,
+        15.75,
+        9.31,
+        3
+      ],
+      [
+        "2026-06-12",
+        20,
+        10.97,
+        5.63,
+        2
+      ],
+      [
+        "2026-06-13",
+        0,
+        5.58,
+        -1.74,
+        1
+      ],
+      [
+        "2026-06-13",
+        16,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-06-16",
+        1,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2026-06-17",
+        0,
+        14.25,
+        7.76,
+        3
+      ],
+      [
+        "2026-06-21",
+        2,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-06-21",
+        24,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-06-22",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-06-23",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-06-25",
+        0,
+        5.58,
+        -1.74,
+        1
+      ],
+      [
+        "2026-06-26",
+        0,
+        11.8,
+        1.37,
+        2
+      ],
+      [
+        "2026-06-27",
+        11,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-06-27",
+        25,
+        35.3,
+        10.48,
+        1
+      ],
+      [
+        "2026-06-28",
+        0,
+        5.58,
+        -1.74,
+        1
+      ],
+      [
+        "2026-06-28",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-06-28",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-06-29",
+        0,
+        5.58,
+        -1.74,
+        1
+      ],
+      [
+        "2026-06-29",
+        11,
+        6.87,
+        3.7,
+        1
+      ],
+      [
+        "2026-06-29",
+        20,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2026-06-30",
+        0,
+        14.25,
+        7.96,
+        3
+      ],
+      [
+        "2026-07-01",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-07-02",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-07-03",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-07-05",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-07-05",
+        2,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-07-06",
+        0,
+        11.16,
+        -3.28,
+        2
+      ],
+      [
+        "2026-07-06",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-07-08",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-07-08",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-07-08",
+        23,
+        4.91,
+        2.82,
+        1
+      ],
+      [
+        "2026-07-10",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-07-13",
+        20,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-07-15",
+        24,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-07-16",
+        4,
+        46.4,
+        20.57,
+        1
+      ],
+      [
+        "2026-07-18",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-07-21",
+        1,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2026-07-22",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-07-22",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-07-23",
+        2,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-07-23",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-07-23",
+        20,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2026-07-23",
+        23,
+        6.87,
+        3.7,
+        1
+      ],
+      [
+        "2026-07-24",
+        20,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2026-07-24",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2026-07-27",
+        1,
+        4.46,
+        2.26,
+        1
+      ],
+      [
+        "2026-07-27",
+        20,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-07-27",
+        21,
+        32.06,
+        28.81,
+        1
+      ],
+      [
+        "2026-07-27",
+        22,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-07-28",
+        19,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2026-07-30",
+        1,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-08-02",
+        9,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-08-05",
+        0,
+        20.66,
+        1.96,
+        4
+      ],
+      [
+        "2026-08-06",
+        4,
+        39.99,
+        14.77,
+        1
+      ],
+      [
+        "2026-08-07",
+        18,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2026-08-10",
+        1,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-08-10",
+        17,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-08-11",
+        4,
+        39.99,
+        14.77,
+        1
+      ],
+      [
+        "2026-08-14",
+        13,
+        6.09,
+        2.99,
+        1
+      ],
+      [
+        "2026-08-14",
+        16,
+        4.11,
+        2.1,
+        1
+      ],
+      [
+        "2026-08-15",
+        5,
+        26.22,
+        10.88,
+        1
+      ],
+      [
+        "2026-08-16",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-08-17",
+        0,
+        5.58,
+        -1.74,
+        1
+      ],
+      [
+        "2026-08-17",
+        1,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-08-17",
+        12,
+        4.99,
+        -1.68,
+        1
+      ],
+      [
+        "2026-08-18",
+        0,
+        19.0,
+        10.68,
+        4
+      ],
+      [
+        "2026-08-19",
+        1,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-08-21",
+        1,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-08-22",
+        0,
+        5.58,
+        -1.74,
+        1
+      ],
+      [
+        "2026-08-25",
+        15,
+        28.63,
+        13.06,
+        1
+      ],
+      [
+        "2026-08-26",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-08-26",
+        9,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2026-08-26",
+        14,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-08-27",
+        13,
+        5.38,
+        2.67,
+        1
+      ],
+      [
+        "2026-08-29",
+        1,
+        9.5,
+        5.24,
+        2
+      ],
+      [
+        "2026-08-29",
+        2,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2026-08-30",
+        4,
+        39.99,
+        14.77,
+        1
+      ],
+      [
+        "2026-09-04",
+        11,
+        4.91,
+        2.82,
+        1
+      ],
+      [
+        "2026-09-04",
+        12,
+        4.99,
+        -1.68,
+        1
+      ],
+      [
+        "2026-09-05",
+        0,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-09-07",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-09-08",
+        1,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-09-10",
+        10,
+        5.25,
+        2.97,
+        1
+      ],
+      [
+        "2026-09-13",
+        2,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-09-14",
+        4,
+        39.99,
+        14.77,
+        1
+      ],
+      [
+        "2026-09-18",
+        8,
+        29.15,
+        7.61,
+        1
+      ],
+      [
+        "2026-09-27",
+        1,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-09-27",
+        8,
+        32.99,
+        11.09,
+        1
+      ],
+      [
+        "2026-09-27",
+        9,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-10-02",
+        6,
+        29.99,
+        9.77,
+        1
+      ],
+      [
+        "2026-10-02",
+        7,
+        10.08,
+        -0.24,
+        1
+      ],
+      [
+        "2026-10-08",
+        0,
+        6.22,
+        3.11,
+        1
+      ],
+      [
+        "2026-10-08",
+        1,
+        4.75,
+        2.52,
+        1
+      ],
+      [
+        "2026-10-09",
+        4,
+        39.99,
+        14.77,
+        1
+      ],
+      [
+        "2026-10-13",
+        5,
+        28.72,
+        11.9,
+        1
+      ],
+      [
+        "2026-10-15",
+        4,
+        39.99,
+        14.77,
+        1
+      ],
+      [
+        "2026-10-16",
+        2,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-10-16",
+        3,
+        38.22,
+        15.9,
+        1
+      ],
+      [
+        "2026-10-18",
+        1,
+        5.58,
+        2.85,
+        1
+      ],
+      [
+        "2026-10-20",
+        0,
+        5.58,
+        -1.74,
+        1
+      ]
+    ],
+    "orders": [
+      {
+        "date": "2026-10-20",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "paid",
+        "amount": 9.33
+      },
+      {
+        "date": "2026-10-18",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.36
+      },
+      {
+        "date": "2026-10-16",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "paid",
+        "amount": 10.47
+      },
+      {
+        "date": "2026-10-16",
+        "products": "Best Clockmaker on Mars Shirt Comfort Colors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 46.73
+      },
+      {
+        "date": "2026-10-15",
+        "products": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 39.28
+      },
+      {
+        "date": "2026-10-13",
+        "products": "BMFS Train Graphic T-Shirt, Billy Strings Inspired Design, Unisex Tee, Casual Wear, Gift for Train Lovers, Everyday Comfort,",
+        "units": 1,
+        "status": "shipped",
+        "amount": 25.85
+      },
+      {
+        "date": "2026-10-09",
+        "products": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 47.73
+      },
+      {
+        "date": "2026-10-08",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.54
+      },
+      {
+        "date": "2026-10-08",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.19
+      },
+      {
+        "date": "2026-10-02",
+        "products": "Phish Turtle Playing Banjo Sticker | Kiss-Cut Vinyl Decal",
+        "units": 1,
+        "status": "shipped",
+        "amount": 16.25
+      },
+      {
+        "date": "2026-10-02",
+        "products": "Mid Profile Phish Fish Cap",
+        "units": 1,
+        "status": "shipped",
+        "amount": 36.88
+      },
+      {
+        "date": "2026-09-27",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 41.04
+      },
+      {
+        "date": "2026-09-27",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors, Red Rocks Colorado Stained Glass Kiss-Cut Stickers, Nature Aesthetic, Laptop Decor, Eco-Friendly Art, Unique Gift Idea",
+        "units": 2,
+        "status": "shipped",
+        "amount": 13.04
+      },
+      {
+        "date": "2026-09-18",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 33.64
+      },
+      {
+        "date": "2026-09-14",
+        "products": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 39.65
+      },
+      {
+        "date": "2026-09-13",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.57
+      },
+      {
+        "date": "2026-09-10",
+        "products": "Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.54
+      },
+      {
+        "date": "2026-09-08",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.28
+      },
+      {
+        "date": "2026-09-07",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 35.78
+      },
+      {
+        "date": "2026-09-05",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.9
+      },
+      {
+        "date": "2026-09-04",
+        "products": "Voodoo Alligator Vinyl Kiss-Cut Stickers | Fun Laptop D\u00e9cor, Unique Gift for Animal Lovers, Halloween Party Favors, Creative Scrapbooking, Dancing Cryptids - Grateful Dead Inspired",
+        "units": 2,
+        "status": "shipped",
+        "amount": 13.59
+      },
+      {
+        "date": "2026-08-30",
+        "products": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 48.52
+      },
+      {
+        "date": "2026-08-29",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 15.42
+      },
+      {
+        "date": "2026-08-29",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.35
+      },
+      {
+        "date": "2026-08-27",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.83
+      },
+      {
+        "date": "2026-08-26",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.62
+      },
+      {
+        "date": "2026-08-26",
+        "products": "Red Rocks Colorado Stained Glass Kiss-Cut Stickers, Nature Aesthetic, Laptop Decor, Eco-Friendly Art, Unique Gift Idea",
+        "units": 2,
+        "status": "shipped",
+        "amount": 15.67
+      },
+      {
+        "date": "2026-08-26",
+        "products": "Music Lover Sticker, Grateful Dead Sticker, Skeleton Sticker, Widespread Panic Decal, Jam Band Gift, Hippie Sticker, Laptop Decal, Guitar",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.56
+      },
+      {
+        "date": "2026-08-25",
+        "products": "BMFS Train Graphic T-Shirt, Billy Strings Inspired Design, Unisex Tee, Casual Wear, Gift for Train Lovers, Everyday Comfort,",
+        "units": 1,
+        "status": "shipped",
+        "amount": 31.1
+      },
+      {
+        "date": "2026-08-22",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.14
+      },
+      {
+        "date": "2026-08-21",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.47
+      },
+      {
+        "date": "2026-08-19",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.56
+      },
+      {
+        "date": "2026-08-18",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 4,
+        "status": "shipped",
+        "amount": 23.86
+      },
+      {
+        "date": "2026-08-17",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.54
+      },
+      {
+        "date": "2026-08-17",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.17
+      },
+      {
+        "date": "2026-08-17",
+        "products": "Dancing Cryptids - Grateful Dead Inspired",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.54
+      },
+      {
+        "date": "2026-08-16",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.59
+      },
+      {
+        "date": "2026-08-15",
+        "products": "BMFS Train Graphic T-Shirt, Billy Strings Inspired Design, Unisex Tee, Casual Wear, Gift for Train Lovers, Everyday Comfort,",
+        "units": 1,
+        "status": "shipped",
+        "amount": 26.81
+      },
+      {
+        "date": "2026-08-14",
+        "products": "Jazz Band Alligator New Orleans Stickers, Fun Vinyl Decals for Music Lovers, Laptop Stickers, Unique Gift, Home Decor, Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.65
+      },
+      {
+        "date": "2026-08-14",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.3
+      },
+      {
+        "date": "2026-08-11",
+        "products": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 48.57
+      },
+      {
+        "date": "2026-08-10",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors, Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts (Left Facing)",
+        "units": 2,
+        "status": "shipped",
+        "amount": 13.93
+      },
+      {
+        "date": "2026-08-07",
+        "products": "Terrapin Station Banjo Master - inspired by Grateful Dead, Grateful dead sticker, Gift for Animal Lovers, Gift for music lovers, musician",
+        "units": 1,
+        "status": "shipped",
+        "amount": 7.78
+      },
+      {
+        "date": "2026-08-06",
+        "products": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 47.73
+      },
+      {
+        "date": "2026-08-05",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 4,
+        "status": "shipped",
+        "amount": 26.81
+      },
+      {
+        "date": "2026-08-02",
+        "products": "Red Rocks Colorado Stained Glass Kiss-Cut Stickers, Nature Aesthetic, Laptop Decor, Eco-Friendly Art, Unique Gift Idea",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.9
+      },
+      {
+        "date": "2026-07-30",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.42
+      },
+      {
+        "date": "2026-07-28",
+        "products": "BMFS Goat Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 12.9
+      },
+      {
+        "date": "2026-07-27",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 34.85
+      },
+      {
+        "date": "2026-07-27",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.49
+      },
+      {
+        "date": "2026-07-27",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.04
+      },
+      {
+        "date": "2026-07-27",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.11
+      },
+      {
+        "date": "2026-07-24",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 2,
+        "status": "shipped",
+        "amount": 12.44
+      },
+      {
+        "date": "2026-07-24",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 37.16
+      },
+      {
+        "date": "2026-07-23",
+        "products": "Bigfoot &quot;Walkin&quot; WSP Decal Sticker Hiking Kiss-Cut Stickers, Widespread Panic Gifts, Widespread Panic Inspired Decal, Laptop Stickers",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.23
+      },
+      {
+        "date": "2026-07-23",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 29.21
+      },
+      {
+        "date": "2026-07-23",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.58
+      },
+      {
+        "date": "2026-07-23",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.93
+      },
+      {
+        "date": "2026-07-22",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts, Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 15.22
+      },
+      {
+        "date": "2026-07-21",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.71
+      },
+      {
+        "date": "2026-07-18",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.99
+      },
+      {
+        "date": "2026-07-16",
+        "products": "Sunwashed Phish Fish Rope Cap",
+        "units": 1,
+        "status": "shipped",
+        "amount": 55.92
+      },
+      {
+        "date": "2026-07-15",
+        "products": "Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.83
+      },
+      {
+        "date": "2026-07-13",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.94
+      },
+      {
+        "date": "2026-07-10",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 36.26
+      },
+      {
+        "date": "2026-07-08",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.82
+      },
+      {
+        "date": "2026-07-08",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.85
+      },
+      {
+        "date": "2026-07-08",
+        "products": "Bigfoot &quot;Walkin&quot; WSP Decal Sticker Hiking Kiss-Cut Stickers, Widespread Panic Gifts, Widespread Panic Inspired Decal, Laptop Stickers",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.92
+      },
+      {
+        "date": "2026-07-06",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 2,
+        "status": "shipped",
+        "amount": 16.51
+      },
+      {
+        "date": "2026-07-06",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 35.39
+      },
+      {
+        "date": "2026-07-05",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.19
+      },
+      {
+        "date": "2026-07-05",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.78
+      },
+      {
+        "date": "2026-07-03",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.75
+      },
+      {
+        "date": "2026-07-02",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.86
+      },
+      {
+        "date": "2026-07-01",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 33.64
+      },
+      {
+        "date": "2026-06-30",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 3,
+        "status": "shipped",
+        "amount": 20.16
+      },
+      {
+        "date": "2026-06-29",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.18
+      },
+      {
+        "date": "2026-06-29",
+        "products": "Voodoo Alligator Vinyl Kiss-Cut Stickers | Fun Laptop D\u00e9cor, Unique Gift for Animal Lovers, Halloween Party Favors, Creative Scrapbooking",
+        "units": 1,
+        "status": "shipped",
+        "amount": 12.41
+      },
+      {
+        "date": "2026-06-29",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.77
+      },
+      {
+        "date": "2026-06-28",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.76
+      },
+      {
+        "date": "2026-06-28",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.34
+      },
+      {
+        "date": "2026-06-28",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.16
+      },
+      {
+        "date": "2026-06-27",
+        "products": "Voodoo Alligator Vinyl Kiss-Cut Stickers | Fun Laptop D\u00e9cor, Unique Gift for Animal Lovers, Halloween Party Favors, Creative Scrapbooking",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.53
+      },
+      {
+        "date": "2026-06-27",
+        "products": "Donut Trout Surf Cap Embroidered Snapback Hat | Trout Flatbill",
+        "units": 1,
+        "status": "shipped",
+        "amount": 38.34
+      },
+      {
+        "date": "2026-06-26",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 2,
+        "status": "shipped",
+        "amount": 17.63
+      },
+      {
+        "date": "2026-06-25",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.86
+      },
+      {
+        "date": "2026-06-23",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.98
+      },
+      {
+        "date": "2026-06-22",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.64
+      },
+      {
+        "date": "2026-06-21",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker, Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories",
+        "units": 2,
+        "status": "shipped",
+        "amount": 13.56
+      },
+      {
+        "date": "2026-06-17",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.7
+      },
+      {
+        "date": "2026-06-17",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.6
+      },
+      {
+        "date": "2026-06-16",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.94
+      },
+      {
+        "date": "2026-06-13",
+        "products": "Jazz Band Alligator New Orleans Stickers, Fun Vinyl Decals for Music Lovers, Laptop Stickers, Unique Gift, Home Decor, Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.34
+      },
+      {
+        "date": "2026-06-13",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.78
+      },
+      {
+        "date": "2026-06-12",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.58
+      },
+      {
+        "date": "2026-06-12",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.67
+      },
+      {
+        "date": "2026-06-11",
+        "products": "BMFS Billy Strings Train, Vintage Train Kiss-Cut Stickers | Colorful Railway Art, Laptop Decor, Gift for Train Lovers, Bluegrass Stickers",
+        "units": 3,
+        "status": "shipped",
+        "amount": 21.2
+      },
+      {
+        "date": "2026-06-11",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.05
+      },
+      {
+        "date": "2026-06-09",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.49
+      },
+      {
+        "date": "2026-06-09",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.26
+      },
+      {
+        "date": "2026-06-08",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 27.81
+      },
+      {
+        "date": "2026-06-08",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.58
+      },
+      {
+        "date": "2026-06-08",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.11
+      },
+      {
+        "date": "2026-06-07",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.84
+      },
+      {
+        "date": "2026-06-04",
+        "products": "Jazz Band Alligator New Orleans Stickers, Fun Vinyl Decals for Music Lovers, Laptop Stickers, Unique Gift, Home Decor, Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.09
+      },
+      {
+        "date": "2026-06-03",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.02
+      },
+      {
+        "date": "2026-05-31",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.86
+      },
+      {
+        "date": "2026-05-30",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.42
+      },
+      {
+        "date": "2026-05-30",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.63
+      },
+      {
+        "date": "2026-05-29",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "paid",
+        "amount": 32.06
+      },
+      {
+        "date": "2026-05-29",
+        "products": "Rainbow Trout Sticker, Fly Fishing Vinyl Decal - Trout Lover Gift, Fishing Enthusiast, Outdoor Adventure, Fishing Gift Ideas, Fishing Decor,, Goose the band vinyl sticker - Kiss-Cut Stickers, Decal, Laptop Sticker, Water Bottle Sticker, Music Lover Gift, Vinyl Decal",
+        "units": 2,
+        "status": "shipped",
+        "amount": 17.29
+      },
+      {
+        "date": "2026-05-28",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts, Grateful Fisherman Sticker, Fly Fishing Sticker, Fly Fishing Decal, Grateful Dead Inspired, Outdoor Adventure, Laptop Decal",
+        "units": 2,
+        "status": "shipped",
+        "amount": 15.34
+      },
+      {
+        "date": "2026-05-28",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.47
+      },
+      {
+        "date": "2026-05-19",
+        "products": "Goose the band vinyl sticker - Kiss-Cut Stickers, Decal, Laptop Sticker, Water Bottle Sticker, Music Lover Gift, Vinyl Decal",
+        "units": 2,
+        "status": "shipped",
+        "amount": 15.92
+      },
+      {
+        "date": "2026-05-19",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 17.56
+      },
+      {
+        "date": "2026-05-19",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 32.26
+      },
+      {
+        "date": "2026-05-18",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.14
+      },
+      {
+        "date": "2026-05-18",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.8
+      },
+      {
+        "date": "2026-05-17",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 5,
+        "status": "shipped",
+        "amount": 37.73
+      },
+      {
+        "date": "2026-05-16",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 4,
+        "status": "shipped",
+        "amount": 23.97
+      },
+      {
+        "date": "2026-05-16",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.57
+      },
+      {
+        "date": "2026-05-14",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 18.01
+      },
+      {
+        "date": "2026-05-12",
+        "products": "BMFS Goat Sticker",
+        "units": 2,
+        "status": "shipped",
+        "amount": 12.44
+      },
+      {
+        "date": "2026-05-08",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 13.86
+      },
+      {
+        "date": "2026-05-08",
+        "products": "BMFS Goat Sticker",
+        "units": 4,
+        "status": "shipped",
+        "amount": 28.51
+      },
+      {
+        "date": "2026-05-03",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.2
+      },
+      {
+        "date": "2026-05-03",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.41
+      },
+      {
+        "date": "2026-05-01",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.11
+      },
+      {
+        "date": "2026-04-29",
+        "products": "BMFS Goat Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.5
+      },
+      {
+        "date": "2026-04-27",
+        "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
+        "units": 2,
+        "status": "shipped",
+        "amount": 62.33
+      },
+      {
+        "date": "2026-04-22",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.2
+      },
+      {
+        "date": "2026-04-20",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.36
+      },
+      {
+        "date": "2026-04-19",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.2
+      },
+      {
+        "date": "2026-04-18",
+        "products": "Vintage Train BMFS Kiss-Cut Stickers, Retro Train Decals, Laptop Stickers, Gift for Train Lovers, Travel Decor",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.54
+      },
+      {
+        "date": "2026-04-17",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.26
+      },
+      {
+        "date": "2026-04-15",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.57
+      },
+      {
+        "date": "2026-04-13",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 35.91
+      },
+      {
+        "date": "2026-04-13",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 3,
+        "status": "shipped",
+        "amount": 20.07
+      },
+      {
+        "date": "2026-04-12",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.12
+      },
+      {
+        "date": "2026-04-12",
+        "products": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
+        "units": 1,
+        "status": "shipped",
+        "amount": 35.49
+      },
+      {
+        "date": "2026-04-12",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 32.41
+      },
+      {
+        "date": "2026-04-12",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.15
+      },
+      {
+        "date": "2026-04-12",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors, BMFS Goat Sticker, Red Rocks Colorado Stained Glass Kiss-Cut Stickers, Nature Aesthetic, Laptop Decor, Eco-Friendly Art, Unique Gift Idea",
+        "units": 3,
+        "status": "shipped",
+        "amount": 16.42
+      },
+      {
+        "date": "2026-04-07",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts, Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories, Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie, Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 12,
+        "status": "shipped",
+        "amount": 71.84
+      },
+      {
+        "date": "2026-04-04",
+        "products": "Grateful Dead Bigfoot Fly Fisherman T-Shirt | Deadhead Fishing Tee",
+        "units": 1,
+        "status": "shipped",
+        "amount": 30.58
+      },
+      {
+        "date": "2026-03-30",
+        "products": "Stella Blue Pint Glass, Grateful Dead Beer Glass, 16oz Drinking Glass, Perfect for Parties, Gifts for Beer Lovers, deadhead gift",
+        "units": 1,
+        "status": "shipped",
+        "amount": 32.64
+      },
+      {
+        "date": "2026-03-27",
+        "products": "Bluegrass Frog Violin Kiss-Cut Stickers - Cute Laptop, Journal, Water Bottle Decor, Ideal for Gifts, Nature Lovers",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.25
+      },
+      {
+        "date": "2026-03-25",
+        "products": "Voodoo Alligator Vinyl Kiss-Cut Stickers | Fun Laptop D\u00e9cor, Unique Gift for Animal Lovers, Halloween Party Favors, Creative Scrapbooking",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.16
+      },
+      {
+        "date": "2026-03-19",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie, Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors, Bigfoot &quot;Walkin&quot; WSP Decal Sticker Hiking Kiss-Cut Stickers, Widespread Panic Gifts, Widespread Panic Inspired Decal, Laptop Stickers",
+        "units": 3,
+        "status": "shipped",
+        "amount": 20.59
+      },
+      {
+        "date": "2026-03-18",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.33
+      },
+      {
+        "date": "2026-03-17",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.66
+      },
+      {
+        "date": "2026-03-17",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.11
+      },
+      {
+        "date": "2026-03-15",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 25,
+        "status": "shipped",
+        "amount": 100.56
+      },
+      {
+        "date": "2026-03-13",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.57
+      },
+      {
+        "date": "2026-03-12",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.75
+      },
+      {
+        "date": "2026-03-10",
+        "products": "Grateful Fisherman Sticker, Fly Fishing Sticker, Fly Fishing Decal, Grateful Dead Inspired, Outdoor Adventure, Laptop Decal",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.34
+      },
+      {
+        "date": "2026-03-10",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.31
+      },
+      {
+        "date": "2026-03-10",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.99
+      },
+      {
+        "date": "2026-03-09",
+        "products": "Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.31
+      },
+      {
+        "date": "2026-03-08",
+        "products": "BMFS Billy Strings Train, Vintage Train Kiss-Cut Stickers | Colorful Railway Art, Laptop Decor, Gift for Train Lovers, Bluegrass Stickers, Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 4,
+        "status": "shipped",
+        "amount": 22.41
+      },
+      {
+        "date": "2026-03-08",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.35
+      },
+      {
+        "date": "2026-03-08",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 27.27
+      },
+      {
+        "date": "2026-03-07",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.22
+      },
+      {
+        "date": "2026-03-07",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.89
+      },
+      {
+        "date": "2026-03-05",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.85
+      },
+      {
+        "date": "2026-03-04",
+        "products": "BMFS Billy Strings Train, Vintage Train Kiss-Cut Stickers | Colorful Railway Art, Laptop Decor, Gift for Train Lovers, Bluegrass Stickers",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.13
+      },
+      {
+        "date": "2026-03-03",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 25.58
+      },
+      {
+        "date": "2026-02-27",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.03
+      },
+      {
+        "date": "2026-02-25",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.65
+      },
+      {
+        "date": "2026-02-23",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.6
+      },
+      {
+        "date": "2026-02-23",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.64
+      },
+      {
+        "date": "2026-02-19",
+        "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
+        "units": 3,
+        "status": "shipped",
+        "amount": 90.62
+      },
+      {
+        "date": "2026-02-18",
+        "products": "Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.54
+      },
+      {
+        "date": "2026-02-16",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 2,
+        "status": "shipped",
+        "amount": 16.71
+      },
+      {
+        "date": "2026-02-14",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 33.76
+      },
+      {
+        "date": "2026-02-12",
+        "products": "Red Rocks Colorado Stained Glass Kiss-Cut Stickers, Nature Aesthetic, Laptop Decor, Eco-Friendly Art, Unique Gift Idea",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.17
+      },
+      {
+        "date": "2026-02-05",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.09
+      },
+      {
+        "date": "2026-02-03",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 32.26
+      },
+      {
+        "date": "2026-02-02",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.86
+      },
+      {
+        "date": "2026-01-31",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.41
+      },
+      {
+        "date": "2026-01-31",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.63
+      },
+      {
+        "date": "2026-01-28",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 34.38
+      },
+      {
+        "date": "2026-01-27",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.84
+      },
+      {
+        "date": "2026-01-24",
+        "products": "BMFS Billy Strings Train, Vintage Train Kiss-Cut Stickers | Colorful Railway Art, Laptop Decor, Gift for Train Lovers, Bluegrass Stickers",
+        "units": 1,
+        "status": "shipped",
+        "amount": 12.05
+      },
+      {
+        "date": "2026-01-23",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.98
+      },
+      {
+        "date": "2026-01-19",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.32
+      },
+      {
+        "date": "2026-01-18",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts, Deadhead Bigfoot Terrapin Coffee Lover Gift, 11oz 15oz Cup, Hippie Music Fan",
+        "units": 3,
+        "status": "shipped",
+        "amount": 35.75
+      },
+      {
+        "date": "2026-01-18",
+        "products": "Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift",
+        "units": 3,
+        "status": "shipped",
+        "amount": 20.5
+      },
+      {
+        "date": "2026-01-17",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.85
+      },
+      {
+        "date": "2026-01-17",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.56
+      },
+      {
+        "date": "2026-01-16",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.47
+      },
+      {
+        "date": "2026-01-14",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.08
+      },
+      {
+        "date": "2026-01-12",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.73
+      },
+      {
+        "date": "2026-01-10",
+        "products": "Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.0
+      },
+      {
+        "date": "2026-01-05",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.64
+      },
+      {
+        "date": "2026-01-02",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.68
+      },
+      {
+        "date": "2025-12-30",
+        "products": "Goose the Band Vinyl Kiss-Cut Stickers, Wysteria Lane Street Sign Sticker, Jam Band Decal, Vinyl Laptop Sticker, Music Lover Gift, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.46
+      },
+      {
+        "date": "2025-12-27",
+        "products": "BMFS Red Rocking Chair - Billy Strings Inspired - Comfort Colors Shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 39.46
+      },
+      {
+        "date": "2025-12-23",
+        "products": "Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.75
+      },
+      {
+        "date": "2025-12-22",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.75
+      },
+      {
+        "date": "2025-12-21",
+        "products": "BMFS Goat Sticker",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.26
+      },
+      {
+        "date": "2025-12-20",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 25.98
+      },
+      {
+        "date": "2025-12-18",
+        "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 32.15
+      },
+      {
+        "date": "2025-12-18",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.1
+      },
+      {
+        "date": "2025-12-17",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie, Rainbow Trout Sticker, Fly Fishing Vinyl Decal - Trout Lover Gift, Fishing Enthusiast, Outdoor Adventure, Fishing Gift Ideas, Fishing Decor,",
+        "units": 3,
+        "status": "shipped",
+        "amount": 19.27
+      },
+      {
+        "date": "2025-12-16",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 35.19
+      },
+      {
+        "date": "2025-12-16",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.43
+      },
+      {
+        "date": "2025-12-15",
+        "products": "Goose the Band Vinyl Kiss-Cut Stickers, Wysteria Lane Street Sign Sticker, Jam Band Decal, Vinyl Laptop Sticker, Music Lover Gift, Hippie, Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 2,
+        "status": "shipped",
+        "amount": 13.14
+      },
+      {
+        "date": "2025-12-15",
+        "products": "Alligator Banjo Vinyl Kiss-Cut Stickers, Fun Laptop Decor, Unique Gift, Cool Art, Music Lovers&#39; Stickers, Voodoo Alligator Vinyl Kiss-Cut Stickers | Fun Laptop D\u00e9cor, Unique Gift for Animal Lovers, Halloween Party Favors, Creative Scrapbooking, Jazz Band Alligator New Orleans Stickers, Fun Vinyl Decals for Music Lovers, Laptop Stickers, Unique Gift, Home Decor, Party Favors",
+        "units": 3,
+        "status": "shipped",
+        "amount": 21.36
+      },
+      {
+        "date": "2025-12-15",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.04
+      },
+      {
+        "date": "2025-12-15",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.74
+      },
+      {
+        "date": "2025-12-15",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.31
+      },
+      {
+        "date": "2025-12-13",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 19.55
+      },
+      {
+        "date": "2025-12-13",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.92
+      },
+      {
+        "date": "2025-12-12",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.7
+      },
+      {
+        "date": "2025-12-12",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.47
+      },
+      {
+        "date": "2025-12-12",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 34.42
+      },
+      {
+        "date": "2025-12-11",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.8
+      },
+      {
+        "date": "2025-12-11",
+        "products": "New Orleans Grateful Dead Streetcar Shirt - IKO IKO - Comfort Colors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 33.29
+      },
+      {
+        "date": "2025-12-10",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.66
+      },
+      {
+        "date": "2025-12-09",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.54
+      },
+      {
+        "date": "2025-12-09",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.49
+      },
+      {
+        "date": "2025-12-09",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.5
+      },
+      {
+        "date": "2025-12-09",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 2,
+        "status": "shipped",
+        "amount": 16.8
+      },
+      {
+        "date": "2025-12-08",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.76
+      },
+      {
+        "date": "2025-12-07",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.3
+      },
+      {
+        "date": "2025-12-07",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.15
+      },
+      {
+        "date": "2025-12-05",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors, Terrapin Station Banjo Master - inspired by Grateful Dead, Grateful dead sticker, Gift for Animal Lovers, Gift for music lovers, musician",
+        "units": 3,
+        "status": "shipped",
+        "amount": 16.75
+      },
+      {
+        "date": "2025-12-05",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.11
+      },
+      {
+        "date": "2025-12-05",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 2,
+        "status": "shipped",
+        "amount": 71.52
+      },
+      {
+        "date": "2025-12-05",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts, Red Rocks Colorado Stained Glass Kiss-Cut Stickers, Nature Aesthetic, Laptop Decor, Eco-Friendly Art, Unique Gift Idea",
+        "units": 2,
+        "status": "shipped",
+        "amount": 15.87
+      },
+      {
+        "date": "2025-12-04",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.67
+      },
+      {
+        "date": "2025-12-04",
+        "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.67
+      },
+      {
+        "date": "2025-12-04",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.35
+      },
+      {
+        "date": "2025-12-03",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.19
+      },
+      {
+        "date": "2025-12-03",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.18
+      },
+      {
+        "date": "2025-12-03",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 30.08
+      },
+      {
+        "date": "2025-12-03",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.97
+      },
+      {
+        "date": "2025-12-02",
+        "products": "Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories, Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+        "units": 2,
+        "status": "shipped",
+        "amount": 12.57
+      },
+      {
+        "date": "2025-12-02",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 32.98
+      },
+      {
+        "date": "2025-12-01",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.56
+      },
+      {
+        "date": "2025-11-30",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts, Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 2,
+        "status": "shipped",
+        "amount": 15.01
+      },
+      {
+        "date": "2025-11-30",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.97
+      },
+      {
+        "date": "2025-11-30",
+        "products": "BMFS Billy Strings Train, Vintage Train Kiss-Cut Stickers | Colorful Railway Art, Laptop Decor, Gift for Train Lovers, Bluegrass Stickers",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.47
+      },
+      {
+        "date": "2025-11-30",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 27.93
+      },
+      {
+        "date": "2025-11-30",
+        "products": "Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.9
+      },
+      {
+        "date": "2025-11-29",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 33.01
+      },
+      {
+        "date": "2025-11-28",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.91
+      },
+      {
+        "date": "2025-11-28",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.91
+      },
+      {
+        "date": "2025-11-26",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.3
+      },
+      {
+        "date": "2025-11-23",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.1
+      },
+      {
+        "date": "2025-11-23",
+        "products": "BMFS Train Colorful Tie Dye Tee for Billy Strings, Unisex Graphic Cotton Shirt, Perfect for Festivals, Casual Wear, Gift Idea for Bluegrass",
+        "units": 1,
+        "status": "shipped",
+        "amount": 31.89
+      },
+      {
+        "date": "2025-11-16",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 6,
+        "status": "shipped",
+        "amount": 34.83
+      },
+      {
+        "date": "2025-11-15",
+        "products": "Jazz Band Alligator New Orleans Stickers, Fun Vinyl Decals for Music Lovers, Laptop Stickers, Unique Gift, Home Decor, Party Favors",
+        "units": 3,
+        "status": "shipped",
+        "amount": 17.98
+      },
+      {
+        "date": "2025-11-14",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.07
+      },
+      {
+        "date": "2025-11-12",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 3,
+        "status": "shipped",
+        "amount": 19.03
+      },
+      {
+        "date": "2025-11-11",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.19
+      },
+      {
+        "date": "2025-11-10",
+        "products": "Deadhead Streetcar Vinyl Sticker, Grateful Dead Fan Gift, New Orleans Retro Design, New Orleans Souvenir, Laptop Decals, Hydro Flask Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.28
+      },
+      {
+        "date": "2025-11-10",
+        "products": "Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.02
+      },
+      {
+        "date": "2025-11-08",
+        "products": "Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.85
+      },
+      {
+        "date": "2025-11-08",
+        "products": "Vintage Train BMFS Kiss-Cut Stickers, Retro Train Decals, Laptop Stickers, Gift for Train Lovers, Travel Decor",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.25
+      },
+      {
+        "date": "2025-11-08",
+        "products": "Stella Blue Light Sticker - Grateful Dead Inspired, Deadhead Streetcar - Hell in a bucket - Grateful Dead Inspired Sticker",
+        "units": 2,
+        "status": "shipped",
+        "amount": 15.59
+      },
+      {
+        "date": "2025-11-06",
+        "products": "Goose the band vinyl sticker - Kiss-Cut Stickers, Decal, Laptop Sticker, Water Bottle Sticker, Music Lover Gift, Vinyl Decal",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.85
+      },
+      {
+        "date": "2025-11-05",
+        "products": "BMFS Goat Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.82
+      },
+      {
+        "date": "2025-11-05",
+        "products": "Goose the band vinyl sticker - Kiss-Cut Stickers, Decal, Laptop Sticker, Water Bottle Sticker, Music Lover Gift, Vinyl Decal",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.67
+      },
+      {
+        "date": "2025-11-01",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie, Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 10,
+        "status": "shipped",
+        "amount": 54.22
+      },
+      {
+        "date": "2025-10-27",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 2,
+        "status": "shipped",
+        "amount": 16.07
+      },
+      {
+        "date": "2025-10-21",
+        "products": "Music Lover Sticker, Grateful Dead Sticker, Skeleton Sticker, Widespread Panic Decal, Jam Band Gift, Hippie Sticker, Laptop Decal, Guitar",
+        "units": 4,
+        "status": "shipped",
+        "amount": 28.67
+      },
+      {
+        "date": "2025-10-21",
+        "products": "New Orleans Deadhead Whiskey Glass, Unique Gift for Deadheads, Fun Barware, Personalized Drinkware, Party Favorite",
+        "units": 1,
+        "status": "shipped",
+        "amount": 31.55
+      },
+      {
+        "date": "2025-10-17",
+        "products": "BMFS Red Rocking Chair - Billy Strings Inspired - Comfort Colors Shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 38.99
+      },
+      {
+        "date": "2025-10-15",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.04
+      },
+      {
+        "date": "2025-10-13",
+        "products": "Deadhead Streetcar Vinyl Sticker, Grateful Dead Fan Gift, New Orleans Retro Design, New Orleans Souvenir, Laptop Decals, Hydro Flask Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.13
+      },
+      {
+        "date": "2025-10-11",
+        "products": "Bigfoot at Phish Concert, Bigfoot Vinyl Stickers, Phish Grateful Dead Widespread Panic Gift, Alternative Rock Festival Decals, Hippie",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.63
+      },
+      {
+        "date": "2025-10-02",
+        "products": "Deadhead Bigfoot Fly Fishing Vinyl Sticker, Outdoor Adventure Decor, Nature Lover Gifts, Fly Fishing Enthusiast Accessories",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.75
+      },
+      {
+        "date": "2025-10-02",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.52
+      },
+      {
+        "date": "2025-10-01",
+        "products": "Red Rocks Colorado Stained Glass Kiss-Cut Stickers, Nature Aesthetic, Laptop Decor, Eco-Friendly Art, Unique Gift Idea",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.04
+      },
+      {
+        "date": "2025-09-28",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.07
+      },
+      {
+        "date": "2025-09-27",
+        "products": "Vintage Train BMFS Kiss-Cut Stickers, Retro Train Decals, Laptop Stickers, Gift for Train Lovers, Travel Decor",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.33
+      },
+      {
+        "date": "2025-09-26",
+        "products": "New Orleans Grateful Dead Streetcar Shirt - IKO IKO - Comfort Colors, WSMFP (Waffle House Style) Comfort Colors Shirt",
+        "units": 2,
+        "status": "shipped",
+        "amount": 61.01
+      },
+      {
+        "date": "2025-09-22",
+        "products": "GOOSE Waffle House Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.57
+      },
+      {
+        "date": "2025-09-21",
+        "products": "Jazz Band Alligator New Orleans Stickers, Fun Vinyl Decals for Music Lovers, Laptop Stickers, Unique Gift, Home Decor, Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.05
+      },
+      {
+        "date": "2025-09-21",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.81
+      },
+      {
+        "date": "2025-09-20",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.04
+      },
+      {
+        "date": "2025-09-19",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.66
+      },
+      {
+        "date": "2025-09-19",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts, Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift, Rainbow Trout, Deadhead Streetcar, Moonlit Alligator Banjo Swamp Serenade",
+        "units": 5,
+        "status": "shipped",
+        "amount": 27.55
+      },
+      {
+        "date": "2025-09-18",
+        "products": "Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals, Adorable Raccoon Musician Stickers - Perfect for Laptops, Water Bottles, Journals, Gifts, Bluegrass Gift, Mandolin Lovers Gift, Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift",
+        "units": 5,
+        "status": "shipped",
+        "amount": 30.92
+      },
+      {
+        "date": "2025-09-16",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.49
+      },
+      {
+        "date": "2025-09-13",
+        "products": "Vintage Train BMFS Kiss-Cut Stickers, Retro Train Decals, Laptop Stickers, Gift for Train Lovers, Travel Decor",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.78
+      },
+      {
+        "date": "2025-09-11",
+        "products": "BMFS (Waffle House - Style) Comfort Colors Shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 28.84
+      },
+      {
+        "date": "2025-09-09",
+        "products": "BMFS Red Rocking Chair - Billy Strings Inspired - Comfort Colors Shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 29.88
+      },
+      {
+        "date": "2025-09-08",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Sticker - Vinyl Decals for Laptops, Water Bottles, Gifts, Bigfoot &quot;Walkin&quot; WSP Decal Sticker Hiking Kiss-Cut Stickers, Widespread Panic Gifts, Widespread Panic Inspired Decal, Laptop Stickers",
+        "units": 3,
+        "status": "shipped",
+        "amount": 17.65
+      },
+      {
+        "date": "2025-09-06",
+        "products": "New Orleans Swamp Festival T-Shirt, Vintage Jazz Fest Tee, Music Lover Gift, Unisex Graphic Shirt, Festival Apparel",
+        "units": 1,
+        "status": "shipped",
+        "amount": 38.3
+      },
+      {
+        "date": "2025-09-06",
+        "products": "Bigfoot &quot;Walkin&quot; WSP Decal Sticker Hiking Kiss-Cut Stickers, Widespread Panic Gifts, Widespread Panic Inspired Decal, Laptop Stickers",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.66
+      },
+      {
+        "date": "2025-09-05",
+        "products": "BMFS Goat Tie Dye Shirt, Billy Strings inspired, perfect bluegrass lover gift, Bluegrass, jam band shirt",
+        "units": 1,
+        "status": "shipped",
+        "amount": 34.22
+      },
+      {
+        "date": "2025-09-04",
+        "products": "Frog Playing Fiddle or Violin Sticker | Cute Art Decals, Laptop Stickers, Frog Lovers Gifts, Nature Wall Decor, Fun Gift, Stand up Bass or Cello, Bluegrass, Musical Bear Stickers: Whimsical Decor for Music Lovers, Gifts for Nature Enthusiasts, Laptop Decals, Adorable Raccoon Musician Stickers - Perfect for Laptops, Water Bottles, Journals, Gifts, Bluegrass Gift, Mandolin Lovers Gift",
+        "units": 3,
+        "status": "shipped",
+        "amount": 19.58
+      },
+      {
+        "date": "2025-09-03",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 11.25
+      },
+      {
+        "date": "2025-09-03",
+        "products": "WSMFP Sticker - Waffle House Style",
+        "units": 2,
+        "status": "shipped",
+        "amount": 13.35
+      },
+      {
+        "date": "2025-08-31",
+        "products": "BMFS Goat Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.39
+      },
+      {
+        "date": "2025-08-30",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 16.88
+      },
+      {
+        "date": "2025-08-30",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.32
+      },
+      {
+        "date": "2025-08-24",
+        "products": "Stella Blue Light Sticker - Grateful Dead Inspired",
+        "units": 3,
+        "status": "shipped",
+        "amount": 16.8
+      },
+      {
+        "date": "2025-08-24",
+        "products": "BMFS (Waffle House - Style) Comfort Colors Shirt, BMFS Waffle House - Style Sticker",
+        "units": 3,
+        "status": "shipped",
+        "amount": 46.46
+      },
+      {
+        "date": "2025-08-21",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.53
+      },
+      {
+        "date": "2025-08-20",
+        "products": "Deadhead Bigfoot & Banjo Turtle Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 2,
+        "status": "shipped",
+        "amount": 14.85
+      },
+      {
+        "date": "2025-08-14",
+        "products": "WSMFP Sticker - Waffle House Style, Deadhead Streetcar",
+        "units": 2,
+        "status": "shipped",
+        "amount": 17.6
+      },
+      {
+        "date": "2025-08-07",
+        "products": "Drums to Space Kiss-Cut Stickers | Musical Space Art for Drummers |",
+        "units": 1,
+        "status": "shipped",
+        "amount": 9.9
+      },
+      {
+        "date": "2025-08-06",
+        "products": "GOOSE Waffle House Sticker",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.59
+      },
+      {
+        "date": "2025-08-05",
+        "products": "WSMFP Patagonia Logo Parody Design, Casual Tee, Outdoor Adventure Shirt, Unisex Graphic Tee, Widespread Panic Lover Gift",
+        "units": 1,
+        "status": "shipped",
+        "amount": 25.38
+      },
+      {
+        "date": "2025-08-03",
+        "products": "BMFS Goat Sticker, BMFS Shirt Goat Comfort Colors",
+        "units": 3,
+        "status": "shipped",
+        "amount": 37.74
+      },
+      {
+        "date": "2025-07-24",
+        "products": "WSMFP Sticker - Waffle House Style",
+        "units": 1,
+        "status": "shipped",
+        "amount": 8.82
+      },
+      {
+        "date": "2025-07-23",
+        "products": "WSMFP Sticker - Waffle House Style, BMFS Waffle House - Style Sticker, WSMFP (Waffle House Style) Comfort Colors Shirt",
+        "units": 11,
+        "status": "shipped",
+        "amount": 73.5
+      },
+      {
+        "date": "2025-07-17",
+        "products": "WSMFP Sticker - Waffle House Style",
+        "units": 1,
+        "status": "shipped",
+        "amount": 10.13
+      }
+    ]
+  }
 }
