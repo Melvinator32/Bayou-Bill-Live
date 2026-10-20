@@ -8,3 +8,4 @@ etsy-printify-tracker
 node_modules
 .wrangler
 .github
+tests

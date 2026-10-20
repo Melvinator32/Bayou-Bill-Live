@@ -150,6 +150,35 @@ def _history():
     }
 
 
+def _tax_orders():
+    """Per-order money and ship-to state for the sales tax worksheets.
+
+    City and ZIP are kept only for Louisiana orders (needed to find the
+    parish); no order ids or buyer details.
+    """
+    conn = get_db()
+    rows = conn.execute("""
+        SELECT sale_date, ship_state, ship_country, ship_city, ship_zip, item_value,
+               order_discount, order_shipping, order_sales_tax, order_total, refund_total
+        FROM etsy_orders
+        ORDER BY sale_date DESC, order_id DESC""").fetchall()
+    conn.close()
+    out = []
+    for r in rows:
+        state = (r["ship_state"] or "").strip()
+        o = {"date": r["sale_date"], "state": state,
+             "country": (r["ship_country"] or "").strip()}
+        if state.upper() in ("LA", "LOUISIANA"):
+            o["city"] = (r["ship_city"] or "").strip()
+            o["zip"] = (r["ship_zip"] or "").strip()[:5]
+        o.update({k: round(r[col] or 0, 2) for k, col in (
+            ("items", "item_value"), ("discount", "order_discount"),
+            ("shipping", "order_shipping"), ("tax", "order_sales_tax"),
+            ("total", "order_total"), ("refunds", "refund_total"))})
+        out.append(o)
+    return out
+
+
 def build_snapshot(today=None):
     today = today or date.today()
     start, end = _window(today)
@@ -206,6 +235,7 @@ def build_snapshot(today=None):
         "recent_orders": recent,
         "unmapped_units": cur["unmapped_units"],
         "history": _history(),
+        "tax": {"orders": _tax_orders()},
     }
 
 

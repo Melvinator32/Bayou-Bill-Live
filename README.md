@@ -67,8 +67,32 @@ live only in your local database and aren't used by the scheduled job.
 `publish.bat` (or `python publish_snapshot.py --sync --repo ..`) does the
 same thing from a local clone, using the app's own `tracker.db`.
 
+## Sales tax documents
+
+The **Sales Tax Documents** section at the bottom of the dashboard builds,
+for any month, quarter or year:
+
+- **Louisiana return worksheet** (lines 1-7): total sales, less out-of-state
+  sales, less marketplace facilitator sales where Etsy collected and remitted
+  the tax, leaving Louisiana sales with no tax collected, with estimated state
+  and parish tax on that amount. Enter your parish rate; the state rate
+  defaults to 5%.
+- **Sales by ship-to state**: orders, sales, shipping and Etsy-collected tax.
+- **Louisiana sales by city / ZIP**, to match orders to parishes.
+
+Each downloads as CSV (worksheet, sales by state, order detail), and
+**Print / Save PDF** prints just that section. The math lives in `tax.js`,
+tested by `tests/tax.test.cjs`. It helps you prepare returns but isn't tax
+advice.
+
+These figures are public on the dashboard. `data.json` carries each order's
+date, ship-to state and money fields; city and ZIP only for Louisiana orders;
+never buyer names, addresses or order ids.
+
 ## Tests
 
     cd etsy-printify-tracker
     pip install pytest
     python -m pytest
+    cd ..
+    node --test tests/tax.test.cjs

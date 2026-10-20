@@ -35,6 +35,9 @@ jobs:
         working-directory: etsy-printify-tracker
         run: python -m pytest -q
 
+      - name: Run sales tax worksheet tests
+        run: node --test tests/tax.test.cjs
+
       - name: Sync Etsy + Printify and build data.json
         working-directory: etsy-printify-tracker
         env:

@@ -198,3 +198,47 @@ def test_history_orders_list_every_order_newest_first():
     assert orders[0] == {"date": "2026-10-19", "products": "Heron Tee",
                          "units": 1, "status": "shipped", "amount": 30.50}
     assert orders[-1]["date"] == "2025-01-05"
+
+
+# ---- sales tax: per-order detail the page builds worksheets from -----------
+
+@pytest.fixture
+def ship_to():
+    conn = database.get_db()
+    rows = [  # order_id, state, country, city, zip, item_value, discount, shipping, tax, refunds
+        ("3141592601", "LA", "US", "Baton Rouge", "70808", 26.00, 0.00, 2.00, 2.50, 0.00),
+        ("3141592602", "TX", "US", "Austin", "73301", 37.00, 0.00, 3.00, 0.00, 0.00),
+        ("3141592603", "LA", "US", "New Orleans", "70115", 25.00, 2.00, 0.00, 0.00, 5.00),
+    ]
+    for oid, st, co, city, zip_, items, disc, ship, tax, refunds in rows:
+        conn.execute("""UPDATE etsy_orders SET ship_state=?, ship_country=?, ship_city=?,
+                        ship_zip=?, item_value=?, order_discount=?, order_shipping=?,
+                        order_sales_tax=?, refund_total=? WHERE order_id=?""",
+                     (st, co, city, zip_, items, disc, ship, tax, refunds, oid))
+    conn.commit(); conn.close()
+
+
+def test_tax_orders_carry_ship_state_and_money_fields(ship_to):
+    orders = snap()["tax"]["orders"]
+    assert len(orders) == len(ORDERS)
+    assert [o["date"] for o in orders] == sorted((o[1] for o in ORDERS), reverse=True)
+    assert orders[0] == {"date": "2026-10-19", "state": "LA", "country": "US",
+                         "city": "Baton Rouge", "zip": "70808", "items": 26.00,
+                         "discount": 0.00, "shipping": 2.00, "tax": 2.50,
+                         "total": 30.50, "refunds": 0.00}
+    poster = next(o for o in orders if o["date"] == "2026-10-10")
+    assert (poster["discount"], poster["refunds"], poster["tax"]) == (2.00, 5.00, 0.00)
+
+
+def test_tax_orders_give_city_and_zip_only_for_louisiana(ship_to):
+    orders = snap()["tax"]["orders"]
+    texas = next(o for o in orders if o["state"] == "TX")
+    assert "city" not in texas and "zip" not in texas
+    blob = json.dumps(snap())
+    assert "Austin" not in blob and "73301" not in blob
+
+
+def test_tax_orders_without_ship_data_are_kept_with_blank_state():
+    orders = snap()["tax"]["orders"]       # fixture orders have no ship_to here
+    assert len(orders) == len(ORDERS)
+    assert all(o["state"] == "" for o in orders)

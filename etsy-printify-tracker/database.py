@@ -20,7 +20,13 @@ CREATE TABLE IF NOT EXISTS etsy_orders (
     order_total     REAL DEFAULT 0,
     currency        TEXT DEFAULT 'USD',
     date_paid       TEXT,
-    date_shipped    TEXT
+    date_shipped    TEXT,
+    ship_state      TEXT DEFAULT '',
+    ship_country    TEXT DEFAULT '',
+    ship_city       TEXT DEFAULT '',
+    ship_zip        TEXT DEFAULT '',
+    item_value      REAL DEFAULT 0,
+    refund_total    REAL DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS etsy_items (
@@ -82,7 +88,14 @@ CREATE INDEX IF NOT EXISTS idx_items_date ON etsy_items(sale_date);
 # Columns we add defensively if an older db is opened (no-ops on a fresh db).
 _MIGRATIONS = {
     "etsy_orders": {"channel": "TEXT DEFAULT 'etsy'",
-                    "order_discount": "REAL DEFAULT 0"},
+                    "order_discount": "REAL DEFAULT 0",
+                    # ship-to and refund detail for the sales tax worksheets
+                    "ship_state": "TEXT DEFAULT ''",
+                    "ship_country": "TEXT DEFAULT ''",
+                    "ship_city": "TEXT DEFAULT ''",
+                    "ship_zip": "TEXT DEFAULT ''",
+                    "item_value": "REAL DEFAULT 0",
+                    "refund_total": "REAL DEFAULT 0"},
     "etsy_items": {"channel": "TEXT DEFAULT 'etsy'",
                    "discount_amount": "REAL DEFAULT 0"},
     "sku_costs": {"source": "TEXT DEFAULT 'manual'"},

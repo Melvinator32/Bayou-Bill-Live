@@ -141,6 +141,14 @@ class EtsyConnector(Connector):
                     "currency": (r.get("grandtotal") or {}).get("currency_code", "USD"),
                     "date_paid": sale_date if r.get("is_paid") else "",
                     "date_shipped": sale_date if r.get("is_shipped") else "",
+                    # ship-to and refunds, for the sales tax worksheets
+                    "ship_state": (r.get("state") or "").strip(),
+                    "ship_country": (r.get("country_iso") or "").strip(),
+                    "ship_city": (r.get("city") or "").strip(),
+                    "ship_zip": (r.get("zip") or "").strip()[:5],
+                    "item_value": _money(r.get("total_price")),
+                    "refund_total": round(sum(_money(x.get("amount"))
+                                              for x in r.get("refunds") or []), 2),
                 })
                 for t in r.get("transactions", []):
                     qty = t.get("quantity") or 1
@@ -184,9 +192,16 @@ class EtsyConnector(Connector):
                     """INSERT INTO etsy_orders
                        (order_id, channel, sale_date, buyer, order_shipping,
                         order_sales_tax, order_discount, order_total, currency,
-                        date_paid, date_shipped)
-                       VALUES (?,'etsy',?,?,?,?,?,?,?,?,?)
+                        date_paid, date_shipped, ship_state, ship_country,
+                        ship_city, ship_zip, item_value, refund_total)
+                       VALUES (?,'etsy',?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                        ON CONFLICT(order_id) DO UPDATE SET
+                         ship_state=excluded.ship_state,
+                         ship_country=excluded.ship_country,
+                         ship_city=excluded.ship_city,
+                         ship_zip=excluded.ship_zip,
+                         item_value=excluded.item_value,
+                         refund_total=excluded.refund_total,
                          sale_date=COALESCE(NULLIF(excluded.sale_date,''), sale_date),
                          buyer=COALESCE(NULLIF(excluded.buyer,''), buyer),
                          order_shipping=excluded.order_shipping,
@@ -197,7 +212,9 @@ class EtsyConnector(Connector):
                          date_shipped=COALESCE(NULLIF(excluded.date_shipped,''), date_shipped)""",
                     (o["order_id"], o["sale_date"], o["buyer"], o["order_shipping"],
                      o["order_sales_tax"], o["order_discount"], o["order_total"],
-                     o["currency"], o["date_paid"], o["date_shipped"]))
+                     o["currency"], o["date_paid"], o["date_shipped"],
+                     o["ship_state"], o["ship_country"], o["ship_city"], o["ship_zip"],
+                     o["item_value"], o["refund_total"]))
             for it in items:
                 exists = conn.execute(
                     "SELECT 1 FROM etsy_items WHERE transaction_id=?",
