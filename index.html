@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bayou Bill Shop Tracker</title>
+<meta name="description" content="Live sales, cost and profit numbers for the Bayou Bill Etsy shop.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300859b'/%3E%3Cpath d='M7 22l6-7 5 4 7-9' stroke='%23bce194' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --sage:#77b28c;
+    --dteal:#00859b;
+    --cteal:#00bfb8;
+    --mgreen:#38a66f;
+    --lygreen:#bce194;
+    --pteal:#cce7eb;
+    --owgreen:#ebf2e6;
+    --cream:#f8ecdb;
+    --lgray:#d9d9d6;
+    --mgray:#b3b3b3;
+
+    --ink:#203330;
+    --ink-muted:#5b6b64;
+    --ink-faint:#8a978f;
+    --card:#ffffff;
+    --border:#e3e6df;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--owgreen);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:28px 16px 60px;}
+
+  /* header */
+  .header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px;}
+  .header h1{font-size:24px;margin:0 0 4px;letter-spacing:-0.01em;}
+  .header .sub{color:var(--ink-muted);font-size:13.5px;}
+  .header-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+  @media (max-width:600px){ .header-right{align-items:flex-start;} }
+  .live-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    background:#eaf5ee;border:1px solid #cfe8d8;color:#2f7a52;
+    font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px;white-space:nowrap;
+  }
+  .live-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--mgreen);}
+  .range-pill{
+    background:var(--card);border:1px solid var(--border);border-radius:10px;
+    padding:8px 14px;font-size:13px;color:var(--ink-muted);
+  }
+  .range-pill strong{color:var(--ink);font-weight:600;}
+  .updated{font-size:11.5px;color:var(--ink-faint);}
+
+  /* kpi row */
+  .kpi-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:20px;}
+  @media (max-width:980px){ .kpi-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:600px){ .kpi-grid{grid-template-columns:repeat(2,1fr);} }
+  .kpi{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 14px 12px;}
+  .kpi .label{font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-faint);font-weight:600;margin-bottom:6px;}
+  .kpi .value{font-size:22px;font-weight:700;color:var(--ink);line-height:1.1;font-variant-numeric:tabular-nums;}
+  .kpi .delta{margin-top:6px;font-size:12px;color:var(--ink-muted);display:flex;align-items:center;gap:4px;}
+  .kpi .delta svg{width:10px;height:10px;fill:var(--ink-faint);}
+  .kpi .delta.good svg{fill:var(--mgreen);}
+  .kpi .delta.good span{color:#2f7a52;}
+  .kpi .delta.bad span{color:#8a6a2f;}
+
+  /* card layout */
+  .row{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:16px;}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  @media (max-width:900px){ .row,.row2{grid-template-columns:1fr;} }
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 18px 14px;position:relative;min-width:0;}
+  .card h3{margin:0 0 2px;font-size:14.5px;font-weight:700;color:var(--ink);}
+  .card .card-sub{font-size:12px;color:var(--ink-faint);margin-bottom:12px;}
+  .empty{font-size:13px;color:var(--ink-faint);padding:20px 0;text-align:center;}
+
+  /* svg charts */
+  .chart-wrap{position:relative;}
+  .chart-wrap svg{width:100%;height:auto;display:block;overflow:visible;}
+  .gridline{stroke:var(--border);stroke-width:1;}
+  .axis-label{fill:var(--ink-faint);font-size:10px;font-family:inherit;}
+  .rev-line{fill:none;stroke:var(--dteal);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+  .hover-dot{fill:var(--dteal);stroke:#fff;stroke-width:2;opacity:0;}
+  .crosshair{stroke:var(--mgray);stroke-width:1;stroke-dasharray:3,3;opacity:0;}
+  .m-rev{fill:var(--dteal);}
+  .m-profit{fill:var(--lygreen);}
+  .m-group:hover .m-rev{fill:var(--cteal);}
+  .m-group:hover .m-profit{fill:var(--mgreen);}
+  .key{display:flex;gap:14px;font-size:12px;color:var(--ink-muted);margin-top:8px;}
+  .key span{display:inline-flex;align-items:center;gap:6px;}
+  .key i{width:10px;height:10px;border-radius:3px;display:inline-block;}
+  .tooltip{
+    position:absolute;pointer-events:none;background:var(--ink);color:#fff;font-size:11.5px;
+    padding:7px 10px;border-radius:8px;line-height:1.4;opacity:0;transform:translate(-50%,-100%);
+    white-space:nowrap;z-index:5;transition:opacity .08s ease;
+  }
+  .tooltip b{font-weight:700;}
+  .tooltip .t-label{color:var(--pteal);font-weight:600;}
+
+  /* bar chart (products) */
+  .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .bar-row:last-child{margin-bottom:0;}
+  .bar-name{width:150px;flex:0 0 150px;font-size:12.5px;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  @media (max-width:600px){ .bar-name{width:110px;flex-basis:110px;} }
+  .bar-track{flex:1;background:var(--owgreen);border-radius:6px;height:20px;min-width:0;}
+  .bar-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--mgreen),var(--sage));min-width:2px;}
+  .bar-value{font-size:12px;font-weight:700;color:var(--ink);white-space:nowrap;text-align:right;min-width:92px;}
+  .bar-value small{display:block;font-weight:500;color:var(--ink-faint);font-size:11px;}
+
+  /* donut */
+  .donut-wrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+  #donutChart{flex:0 0 150px;width:150px;height:150px;}
+  .donut-center-num{font-size:22px;font-weight:700;fill:var(--ink);}
+  .donut-center-lbl{font-size:9.5px;fill:var(--ink-faint);}
+  .legend{flex:1;min-width:160px;}
+  .legend-item{display:flex;align-items:center;gap:8px;font-size:12.5px;padding:6px 0;border-bottom:1px dashed var(--border);}
+  .legend-item:last-child{border-bottom:none;}
+  .legend-swatch{width:10px;height:10px;border-radius:3px;flex:0 0 10px;}
+  .legend-label{flex:1;color:var(--ink);}
+  .legend-count{font-weight:700;color:var(--ink);}
+  .legend-pct{color:var(--ink-faint);font-size:11px;width:38px;text-align:right;}
+
+  /* orders table */
+  .table-scroll{overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:var(--ink-faint);font-weight:600;padding:0 10px 8px;border-bottom:1px solid var(--border);white-space:nowrap;}
+  td{padding:9px 10px;border-bottom:1px solid var(--border);color:var(--ink);}
+  tr:last-child td{border-bottom:none;}
+  td.date{color:var(--ink-muted);white-space:nowrap;font-variant-numeric:tabular-nums;}
+  .num{text-align:right;font-variant-numeric:tabular-nums;}
+  @media (max-width:600px){ .col-units{display:none;} th,td{padding-left:6px;padding-right:6px;} td.date{white-space:normal;} .status-badge{padding:3px 7px;gap:4px;} }
+  .amt{font-weight:700;}
+  .status-badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap;}
+  .status-dot{width:7px;height:7px;border-radius:50%;flex:0 0 7px;}
+  .status-shipped{background:#eaf5ee;color:#2f7a52;}
+  .status-shipped .status-dot{background:var(--mgreen);}
+  .status-paid{background:#e2f0f3;color:#00647a;}
+  .status-paid .status-dot{background:var(--dteal);}
+  .status-unpaid{background:#f0f0ef;color:#6b6b68;}
+  .status-unpaid .status-dot{background:var(--mgray);}
+
+  .note{
+    background:var(--cream);border:1px solid #ecd9b8;color:#7a5a23;border-radius:10px;
+    padding:10px 14px;font-size:12.5px;margin-bottom:16px;
+  }
+  .foot-note{margin-top:24px;font-size:11.5px;color:var(--ink-faint);text-align:center;line-height:1.6;}
+  .error{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;text-align:center;color:var(--ink-muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div>
+      <h1>Bayou Bill Shop Tracker</h1>
+      <div class="sub">Print-on-demand Etsy shop &middot; fulfilled via Printify</div>
+    </div>
+    <div class="header-right">
+      <span class="live-badge"><span class="dot"></span>Live shop numbers</span>
+      <div class="range-pill" id="rangePill">Loading&hellip;</div>
+      <div class="updated" id="updated"></div>
+    </div>
+  </div>
+
+  <div id="app"></div>
+
+  <div class="foot-note">
+    Revenue and orders come from Etsy; product costs from Printify. Etsy fees are
+    estimated from Etsy's published fee rates, since Etsy's order data doesn't include
+    them. Buyer details are never published.
+  </div>
+</div>
+
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let CUR = 'USD';
+const money = (n, dp) => new Intl.NumberFormat('en-US', {style:'currency', currency:CUR,
+  minimumFractionDigits: dp ?? 2, maximumFractionDigits: dp ?? 2}).format(n || 0);
+const money0 = n => money(n, 0);
+const parseDay = s => new Date(s + 'T00:00:00Z');
+const fmtDay = (s, opts) => parseDay(s).toLocaleDateString('en-US', {timeZone:'UTC', ...opts});
+
+function delta(cur, prior, {higherIsGood = true, unit = '%'} = {}){
+  if (unit === 'pt'){
+    const d = cur - prior;
+    return {text: `${d >= 0 ? '+' : ''}${d.toFixed(1)}pt`, dir: d, good: higherIsGood ? d >= 0 : d <= 0};
+  }
+  if (!prior) return {text: cur ? 'new vs prior' : 'no change', dir: 0, good: true};
+  const pct = (cur - prior) / Math.abs(prior) * 100;
+  return {text: `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%`, dir: pct, good: higherIsGood ? pct >= 0 : pct <= 0};
+}
+
+function renderKpis(k){
+  const tiles = [
+    {label:'Revenue', value: money0(k.revenue.value), d: delta(k.revenue.value, k.revenue.prior)},
+    {label:'Orders', value: k.orders.value.toLocaleString(), d: delta(k.orders.value, k.orders.prior)},
+    {label:'Avg Order Value', value: money(k.avg_order_value.value), d: delta(k.avg_order_value.value, k.avg_order_value.prior)},
+    {label:'Product Cost', value: money0(k.product_cost.value), d: delta(k.product_cost.value, k.product_cost.prior, {higherIsGood:false})},
+    {label:'Est. Etsy Fees', value: money0(k.fees.value), d: delta(k.fees.value, k.fees.prior, {higherIsGood:false})},
+    {label:`Net Profit (${k.margin.value.toFixed(1)}% mgn)`, value: money0(k.profit.value), d: delta(k.profit.value, k.profit.prior)},
+  ];
+  return `<div class="kpi-grid">${tiles.map(t => {
+    const arrow = t.d.dir >= 0 ? '<path d="M5 0L10 6H0Z"/>' : '<path d="M5 10L0 4H10Z"/>';
+    return `<div class="kpi">
+      <div class="label">${esc(t.label)}</div>
+      <div class="value">${esc(t.value)}</div>
+      <div class="delta ${t.d.good ? 'good' : 'bad'}"><svg viewBox="0 0 10 10">${arrow}</svg><span>${esc(t.d.text)}</span></div>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+function renderLayout(d){
+  const f = d.fulfillment;
+  const nOrders = f.shipped + f.paid + f.unpaid;
+  const note = d.unmapped_units
+    ? `<div class="note">${d.unmapped_units} unit${d.unmapped_units === 1 ? '' : 's'} sold in this period
+       ${d.unmapped_units === 1 ? 'has' : 'have'} no product cost on file yet, so profit is slightly overstated.</div>`
+    : '';
+  return `
+    ${renderKpis(d.kpis)}
+    ${note}
+    <div class="row">
+      <div class="card">
+        <h3>Revenue, last ${d.window.days} days</h3>
+        <div class="card-sub">Daily item revenue &middot; hover for detail</div>
+        <div class="chart-wrap"><svg id="lineChart" viewBox="0 0 700 220" role="img" aria-label="Daily revenue chart"></svg><div class="tooltip" id="lineTooltip"></div></div>
+      </div>
+      <div class="card">
+        <h3>Order Status</h3>
+        <div class="card-sub">${nOrders} order${nOrders === 1 ? '' : 's'} in range</div>
+        <div class="donut-wrap"><svg id="donutChart" viewBox="0 0 150 150" role="img" aria-label="Order status"></svg><div class="legend" id="donutLegend"></div></div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="card">
+        <h3>Top Products by Revenue</h3>
+        <div class="card-sub">Last ${d.window.days} days &middot; revenue and estimated profit</div>
+        <div id="barChart"></div>
+      </div>
+      <div class="card">
+        <h3>Monthly Revenue &amp; Profit</h3>
+        <div class="card-sub">Last 12 months</div>
+        <div class="chart-wrap"><svg id="monthChart" viewBox="0 0 420 200" role="img" aria-label="Monthly revenue and profit"></svg><div class="tooltip" id="monthTooltip"></div></div>
+        <div class="key"><span><i style="background:var(--dteal)"></i>Revenue</span><span><i style="background:var(--lygreen)"></i>Profit</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Recent Orders</h3>
+      <div class="card-sub">Most recent ${d.recent_orders.length} orders</div>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Date</th><th>Products</th><th class="num col-units">Units</th><th>Status</th><th class="num">Total</th></tr></thead>
+        <tbody id="ordersBody"></tbody>
+      </table></div>
+    </div>`;
+}
+
+// Round an axis max up so its 4 gridlines land on 1/2/2.5/5 x 10^n steps.
+function niceMax(v){
+  const raw = Math.max(v, 1) / 4, mag = 10 ** Math.floor(Math.log10(raw));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(x => x >= raw);
+  return step * 4;
+}
+// Size the SVG coordinate space to its rendered width so text stays 10px.
+const widthOf = svg => Math.max(300, Math.round(svg.parentElement.clientWidth));
+
+function renderLine(days){
+  const svg = document.getElementById('lineChart');
+  const tooltip = document.getElementById('lineTooltip');
+  const vals = days.map(x => x.revenue);
+  const W=widthOf(svg),H=220,padL=48,padR=10,padT=14,padB=24;
+  const plotW=W-padL-padR, plotH=H-padT-padB;
+  const max = niceMax(Math.max(...vals));
+  const xFor = i => padL + (i/(vals.length-1))*plotW;
+  const yFor = v => padT + plotH - (v/max)*plotH;
+  let h = `<defs><linearGradient id="revGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00bfb8" stop-opacity="0.32"/><stop offset="100%" stop-color="#00bfb8" stop-opacity="0.02"/></linearGradient></defs>`;
+  for (let s=0; s<=4; s++){
+    const v = max*s/4, y = yFor(v);
+    h += `<line class="gridline" x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}"/>`;
+    h += `<text class="axis-label" x="${padL-8}" y="${y+3}" text-anchor="end">${money0(v)}</text>`;
+  }
+  days.forEach((x,i) => {
+    if (i%7===0 || (i===days.length-1 && W > 480))
+      h += `<text class="axis-label" x="${xFor(i)}" y="${H-6}" text-anchor="middle">${fmtDay(x.date,{month:'short',day:'numeric'})}</text>`;
+  });
+  let area = `M ${xFor(0)} ${yFor(0)} `, line = '';
+  vals.forEach((v,i) => { area += `L ${xFor(i)} ${yFor(v)} `; line += `${i?'L':'M'} ${xFor(i)} ${yFor(v)} `; });
+  area += `L ${xFor(vals.length-1)} ${yFor(0)} Z`;
+  h += `<path d="${area}" fill="url(#revGradient)"/><path class="rev-line" d="${line}"/>`;
+  h += `<line class="crosshair" id="lcCross" x1="0" y1="${padT}" x2="0" y2="${H-padB}"/><circle class="hover-dot" id="lcDot" r="4.5"/>`;
+  h += `<rect id="lcCapture" x="${padL}" y="${padT}" width="${plotW}" height="${plotH}" fill="transparent"/>`;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = h;
+
+  const cross = document.getElementById('lcCross'), dot = document.getElementById('lcDot');
+  const capture = document.getElementById('lcCapture');
+  capture.addEventListener('mousemove', e => {
+    const rect = svg.getBoundingClientRect();
+    let i = Math.round(((((e.clientX-rect.left)/rect.width)*W - padL)/plotW)*(vals.length-1));
+    i = Math.max(0, Math.min(vals.length-1, i));
+    const x = xFor(i), y = yFor(vals[i]);
+    cross.setAttribute('x1',x); cross.setAttribute('x2',x); cross.style.opacity = 1;
+    dot.setAttribute('cx',x); dot.setAttribute('cy',y); dot.style.opacity = 1;
+    tooltip.style.left = (x*rect.width/W)+'px'; tooltip.style.top = (y*rect.height/H - 10)+'px'; tooltip.style.opacity = 1;
+    tooltip.innerHTML = `<span class="t-label">${fmtDay(days[i].date,{weekday:'short',month:'short',day:'numeric'})}</span><br><b>${money(vals[i])}</b> revenue`;
+  });
+  capture.addEventListener('mouseleave', () => { cross.style.opacity = 0; dot.style.opacity = 0; tooltip.style.opacity = 0; });
+}
+
+function renderDonut(f){
+  const svg = document.getElementById('donutChart');
+  const legend = document.getElementById('donutLegend');
+  const segs = [
+    {label:'Shipped', count:f.shipped, hex:'#38a66f'},
+    {label:'Paid, not shipped', count:f.paid, hex:'#00859b'},
+    {label:'Unpaid', count:f.unpaid, hex:'#b3b3b3'},
+  ];
+  const total = segs.reduce((a,s) => a+s.count, 0);
+  const cx=75, cy=75, r=52, ri=32, rad = d => d*Math.PI/180;
+  let h = `<circle cx="${cx}" cy="${cy}" r="${(r+ri)/2}" fill="none" stroke="#ebf2e6" stroke-width="${r-ri}"/>`;
+  let angle = -90;
+  segs.filter(s => s.count).forEach(s => {
+    const sweep = Math.min(s.count/total*360, 359.99), a0 = angle, a1 = angle + sweep;
+    const pt = (rr,a) => `${cx + rr*Math.cos(rad(a))} ${cy + rr*Math.sin(rad(a))}`;
+    const large = sweep > 180 ? 1 : 0;
+    h += `<path d="M ${pt(r,a0)} A ${r} ${r} 0 ${large} 1 ${pt(r,a1)} L ${pt(ri,a1)} A ${ri} ${ri} 0 ${large} 0 ${pt(ri,a0)} Z" fill="${s.hex}"><title>${s.label}: ${s.count}</title></path>`;
+    angle = a1;
+  });
+  h += `<text class="donut-center-num" x="${cx}" y="${cy-2}" text-anchor="middle">${total}</text>`;
+  h += `<text class="donut-center-lbl" x="${cx}" y="${cy+14}" text-anchor="middle">ORDERS</text>`;
+  svg.innerHTML = h;
+  legend.innerHTML = segs.map(s => `<div class="legend-item">
+      <span class="legend-swatch" style="background:${s.hex}"></span>
+      <span class="legend-label">${s.label}</span>
+      <span class="legend-count">${s.count}</span>
+      <span class="legend-pct">${total ? Math.round(s.count/total*100) : 0}%</span></div>`).join('');
+}
+
+function renderProducts(products){
+  const el = document.getElementById('barChart');
+  if (!products.length){ el.innerHTML = '<div class="empty">No sales in this period yet.</div>'; return; }
+  const max = Math.max(...products.map(p => p.revenue)) || 1;
+  el.innerHTML = products.map(p => `<div class="bar-row">
+      <div class="bar-name" title="${esc(p.name)}">${esc(p.name)}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(p.revenue/max)*100}%"></div></div>
+      <div class="bar-value">${money0(p.revenue)}<small>${money0(p.profit)} profit &middot; ${p.units} sold</small></div>
+    </div>`).join('');
+}
+
+function renderMonthly(months){
+  const svg = document.getElementById('monthChart');
+  const tooltip = document.getElementById('monthTooltip');
+  if (!months.length){ svg.outerHTML = '<div class="empty">No monthly history yet.</div>'; return; }
+  const W=widthOf(svg),H=200,padL=46,padR=6,padT=10,padB=24;
+  const plotW=W-padL-padR, plotH=H-padT-padB;
+  const lo = Math.min(0, ...months.map(m => m.profit));
+  const hi = niceMax(Math.max(...months.map(m => m.revenue)));
+  const yFor = v => padT + plotH - ((v-lo)/(hi-lo))*plotH;
+  const slot = plotW / months.length, bw = Math.min(16, slot*0.36);
+  let h = '';
+  for (let s=0; s<=4; s++){
+    const v = lo + (hi-lo)*s/4, y = yFor(v);
+    h += `<line class="gridline" x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}"/>`;
+    h += `<text class="axis-label" x="${padL-6}" y="${y+3}" text-anchor="end">${money0(v)}</text>`;
+  }
+  const every = Math.ceil(months.length / Math.floor((W - padL) / 34));
+  months.forEach((m,i) => {
+    const x = padL + slot*i + slot/2, y0 = yFor(0);
+    const bar = (v, dx, cls) => {
+      const y = yFor(Math.max(v,0)), hgt = Math.abs(yFor(v) - y0);
+      return `<rect class="${cls}" x="${x+dx}" y="${v >= 0 ? y : y0}" width="${bw}" height="${Math.max(hgt, 0.5)}" rx="3"/>`;
+    };
+    h += `<g class="m-group" data-i="${i}">${bar(m.revenue, -bw-1, 'm-rev')}${bar(m.profit, 1, 'm-profit')}
+          <rect x="${padL + slot*i}" y="${padT}" width="${slot}" height="${plotH}" fill="transparent"/></g>`;
+    if (i % every === 0 || i === months.length-1)
+      h += `<text class="axis-label" x="${x}" y="${H-6}" text-anchor="middle">${fmtDay(m.month+'-01',{month:'short'})}</text>`;
+  });
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = h;
+  svg.querySelectorAll('.m-group').forEach(g => {
+    g.addEventListener('mousemove', e => {
+      const m = months[+g.dataset.i], rect = svg.parentElement.getBoundingClientRect();
+      tooltip.style.left = (e.clientX-rect.left)+'px'; tooltip.style.top = (e.clientY-rect.top-10)+'px'; tooltip.style.opacity = 1;
+      tooltip.innerHTML = `<span class="t-label">${fmtDay(m.month+'-01',{month:'long',year:'numeric'})}</span><br><b>${money0(m.revenue)}</b> revenue &middot; <b>${money0(m.profit)}</b> profit`;
+    });
+    g.addEventListener('mouseleave', () => { tooltip.style.opacity = 0; });
+  });
+}
+
+function renderOrders(orders){
+  const meta = {shipped:['status-shipped','Shipped'], paid:['status-paid','Paid'], unpaid:['status-unpaid','Unpaid']};
+  const body = document.getElementById('ordersBody');
+  body.innerHTML = orders.map(o => {
+    const [cls, label] = meta[o.status] || meta.unpaid;
+    return `<tr>
+      <td class="date">${o.date ? fmtDay(o.date,{month:'short',day:'numeric'}) : ''}</td>
+      <td>${esc(o.products)}</td>
+      <td class="num col-units">${o.units}</td>
+      <td><span class="status-badge ${cls}"><span class="status-dot"></span>${label}</span></td>
+      <td class="num amt">${money(o.amount)}</td></tr>`;
+  }).join('') || '<tr><td colspan="5" class="empty">No orders yet.</td></tr>';
+}
+
+async function main(){
+  const app = document.getElementById('app');
+  let d;
+  try {
+    const res = await fetch('data.json', {cache:'no-store'});
+    if (!res.ok) throw new Error(res.status);
+    d = await res.json();
+  } catch (e) {
+    document.getElementById('rangePill').textContent = 'No data yet';
+    app.innerHTML = '<div class="error">No snapshot has been published yet. Run <code>publish_snapshot.py</code> from the tracker app to publish one.</div>';
+    return;
+  }
+  CUR = d.currency || 'USD';
+  const w = d.window;
+  document.getElementById('rangePill').innerHTML =
+    `${fmtDay(w.start,{month:'short',day:'numeric'})}&ndash;${fmtDay(w.end,{month:'short',day:'numeric',year:'numeric'})} &nbsp;&middot;&nbsp; vs. prior ${w.days} days`;
+  const gen = new Date(d.generated_at);
+  if (!isNaN(gen)) document.getElementById('updated').textContent =
+    'Updated ' + gen.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+  app.innerHTML = renderLayout(d);
+  renderLine(d.daily_revenue);
+  renderDonut(d.fulfillment);
+  renderProducts(d.top_products);
+  renderMonthly(d.monthly);
+  renderOrders(d.recent_orders);
+  let lastW = innerWidth, t;
+  addEventListener('resize', () => {
+    if (innerWidth === lastW) return;
+    lastW = innerWidth; clearTimeout(t);
+    t = setTimeout(() => { renderLine(d.daily_revenue); renderMonthly(d.monthly); }, 150);
+  });
+}
+main();
+</script>
+</body>
+</html>

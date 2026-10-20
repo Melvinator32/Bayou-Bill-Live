@@ -1,0 +1,8 @@
+# Never commit the tracker database: it holds the Etsy/Printify keys and buyer names.
+*.db
+*.db-wal
+*.db-shm
+__pycache__/
+.pytest_cache/
+.venv/
+.env
