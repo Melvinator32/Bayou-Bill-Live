@@ -167,3 +167,17 @@ def test_rotated_etsy_refresh_token_is_captured():
     assert seen == ["rt-NEW"]
     assert target.post is fake_post          # restored afterwards
     assert len(calls) == 2
+
+
+def test_failure_message_includes_the_api_error_body(paths):
+    import requests
+
+    class RejectedEtsy(FakeEtsy):
+        def sync(self, settings):
+            resp = SimpleNamespace(
+                status_code=400,
+                text='{"error":"invalid_grant","error_description":"refresh token expired"}')
+            raise requests.exceptions.HTTPError("400 Client Error: Bad Request", response=resp)
+
+    with pytest.raises(cloud_publish.PublishError, match="invalid_grant.*refresh token expired"):
+        run(paths, etsy=RejectedEtsy(), printify=FakePrintify())

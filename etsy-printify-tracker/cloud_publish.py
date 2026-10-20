@@ -102,7 +102,10 @@ def run(environ, out_dir, db_path, connectors=None, today=None):
         try:
             result = c.sync(settings)
         except Exception as e:
-            raise PublishError(f"{c.label} sync failed: {e}") from e
+            # Etsy and Printify explain 4xx errors in the body (e.g. invalid_grant).
+            body = getattr(getattr(e, "response", None), "text", "") or ""
+            detail = f" | {body.strip()[:500]}" if body.strip() else ""
+            raise PublishError(f"{c.label} sync failed: {e}{detail}") from e
         print(f"[ok] {c.label}: {result}")
 
     snapshot = publish_snapshot.build_snapshot(today=today)
