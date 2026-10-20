@@ -26,21 +26,49 @@ products, units, status, total).
 Never published: buyer names or addresses, order / transaction / listing ids,
 SKUs, variations (they can contain personalization text), or any API key.
 
-## Publishing new numbers
+## How the numbers update
 
-Run the app from your clone of this repo (`etsy-printify-tracker/`), then
-double-click `publish.bat` there, or:
+A scheduled GitHub Action (`.github/workflows/publish.yml`) runs every 6 hours.
+It syncs Etsy and Printify through the app's own connectors into a throwaway
+database, builds `data.json` with `analytics.py`, and commits it. Cloudflare
+redeploys on that push. Nothing runs on your PC. To update right away, go to
+Actions -> Publish shop numbers -> Run workflow.
 
-    cd etsy-printify-tracker
-    python publish_snapshot.py --sync --repo ..
+If a sync fails, nothing is published and the page keeps its last numbers.
+The run shows up red in the Actions tab, and GitHub emails you.
 
-It syncs Etsy and Printify, writes `data.json` at the repo root, commits only
-that file and pushes. The page updates within a minute or two. Git must be on
-your PATH (Git for Windows). To run it on a schedule, point Windows Task
-Scheduler at `publish.bat`.
+### One-time setup: GitHub secrets
+
+Repo Settings -> Secrets and variables -> Actions -> New repository secret:
+
+| Secret | Value |
+|---|---|
+| `ETSY_KEYSTRING` | Etsy app keystring |
+| `ETSY_SHARED_SECRET` | Etsy app shared secret |
+| `ETSY_REFRESH_TOKEN` | From the app's Etsy connect flow |
+| `ETSY_SHOP_ID` | Your Etsy shop id |
+| `PRINTIFY_TOKEN` | Printify personal access token |
+| `PRINTIFY_SHOP_ID` | Optional; auto-detected |
+| `SECRETS_PAT` | Optional; see below |
+
+`python show_github_secrets.py` (run once in the app folder on your PC) prints
+every value the app already has, ready to paste.
+
+Etsy refresh tokens expire after 90 days. When Etsy issues a new one, the job
+saves it to `ETSY_REFRESH_TOKEN`, but only if `SECRETS_PAT` is set: a
+fine-grained GitHub token for this repo with **Secrets: Read and write**.
+Without it, reconnect Etsy in the app every 90 days and update the secret.
+
+Product costs come from Printify. Costs typed by hand on the app's Costs page
+live only in your local database and aren't used by the scheduled job.
+
+### Publishing from your PC instead
+
+`publish.bat` (or `python publish_snapshot.py --sync --repo ..`) does the
+same thing from a local clone, using the app's own `tracker.db`.
 
 ## Tests
 
     cd etsy-printify-tracker
     pip install pytest
-    python -m pytest test_publish_snapshot.py
+    python -m pytest

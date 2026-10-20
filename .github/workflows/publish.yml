@@ -1,0 +1,71 @@
+# Sync Etsy + Printify on a schedule and publish data.json.
+# Pushing data.json makes Cloudflare redeploy the dashboard.
+name: Publish shop numbers
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: etsy-printify-tracker/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r etsy-printify-tracker/requirements.txt pytest
+
+      - name: Run tests
+        working-directory: etsy-printify-tracker
+        run: python -m pytest -q
+
+      - name: Sync Etsy + Printify and build data.json
+        working-directory: etsy-printify-tracker
+        env:
+          ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
+          ETSY_REFRESH_TOKEN: ${{ secrets.ETSY_REFRESH_TOKEN }}
+          ETSY_SHOP_ID: ${{ secrets.ETSY_SHOP_ID }}
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          PRINTIFY_SHOP_ID: ${{ secrets.PRINTIFY_SHOP_ID }}
+          NEW_REFRESH_TOKEN_FILE: ${{ runner.temp }}/etsy_refresh_token
+        run: python cloud_publish.py
+
+      - name: Save rotated Etsy refresh token
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+          TOKEN_FILE: ${{ runner.temp }}/etsy_refresh_token
+        run: |
+          [ -s "$TOKEN_FILE" ] || exit 0
+          if [ -n "$GH_TOKEN" ]; then
+            gh secret set ETSY_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < "$TOKEN_FILE"
+            echo "Updated the ETSY_REFRESH_TOKEN secret."
+          else
+            echo "::warning::Etsy issued a new refresh token but SECRETS_PAT is not set, so the ETSY_REFRESH_TOKEN secret will expire 90 days after it was created."
+          fi
+          rm -f "$TOKEN_FILE"
+
+      - name: Commit data.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update shop numbers"
+          git push
