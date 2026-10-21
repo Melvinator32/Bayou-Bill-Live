@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T11:51:52",
+  "generated_at": "2026-10-21T17:14:59",
   "currency": "USD",
   "window": {
     "start": "2026-09-24",
@@ -251,8 +251,8 @@
     }
   ],
   "fulfillment": {
-    "shipped": 11,
-    "paid": 2,
+    "shipped": 12,
+    "paid": 1,
     "unpaid": 0
   },
   "recent_orders": [
@@ -274,7 +274,7 @@
       "date": "2026-10-16",
       "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 10.47
     },
     {
@@ -2870,8 +2870,8 @@
         "orders": 2,
         "units": 2,
         "unmapped_units": 0,
-        "shipped": 1,
-        "paid": 1,
+        "shipped": 2,
+        "paid": 0,
         "unpaid": 0
       },
       {
@@ -5380,7 +5380,7 @@
         "date": "2026-10-16",
         "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 10.47
       },
       {
