@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-10-21T21:44:45",
+  "generated_at": "2026-10-22T04:49:43",
   "currency": "USD",
   "window": {
-    "start": "2026-09-24",
-    "end": "2026-10-21",
+    "start": "2026-09-25",
+    "end": "2026-10-22",
     "days": 28
   },
   "kpis": {
     "revenue": {
       "value": 266.69,
-      "prior": 189.61
+      "prior": 184.23
     },
     "orders": {
       "value": 15,
-      "prior": 12
+      "prior": 11
     },
     "avg_order_value": {
       "value": 17.78,
-      "prior": 15.8
+      "prior": 16.75
     },
     "product_cost": {
       "value": 153.1,
-      "prior": 109.8
+      "prior": 107.8
     },
     "fees": {
       "value": 32.29,
-      "prior": 23.61
+      "prior": 22.65
     },
     "profit": {
       "value": 81.3,
-      "prior": 56.2
+      "prior": 53.78
     },
     "margin": {
       "value": 30.5,
-      "prior": 29.6
+      "prior": 29.2
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-09-24",
-      "revenue": 0
-    },
     {
       "date": "2026-09-25",
       "revenue": 0
@@ -148,6 +144,10 @@
     {
       "date": "2026-10-21",
       "revenue": 9.5
+    },
+    {
+      "date": "2026-10-22",
+      "revenue": 0
     }
   ],
   "monthly": [
