@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T17:09:39",
+  "generated_at": "2026-10-23T21:26:34",
   "currency": "USD",
   "window": {
     "start": "2026-09-26",
@@ -8,31 +8,31 @@
   },
   "kpis": {
     "revenue": {
-      "value": 266.69,
+      "value": 272.91,
       "prior": 184.23
     },
     "orders": {
-      "value": 15,
+      "value": 16,
       "prior": 11
     },
     "avg_order_value": {
-      "value": 17.78,
+      "value": 17.06,
       "prior": 16.75
     },
     "product_cost": {
-      "value": 135.94,
+      "value": 142.55,
       "prior": 99.22
     },
     "fees": {
-      "value": 32.29,
+      "value": 33.33,
       "prior": 22.65
     },
     "profit": {
-      "value": 98.46,
+      "value": 97.03,
       "prior": 62.36
     },
     "margin": {
-      "value": 36.9,
+      "value": 35.6,
       "prior": 33.8
     }
   },
@@ -147,14 +147,14 @@
     },
     {
       "date": "2026-10-23",
-      "revenue": 0
+      "revenue": 6.22
     }
   ],
   "monthly": [
     {
       "month": "2025-11",
       "revenue": 310.74,
-      "profit": 199.96
+      "profit": 195.67
     },
     {
       "month": "2025-12",
@@ -174,7 +174,7 @@
     {
       "month": "2026-03",
       "revenue": 332.64,
-      "profit": 188.69
+      "profit": 180.11
     },
     {
       "month": "2026-04",
@@ -184,17 +184,17 @@
     {
       "month": "2026-05",
       "revenue": 268.89,
-      "profit": 163.33
+      "profit": 111.85
     },
     {
       "month": "2026-06",
       "revenue": 255.28,
-      "profit": 120.07
+      "profit": 111.49
     },
     {
       "month": "2026-07",
       "revenue": 355.04,
-      "profit": 175.89
+      "profit": 171.6
     },
     {
       "month": "2026-08",
@@ -208,8 +208,8 @@
     },
     {
       "month": "2026-10",
-      "revenue": 224.2,
-      "profit": 86.09
+      "revenue": 230.42,
+      "profit": 84.91
     }
   ],
   "top_products": [
@@ -232,6 +232,12 @@
       "units": 1
     },
     {
+      "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+      "revenue": 30.8,
+      "profit": 11.74,
+      "units": 6
+    },
+    {
       "name": "Mid Profile Phish Fish Cap",
       "revenue": 29.99,
       "profit": 9.77,
@@ -242,20 +248,21 @@
       "revenue": 28.72,
       "profit": 11.9,
       "units": 1
-    },
-    {
-      "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
-      "revenue": 24.58,
-      "profit": 12.92,
-      "units": 5
     }
   ],
   "fulfillment": {
-    "shipped": 13,
+    "shipped": 14,
     "paid": 2,
     "unpaid": 0
   },
   "recent_orders": [
+    {
+      "date": "2026-10-23",
+      "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+      "units": 1,
+      "status": "paid",
+      "amount": 11.14
+    },
     {
       "date": "2026-10-21",
       "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
@@ -274,7 +281,7 @@
       "date": "2026-10-20",
       "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 9.33
     },
     {
@@ -318,13 +325,6 @@
       "units": 1,
       "status": "shipped",
       "amount": 47.73
-    },
-    {
-      "date": "2026-10-08",
-      "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
-      "units": 1,
-      "status": "shipped",
-      "amount": 9.54
     }
   ],
   "unmapped_units": 0,
@@ -957,7 +957,7 @@
       {
         "date": "2025-11-30",
         "revenue": 58.31,
-        "cost": 8.48,
+        "cost": 12.77,
         "fees": 7.99,
         "orders": 5,
         "units": 6,
@@ -1557,7 +1557,7 @@
       {
         "date": "2026-03-05",
         "revenue": 6.09,
-        "cost": 2.32,
+        "cost": 6.61,
         "fees": 1.03,
         "orders": 1,
         "units": 1,
@@ -1653,7 +1653,7 @@
       {
         "date": "2026-03-17",
         "revenue": 11.67,
-        "cost": 4.32,
+        "cost": 8.61,
         "fees": 2.01,
         "orders": 2,
         "units": 2,
@@ -1869,7 +1869,7 @@
       {
         "date": "2026-05-01",
         "revenue": 6.09,
-        "cost": 2.32,
+        "cost": 6.61,
         "fees": 1.03,
         "orders": 1,
         "units": 1,
@@ -1917,7 +1917,7 @@
       {
         "date": "2026-05-14",
         "revenue": 12.18,
-        "cost": 4.64,
+        "cost": 13.22,
         "fees": 1.61,
         "orders": 1,
         "units": 2,
@@ -1941,7 +1941,7 @@
       {
         "date": "2026-05-17",
         "revenue": 30.45,
-        "cost": 11.6,
+        "cost": 33.05,
         "fees": 3.34,
         "orders": 1,
         "units": 5,
@@ -1953,7 +1953,7 @@
       {
         "date": "2026-05-18",
         "revenue": 17.56,
-        "cost": 6.64,
+        "cost": 15.22,
         "fees": 2.57,
         "orders": 2,
         "units": 3,
@@ -1965,7 +1965,7 @@
       {
         "date": "2026-05-19",
         "revenue": 52.59,
-        "cost": 8.22,
+        "cost": 16.8,
         "fees": 6.55,
         "orders": 3,
         "units": 5,
@@ -2073,7 +2073,7 @@
       {
         "date": "2026-06-09",
         "revenue": 10.84,
-        "cost": 3.9,
+        "cost": 8.19,
         "fees": 1.93,
         "orders": 2,
         "units": 2,
@@ -2121,7 +2121,7 @@
       {
         "date": "2026-06-16",
         "revenue": 6.09,
-        "cost": 2.32,
+        "cost": 6.61,
         "fees": 1.03,
         "orders": 1,
         "units": 1,
@@ -2385,7 +2385,7 @@
       {
         "date": "2026-07-21",
         "revenue": 6.09,
-        "cost": 2.32,
+        "cost": 6.61,
         "fees": 1.03,
         "orders": 1,
         "units": 1,
@@ -2894,8 +2894,8 @@
         "orders": 1,
         "units": 1,
         "unmapped_units": 0,
-        "shipped": 0,
-        "paid": 1,
+        "shipped": 1,
+        "paid": 0,
         "unpaid": 0
       },
       {
@@ -2907,6 +2907,18 @@
         "units": 2,
         "unmapped_units": 0,
         "shipped": 1,
+        "paid": 1,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-23",
+        "revenue": 6.22,
+        "cost": 6.61,
+        "fees": 1.04,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 0,
         "paid": 1,
         "unpaid": 0
       }
@@ -3542,7 +3554,7 @@
         "2025-11-30",
         0,
         6.09,
-        2.99,
+        -1.3,
         1
       ],
       [
@@ -4151,7 +4163,7 @@
         "2026-03-05",
         0,
         6.09,
-        2.99,
+        -1.3,
         1
       ],
       [
@@ -4249,7 +4261,7 @@
         "2026-03-17",
         0,
         6.09,
-        2.99,
+        -1.3,
         1
       ],
       [
@@ -4459,7 +4471,7 @@
         "2026-05-01",
         0,
         6.09,
-        2.99,
+        -1.3,
         1
       ],
       [
@@ -4501,7 +4513,7 @@
         "2026-05-14",
         0,
         12.18,
-        6.18,
+        -2.4,
         2
       ],
       [
@@ -4522,21 +4534,21 @@
         "2026-05-17",
         0,
         30.45,
-        15.76,
+        -5.69,
         5
       ],
       [
         "2026-05-18",
         0,
         17.56,
-        8.85,
+        0.27,
         3
       ],
       [
         "2026-05-19",
         0,
         12.18,
-        6.18,
+        -2.4,
         2
       ],
       [
@@ -4655,7 +4667,7 @@
         "2026-06-09",
         0,
         6.09,
-        2.99,
+        -1.3,
         1
       ],
       [
@@ -4704,7 +4716,7 @@
         "2026-06-16",
         0,
         6.09,
-        2.99,
+        -1.3,
         1
       ],
       [
@@ -4928,7 +4940,7 @@
         "2026-07-21",
         0,
         6.09,
-        2.99,
+        -1.3,
         1
       ],
       [
@@ -5378,9 +5390,23 @@
         9.5,
         5.04,
         2
+      ],
+      [
+        "2026-10-23",
+        0,
+        6.22,
+        -1.18,
+        1
       ]
     ],
     "orders": [
+      {
+        "date": "2026-10-23",
+        "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+        "units": 1,
+        "status": "paid",
+        "amount": 11.14
+      },
       {
         "date": "2026-10-21",
         "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
@@ -5399,7 +5425,7 @@
         "date": "2026-10-20",
         "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 9.33
       },
       {
@@ -7583,6 +7609,17 @@
   },
   "tax": {
     "orders": [
+      {
+        "date": "2026-10-23",
+        "state": "KY",
+        "country": "US",
+        "items": 6.22,
+        "discount": 0,
+        "shipping": 4.29,
+        "tax": 0.63,
+        "total": 11.14,
+        "refunds": 0
+      },
       {
         "date": "2026-10-21",
         "state": "VT",
