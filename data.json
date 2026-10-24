@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-10-23T21:26:34",
+  "generated_at": "2026-10-24T04:39:23",
   "currency": "USD",
   "window": {
-    "start": "2026-09-26",
-    "end": "2026-10-23",
+    "start": "2026-09-27",
+    "end": "2026-10-24",
     "days": 28
   },
   "kpis": {
     "revenue": {
       "value": 272.91,
-      "prior": 184.23
+      "prior": 168.51
     },
     "orders": {
       "value": 16,
-      "prior": 11
+      "prior": 9
     },
     "avg_order_value": {
       "value": 17.06,
-      "prior": 16.75
+      "prior": 18.72
     },
     "product_cost": {
       "value": 142.55,
-      "prior": 99.22
+      "prior": 93.74
     },
     "fees": {
       "value": 33.33,
-      "prior": 22.65
+      "prior": 20.26
     },
     "profit": {
       "value": 97.03,
-      "prior": 62.36
+      "prior": 54.51
     },
     "margin": {
       "value": 35.6,
-      "prior": 33.8
+      "prior": 32.3
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-09-26",
-      "revenue": 0
-    },
     {
       "date": "2026-09-27",
       "revenue": 42.49
@@ -148,6 +144,10 @@
     {
       "date": "2026-10-23",
       "revenue": 6.22
+    },
+    {
+      "date": "2026-10-24",
+      "revenue": 0
     }
   ],
   "monthly": [
@@ -251,8 +251,8 @@
     }
   ],
   "fulfillment": {
-    "shipped": 14,
-    "paid": 2,
+    "shipped": 15,
+    "paid": 1,
     "unpaid": 0
   },
   "recent_orders": [
@@ -267,7 +267,7 @@
       "date": "2026-10-21",
       "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 8.58
     },
     {
@@ -2906,8 +2906,8 @@
         "orders": 2,
         "units": 2,
         "unmapped_units": 0,
-        "shipped": 1,
-        "paid": 1,
+        "shipped": 2,
+        "paid": 0,
         "unpaid": 0
       },
       {
@@ -5411,7 +5411,7 @@
         "date": "2026-10-21",
         "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 8.58
       },
       {
