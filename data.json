@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-10-24T20:52:19",
+  "generated_at": "2026-10-25T04:43:59",
   "currency": "USD",
   "window": {
-    "start": "2026-09-27",
-    "end": "2026-10-24",
+    "start": "2026-09-28",
+    "end": "2026-10-25",
     "days": 28
   },
   "kpis": {
     "revenue": {
-      "value": 277.66,
-      "prior": 168.51
+      "value": 235.17,
+      "prior": 171.01
     },
     "orders": {
-      "value": 17,
-      "prior": 9
+      "value": 15,
+      "prior": 10
     },
     "avg_order_value": {
-      "value": 16.33,
-      "prior": 18.72
+      "value": 15.68,
+      "prior": 17.1
     },
     "product_cost": {
-      "value": 144.43,
-      "prior": 98.33
+      "value": 122.7,
+      "prior": 98.84
     },
     "fees": {
-      "value": 34.23,
-      "prior": 20.26
+      "value": 29.09,
+      "prior": 21.15
     },
     "profit": {
-      "value": 99.0,
-      "prior": 49.92
+      "value": 83.38,
+      "prior": 51.02
     },
     "margin": {
-      "value": 35.7,
-      "prior": 29.6
+      "value": 35.5,
+      "prior": 29.8
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-09-27",
-      "revenue": 42.49
-    },
     {
       "date": "2026-09-28",
       "revenue": 0
@@ -148,6 +144,10 @@
     {
       "date": "2026-10-24",
       "revenue": 4.75
+    },
+    {
+      "date": "2026-10-25",
+      "revenue": 0
     }
   ],
   "monthly": [
@@ -226,18 +226,6 @@
       "units": 1
     },
     {
-      "name": "Phish Donut Trout - Fish Embroidery Cap | Corduroy Dad Hat",
-      "revenue": 32.99,
-      "profit": 11.09,
-      "units": 1
-    },
-    {
-      "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
-      "revenue": 30.8,
-      "profit": 16.03,
-      "units": 6
-    },
-    {
       "name": "Mid Profile Phish Fish Cap",
       "revenue": 29.99,
       "profit": 9.77,
@@ -248,10 +236,22 @@
       "revenue": 28.72,
       "profit": 11.9,
       "units": 1
+    },
+    {
+      "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
+      "revenue": 26.05,
+      "profit": 13.52,
+      "units": 5
+    },
+    {
+      "name": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+      "revenue": 16.55,
+      "profit": 3.89,
+      "units": 3
     }
   ],
   "fulfillment": {
-    "shipped": 15,
+    "shipped": 13,
     "paid": 2,
     "unpaid": 0
   },
