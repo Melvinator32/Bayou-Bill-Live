@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T12:14:47",
+  "generated_at": "2026-10-27T18:03:57",
   "currency": "USD",
   "window": {
     "start": "2026-09-30",
@@ -251,8 +251,8 @@
     }
   ],
   "fulfillment": {
-    "shipped": 14,
-    "paid": 1,
+    "shipped": 15,
+    "paid": 0,
     "unpaid": 0
   },
   "recent_orders": [
@@ -260,7 +260,7 @@
       "date": "2026-10-24",
       "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 9.9
     },
     {
@@ -2930,8 +2930,8 @@
         "orders": 1,
         "units": 1,
         "unmapped_units": 0,
-        "shipped": 0,
-        "paid": 1,
+        "shipped": 1,
+        "paid": 0,
         "unpaid": 0
       }
     ],
@@ -5423,7 +5423,7 @@
         "date": "2026-10-24",
         "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 9.9
       },
       {
