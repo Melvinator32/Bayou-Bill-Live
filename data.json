@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-10-28T22:37:33",
+  "generated_at": "2026-10-29T05:50:40",
   "currency": "USD",
   "window": {
-    "start": "2026-10-01",
-    "end": "2026-10-28",
+    "start": "2026-10-02",
+    "end": "2026-10-29",
     "days": 28
   },
   "kpis": {
     "revenue": {
-      "value": 235.17,
+      "value": 240.75,
       "prior": 171.01
     },
     "orders": {
-      "value": 15,
+      "value": 16,
       "prior": 10
     },
     "avg_order_value": {
-      "value": 15.68,
+      "value": 15.05,
       "prior": 17.1
     },
     "product_cost": {
-      "value": 118.11,
+      "value": 129.29,
       "prior": 94.25
     },
     "fees": {
-      "value": 29.09,
+      "value": 30.07,
       "prior": 21.15
     },
     "profit": {
-      "value": 87.97,
+      "value": 81.39,
       "prior": 55.61
     },
     "margin": {
-      "value": 37.4,
+      "value": 33.8,
       "prior": 32.5
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-10-01",
-      "revenue": 0
-    },
     {
       "date": "2026-10-02",
       "revenue": 40.07
@@ -148,13 +144,17 @@
     {
       "date": "2026-10-28",
       "revenue": 0
+    },
+    {
+      "date": "2026-10-29",
+      "revenue": 5.58
     }
   ],
   "monthly": [
     {
       "month": "2025-11",
       "revenue": 310.74,
-      "profit": 199.96
+      "profit": 181.6
     },
     {
       "month": "2025-12",
@@ -164,7 +164,7 @@
     {
       "month": "2026-01",
       "revenue": 151.36,
-      "profit": 93.97
+      "profit": 89.38
     },
     {
       "month": "2026-02",
@@ -189,17 +189,17 @@
     {
       "month": "2026-06",
       "revenue": 255.28,
-      "profit": 120.07
+      "profit": 97.12
     },
     {
       "month": "2026-07",
       "revenue": 355.04,
-      "profit": 175.89
+      "profit": 166.71
     },
     {
       "month": "2026-08",
       "revenue": 323.27,
-      "profit": 142.18
+      "profit": 123.82
     },
     {
       "month": "2026-09",
@@ -208,8 +208,8 @@
     },
     {
       "month": "2026-10",
-      "revenue": 235.17,
-      "profit": 91.72
+      "revenue": 240.75,
+      "profit": 85.39
     }
   ],
   "top_products": [
@@ -245,17 +245,24 @@
     },
     {
       "name": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
-      "revenue": 16.55,
-      "profit": 8.48,
-      "units": 3
+      "revenue": 22.13,
+      "profit": 2.15,
+      "units": 4
     }
   ],
   "fulfillment": {
     "shipped": 15,
-    "paid": 0,
+    "paid": 1,
     "unpaid": 0
   },
   "recent_orders": [
+    {
+      "date": "2026-10-29",
+      "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+      "units": 1,
+      "status": "paid",
+      "amount": 10.47
+    },
     {
       "date": "2026-10-24",
       "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
@@ -318,13 +325,6 @@
       "units": 1,
       "status": "shipped",
       "amount": 39.28
-    },
-    {
-      "date": "2026-10-13",
-      "products": "BMFS Train Graphic T-Shirt, Billy Strings Inspired Design, Unisex Tee, Casual Wear, Gift for Train Lovers, Everyday Comfort,",
-      "units": 1,
-      "status": "shipped",
-      "amount": 25.85
     }
   ],
   "unmapped_units": 0,
@@ -897,7 +897,7 @@
       {
         "date": "2025-11-16",
         "revenue": 34.76,
-        "cost": 12.64,
+        "cost": 31.0,
         "fees": 3.95,
         "orders": 1,
         "units": 6,
@@ -1329,7 +1329,7 @@
       {
         "date": "2026-01-19",
         "revenue": 5.58,
-        "cost": 2.0,
+        "cost": 6.59,
         "fees": 0.98,
         "orders": 1,
         "units": 1,
@@ -2109,7 +2109,7 @@
       {
         "date": "2026-06-13",
         "revenue": 10.04,
-        "cost": 3.58,
+        "cost": 8.17,
         "fees": 1.85,
         "orders": 2,
         "units": 2,
@@ -2181,7 +2181,7 @@
       {
         "date": "2026-06-25",
         "revenue": 5.58,
-        "cost": 2.0,
+        "cost": 6.59,
         "fees": 0.98,
         "orders": 1,
         "units": 1,
@@ -2193,7 +2193,7 @@
       {
         "date": "2026-06-26",
         "revenue": 11.8,
-        "cost": 4.32,
+        "cost": 8.91,
         "fees": 1.77,
         "orders": 1,
         "units": 2,
@@ -2217,7 +2217,7 @@
       {
         "date": "2026-06-28",
         "revenue": 15.58,
-        "cost": 5.16,
+        "cost": 9.75,
         "fees": 2.83,
         "orders": 3,
         "units": 3,
@@ -2229,7 +2229,7 @@
       {
         "date": "2026-06-29",
         "revenue": 18.67,
-        "cost": 6.64,
+        "cost": 11.23,
         "fees": 3.12,
         "orders": 3,
         "units": 3,
@@ -2301,7 +2301,7 @@
       {
         "date": "2026-07-06",
         "revenue": 40.31,
-        "cost": 22.57,
+        "cost": 31.75,
         "fees": 4.73,
         "orders": 2,
         "units": 3,
@@ -2481,7 +2481,7 @@
       {
         "date": "2026-08-05",
         "revenue": 20.66,
-        "cost": 7.16,
+        "cost": 16.34,
         "fees": 2.61,
         "orders": 1,
         "units": 4,
@@ -2577,7 +2577,7 @@
       {
         "date": "2026-08-17",
         "revenue": 16.15,
-        "cost": 10.0,
+        "cost": 14.59,
         "fees": 2.88,
         "orders": 3,
         "units": 3,
@@ -2625,7 +2625,7 @@
       {
         "date": "2026-08-22",
         "revenue": 5.58,
-        "cost": 2.0,
+        "cost": 6.59,
         "fees": 0.98,
         "orders": 1,
         "units": 1,
@@ -2889,7 +2889,7 @@
       {
         "date": "2026-10-20",
         "revenue": 5.58,
-        "cost": 2.0,
+        "cost": 6.59,
         "fees": 0.98,
         "orders": 1,
         "units": 1,
@@ -2932,6 +2932,18 @@
         "unmapped_units": 0,
         "shipped": 1,
         "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-10-29",
+        "revenue": 5.58,
+        "cost": 6.59,
+        "fees": 0.98,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 0,
+        "paid": 1,
         "unpaid": 0
       }
     ],
@@ -3524,7 +3536,7 @@
         "2025-11-16",
         0,
         34.76,
-        18.42,
+        0.06,
         6
       ],
       [
@@ -4028,7 +4040,7 @@
         "2026-01-19",
         0,
         5.58,
-        2.85,
+        -1.74,
         1
       ],
       [
@@ -4714,7 +4726,7 @@
         "2026-06-13",
         0,
         5.58,
-        2.85,
+        -1.74,
         1
       ],
       [
@@ -4770,14 +4782,14 @@
         "2026-06-25",
         0,
         5.58,
-        2.85,
+        -1.74,
         1
       ],
       [
         "2026-06-26",
         0,
         11.8,
-        5.96,
+        1.37,
         2
       ],
       [
@@ -4798,7 +4810,7 @@
         "2026-06-28",
         0,
         5.58,
-        2.85,
+        -1.74,
         1
       ],
       [
@@ -4819,7 +4831,7 @@
         "2026-06-29",
         0,
         5.58,
-        2.85,
+        -1.74,
         1
       ],
       [
@@ -4882,7 +4894,7 @@
         "2026-07-06",
         0,
         11.16,
-        5.9,
+        -3.28,
         2
       ],
       [
@@ -5064,7 +5076,7 @@
         "2026-08-05",
         0,
         20.66,
-        11.14,
+        1.96,
         4
       ],
       [
@@ -5134,7 +5146,7 @@
         "2026-08-17",
         0,
         5.58,
-        2.85,
+        -1.74,
         1
       ],
       [
@@ -5176,7 +5188,7 @@
         "2026-08-22",
         0,
         5.58,
-        2.85,
+        -1.74,
         1
       ],
       [
@@ -5393,7 +5405,7 @@
         "2026-10-20",
         0,
         5.58,
-        2.85,
+        -1.74,
         1
       ],
       [
@@ -5416,9 +5428,23 @@
         4.75,
         2.52,
         1
+      ],
+      [
+        "2026-10-29",
+        0,
+        5.58,
+        -1.74,
+        1
       ]
     ],
     "orders": [
+      {
+        "date": "2026-10-29",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "paid",
+        "amount": 10.47
+      },
       {
         "date": "2026-10-24",
         "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
@@ -7635,6 +7661,17 @@
   },
   "tax": {
     "orders": [
+      {
+        "date": "2026-10-29",
+        "state": "VA",
+        "country": "US",
+        "items": 5.58,
+        "discount": 0,
+        "shipping": 4.59,
+        "tax": 0.3,
+        "total": 10.47,
+        "refunds": 0
+      },
       {
         "date": "2026-10-24",
         "state": "GA",
