@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-11-04T19:47:45",
+  "generated_at": "2026-11-05T06:49:21",
   "currency": "USD",
   "window": {
-    "start": "2026-10-08",
-    "end": "2026-11-04",
+    "start": "2026-10-09",
+    "end": "2026-11-05",
     "days": 28
   },
   "kpis": {
     "revenue": {
-      "value": 200.68,
-      "prior": 161.7
+      "value": 189.71,
+      "prior": 167.42
     },
     "orders": {
-      "value": 14,
-      "prior": 8
+      "value": 12,
+      "prior": 9
     },
     "avg_order_value": {
-      "value": 14.33,
-      "prior": 20.21
+      "value": 15.81,
+      "prior": 18.6
     },
     "product_cost": {
-      "value": 93.78,
-      "prior": 91.01
+      "value": 89.88,
+      "prior": 93.33
     },
     "fees": {
-      "value": 25.36,
-      "prior": 19.16
+      "value": 23.42,
+      "prior": 20.15
     },
     "profit": {
-      "value": 81.54,
-      "prior": 51.53
+      "value": 76.41,
+      "prior": 53.94
     },
     "margin": {
-      "value": 40.6,
-      "prior": 31.9
+      "value": 40.3,
+      "prior": 32.2
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-10-08",
-      "revenue": 10.97
-    },
     {
       "date": "2026-10-09",
       "revenue": 39.99
@@ -148,6 +144,10 @@
     {
       "date": "2026-11-04",
       "revenue": 0
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 0
     }
   ],
   "monthly": [
@@ -228,15 +228,15 @@
     },
     {
       "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
-      "revenue": 26.05,
-      "profit": 13.52,
-      "units": 5
+      "revenue": 21.3,
+      "profit": 11.0,
+      "units": 4
     },
     {
       "name": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
-      "revenue": 22.13,
-      "profit": 11.33,
-      "units": 4
+      "revenue": 15.91,
+      "profit": 8.22,
+      "units": 3
     },
     {
       "name": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
@@ -246,7 +246,7 @@
     }
   ],
   "fulfillment": {
-    "shipped": 14,
+    "shipped": 12,
     "paid": 0,
     "unpaid": 0
   },
