@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T07:21:09",
+  "generated_at": "2026-11-10T19:45:32",
   "currency": "USD",
   "window": {
     "start": "2026-10-14",
@@ -8,31 +8,31 @@
   },
   "kpis": {
     "revenue": {
-      "value": 148.95,
+      "value": 311.35,
       "prior": 191.39
     },
     "orders": {
-      "value": 12,
+      "value": 13,
       "prior": 9
     },
     "avg_order_value": {
-      "value": 12.41,
+      "value": 23.95,
       "prior": 21.27
     },
     "product_cost": {
-      "value": 78.52,
+      "value": 196.81,
       "prior": 105.64
     },
     "fees": {
-      "value": 19.55,
+      "value": 35.43,
       "prior": 22.43
     },
     "profit": {
-      "value": 50.88,
+      "value": 79.11,
       "prior": 63.32
     },
     "margin": {
-      "value": 34.2,
+      "value": 25.4,
       "prior": 33.1
     }
   },
@@ -147,14 +147,14 @@
     },
     {
       "date": "2026-11-10",
-      "revenue": 4.75
+      "revenue": 167.15
     }
   ],
   "monthly": [
     {
       "month": "2025-12",
       "revenue": 573.21,
-      "profit": 333.53
+      "profit": 352.87
     },
     {
       "month": "2026-01",
@@ -164,7 +164,7 @@
     {
       "month": "2026-02",
       "revenue": 188.93,
-      "profit": 95.63
+      "profit": 98.2
     },
     {
       "month": "2026-03",
@@ -174,7 +174,7 @@
     {
       "month": "2026-04",
       "revenue": 296.58,
-      "profit": 103.91
+      "profit": 105.62
     },
     {
       "month": "2026-05",
@@ -208,11 +208,17 @@
     },
     {
       "month": "2026-11",
-      "revenue": 27.95,
-      "profit": 1.15
+      "revenue": 190.35,
+      "profit": 29.63
     }
   ],
   "top_products": [
+    {
+      "name": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
+      "revenue": 185.6,
+      "profit": 31.4,
+      "units": 8
+    },
     {
       "name": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
       "revenue": 39.99,
@@ -223,12 +229,6 @@
       "name": "Best Clockmaker on Mars Shirt Comfort Colors",
       "revenue": 38.22,
       "profit": 15.9,
-      "units": 1
-    },
-    {
-      "name": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
-      "revenue": 23.2,
-      "profit": 2.92,
       "units": 1
     },
     {
@@ -252,10 +252,17 @@
   ],
   "fulfillment": {
     "shipped": 10,
-    "paid": 2,
+    "paid": 3,
     "unpaid": 0
   },
   "recent_orders": [
+    {
+      "date": "2026-11-10",
+      "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
+      "units": 7,
+      "status": "paid",
+      "amount": 207.0
+    },
     {
       "date": "2026-11-10",
       "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
@@ -318,13 +325,6 @@
       "units": 1,
       "status": "shipped",
       "amount": 9.36
-    },
-    {
-      "date": "2026-10-16",
-      "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
-      "units": 1,
-      "status": "shipped",
-      "amount": 10.47
     }
   ],
   "unmapped_units": 0,
@@ -549,11 +549,11 @@
       {
         "date": "2025-09-09",
         "revenue": 32.36,
-        "cost": 18.49,
+        "cost": 0,
         "fees": 3.52,
         "orders": 1,
         "units": 1,
-        "unmapped_units": 0,
+        "unmapped_units": 1,
         "shipped": 1,
         "paid": 0,
         "unpaid": 0
@@ -753,11 +753,11 @@
       {
         "date": "2025-10-17",
         "revenue": 32.36,
-        "cost": 18.49,
+        "cost": 0,
         "fees": 3.52,
         "orders": 1,
         "units": 1,
-        "unmapped_units": 0,
+        "unmapped_units": 1,
         "shipped": 1,
         "paid": 0,
         "unpaid": 0
@@ -1149,7 +1149,7 @@
       {
         "date": "2025-12-18",
         "revenue": 28.78,
-        "cost": 19.88,
+        "cost": 19.02,
         "fees": 3.63,
         "orders": 2,
         "units": 2,
@@ -1209,11 +1209,11 @@
       {
         "date": "2025-12-27",
         "revenue": 32.36,
-        "cost": 18.49,
+        "cost": 0,
         "fees": 3.52,
         "orders": 1,
         "units": 1,
-        "unmapped_units": 0,
+        "unmapped_units": 1,
         "shipped": 1,
         "paid": 0,
         "unpaid": 0
@@ -1485,7 +1485,7 @@
       {
         "date": "2026-02-19",
         "revenue": 69.6,
-        "cost": 53.64,
+        "cost": 51.06,
         "fees": 7.06,
         "orders": 1,
         "units": 3,
@@ -1845,7 +1845,7 @@
       {
         "date": "2026-04-27",
         "revenue": 46.4,
-        "cost": 35.76,
+        "cost": 34.04,
         "fees": 4.86,
         "orders": 1,
         "units": 2,
@@ -2949,7 +2949,7 @@
       {
         "date": "2026-11-06",
         "revenue": 23.2,
-        "cost": 17.88,
+        "cost": 17.02,
         "fees": 2.65,
         "orders": 1,
         "units": 1,
@@ -2960,20 +2960,20 @@
       },
       {
         "date": "2026-11-10",
-        "revenue": 4.75,
-        "cost": 5.87,
-        "fees": 0.9,
-        "orders": 1,
-        "units": 1,
+        "revenue": 167.15,
+        "cost": 125.02,
+        "fees": 16.78,
+        "orders": 2,
+        "units": 8,
         "unmapped_units": 0,
         "shipped": 0,
-        "paid": 1,
+        "paid": 2,
         "unpaid": 0
       }
     ],
     "products": [
-      "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
       "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
+      "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
       "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
       "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
       "Best Clockmaker on Mars Shirt Comfort Colors",
@@ -3245,7 +3245,7 @@
         "2025-09-09",
         39,
         32.36,
-        10.6,
+        29.09,
         1
       ],
       [
@@ -3427,7 +3427,7 @@
         "2025-10-17",
         39,
         32.36,
-        10.6,
+        29.09,
         1
       ],
       [
@@ -3649,7 +3649,7 @@
       ],
       [
         "2025-12-02",
-        0,
+        1,
         4.75,
         -1.77,
         1
@@ -3698,7 +3698,7 @@
       ],
       [
         "2025-12-04",
-        0,
+        1,
         9.5,
         -3.54,
         2
@@ -3754,7 +3754,7 @@
       ],
       [
         "2025-12-07",
-        0,
+        1,
         6.22,
         3.11,
         1
@@ -3768,14 +3768,14 @@
       ],
       [
         "2025-12-08",
-        0,
+        1,
         4.75,
         -1.77,
         1
       ],
       [
         "2025-12-09",
-        0,
+        1,
         5.58,
         2.85,
         1
@@ -3803,14 +3803,14 @@
       ],
       [
         "2025-12-10",
-        0,
+        1,
         5.58,
         2.85,
         1
       ],
       [
         "2025-12-11",
-        0,
+        1,
         4.75,
         -1.77,
         1
@@ -3824,7 +3824,7 @@
       ],
       [
         "2025-12-12",
-        0,
+        1,
         10.33,
         1.08,
         2
@@ -3838,7 +3838,7 @@
       ],
       [
         "2025-12-13",
-        0,
+        1,
         9.5,
         -3.34,
         2
@@ -3852,7 +3852,7 @@
       ],
       [
         "2025-12-15",
-        0,
+        1,
         10.33,
         1.08,
         2
@@ -3901,7 +3901,7 @@
       ],
       [
         "2025-12-16",
-        0,
+        1,
         6.22,
         3.11,
         1
@@ -3929,9 +3929,9 @@
       ],
       [
         "2025-12-18",
-        1,
+        0,
         23.2,
-        2.92,
+        3.77,
         1
       ],
       [
@@ -3973,7 +3973,7 @@
         "2025-12-27",
         39,
         32.36,
-        10.6,
+        29.09,
         1
       ],
       [
@@ -4006,7 +4006,7 @@
       ],
       [
         "2026-01-12",
-        0,
+        1,
         4.75,
         -1.77,
         1
@@ -4160,9 +4160,9 @@
       ],
       [
         "2026-02-19",
-        1,
+        0,
         69.6,
-        9.15,
+        11.72,
         3
       ],
       [
@@ -4230,7 +4230,7 @@
       ],
       [
         "2026-03-08",
-        0,
+        1,
         9.5,
         -3.34,
         2
@@ -4293,7 +4293,7 @@
       ],
       [
         "2026-03-13",
-        0,
+        1,
         6.22,
         3.11,
         1
@@ -4377,7 +4377,7 @@
       ],
       [
         "2026-04-07",
-        0,
+        1,
         14.25,
         -4.91,
         3
@@ -4447,7 +4447,7 @@
       ],
       [
         "2026-04-13",
-        0,
+        1,
         14.25,
         -4.91,
         3
@@ -4503,9 +4503,9 @@
       ],
       [
         "2026-04-27",
-        1,
+        0,
         46.4,
-        6.03,
+        7.75,
         2
       ],
       [
@@ -4776,7 +4776,7 @@
       ],
       [
         "2026-06-21",
-        0,
+        1,
         5.58,
         2.85,
         1
@@ -4902,7 +4902,7 @@
       ],
       [
         "2026-07-05",
-        0,
+        1,
         4.75,
         -1.77,
         1
@@ -5007,7 +5007,7 @@
       ],
       [
         "2026-07-23",
-        0,
+        1,
         4.75,
         -1.77,
         1
@@ -5252,7 +5252,7 @@
       ],
       [
         "2026-08-29",
-        0,
+        1,
         6.22,
         3.11,
         1
@@ -5315,7 +5315,7 @@
       ],
       [
         "2026-09-13",
-        0,
+        1,
         4.75,
         -1.77,
         1
@@ -5406,7 +5406,7 @@
       ],
       [
         "2026-10-16",
-        0,
+        1,
         5.58,
         2.85,
         1
@@ -5462,20 +5462,34 @@
       ],
       [
         "2026-11-06",
-        1,
+        0,
         23.2,
-        2.92,
+        3.77,
         1
       ],
       [
         "2026-11-10",
         0,
+        162.4,
+        27.62,
+        7
+      ],
+      [
+        "2026-11-10",
+        1,
         4.75,
         -1.77,
         1
       ]
     ],
     "orders": [
+      {
+        "date": "2026-11-10",
+        "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
+        "units": 7,
+        "status": "paid",
+        "amount": 207.0
+      },
       {
         "date": "2026-11-10",
         "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
@@ -7713,6 +7727,19 @@
   },
   "tax": {
     "orders": [
+      {
+        "date": "2026-11-10",
+        "state": "LA",
+        "country": "US",
+        "city": "Pineville",
+        "zip": "71360",
+        "items": 162.4,
+        "discount": 0,
+        "shipping": 24.93,
+        "tax": 19.67,
+        "total": 207.0,
+        "refunds": 0
+      },
       {
         "date": "2026-11-10",
         "state": "WI",
