@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T06:24:57",
+  "generated_at": "2026-11-11T19:37:33",
   "currency": "USD",
   "window": {
     "start": "2026-10-15",
@@ -251,8 +251,8 @@
     }
   ],
   "fulfillment": {
-    "shipped": 10,
-    "paid": 4,
+    "shipped": 12,
+    "paid": 2,
     "unpaid": 0
   },
   "recent_orders": [
@@ -274,14 +274,14 @@
       "date": "2026-11-10",
       "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 9.54
     },
     {
       "date": "2026-11-06",
       "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 27.08
     },
     {
@@ -2954,8 +2954,8 @@
         "orders": 1,
         "units": 1,
         "unmapped_units": 0,
-        "shipped": 0,
-        "paid": 1,
+        "shipped": 1,
+        "paid": 0,
         "unpaid": 0
       },
       {
@@ -2966,8 +2966,8 @@
         "orders": 3,
         "units": 9,
         "unmapped_units": 0,
-        "shipped": 0,
-        "paid": 3,
+        "shipped": 1,
+        "paid": 2,
         "unpaid": 0
       }
     ],
@@ -5508,14 +5508,14 @@
         "date": "2026-11-10",
         "products": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 9.54
       },
       {
         "date": "2026-11-06",
         "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 27.08
       },
       {
