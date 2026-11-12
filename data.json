@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-11-11T19:37:33",
+  "generated_at": "2026-11-12T07:13:13",
   "currency": "USD",
   "window": {
-    "start": "2026-10-15",
-    "end": "2026-11-11",
+    "start": "2026-10-16",
+    "end": "2026-11-12",
     "days": 28
   },
   "kpis": {
     "revenue": {
-      "value": 316.73,
-      "prior": 191.39
+      "value": 276.74,
+      "prior": 231.38
     },
     "orders": {
-      "value": 14,
-      "prior": 9
+      "value": 13,
+      "prior": 10
     },
     "avg_order_value": {
-      "value": 22.62,
-      "prior": 21.27
+      "value": 21.29,
+      "prior": 23.14
     },
     "product_cost": {
-      "value": 198.81,
-      "prior": 105.64
+      "value": 173.3,
+      "prior": 126.86
     },
     "fees": {
-      "value": 36.39,
-      "prior": 22.43
+      "value": 32.14,
+      "prior": 26.68
     },
     "profit": {
-      "value": 81.53,
-      "prior": 63.32
+      "value": 71.3,
+      "prior": 77.84
     },
     "margin": {
-      "value": 25.7,
-      "prior": 33.1
+      "value": 25.8,
+      "prior": 33.6
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-10-15",
-      "revenue": 39.99
-    },
     {
       "date": "2026-10-16",
       "revenue": 43.8
@@ -148,6 +144,10 @@
     {
       "date": "2026-11-11",
       "revenue": 0
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 0
     }
   ],
   "monthly": [
@@ -179,7 +179,7 @@
     {
       "month": "2026-05",
       "revenue": 268.89,
-      "profit": 146.17
+      "profit": 163.33
     },
     {
       "month": "2026-06",
@@ -209,7 +209,7 @@
     {
       "month": "2026-11",
       "revenue": 195.73,
-      "profit": 32.29
+      "profit": 36.58
     }
   ],
   "top_products": [
@@ -218,12 +218,6 @@
       "revenue": 185.6,
       "profit": 31.4,
       "units": 8
-    },
-    {
-      "name": "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
-      "revenue": 39.99,
-      "profit": 14.77,
-      "units": 1
     },
     {
       "name": "Best Clockmaker on Mars Shirt Comfort Colors",
@@ -248,10 +242,16 @@
       "revenue": 10.33,
       "profit": 5.37,
       "units": 2
+    },
+    {
+      "name": "BMFS Goat Sticker",
+      "revenue": 5.38,
+      "profit": 2.67,
+      "units": 1
     }
   ],
   "fulfillment": {
-    "shipped": 12,
+    "shipped": 11,
     "paid": 2,
     "unpaid": 0
   },
@@ -801,7 +801,7 @@
       {
         "date": "2025-11-05",
         "revenue": 10.13,
-        "cost": 7.87,
+        "cost": 3.58,
         "fees": 1.86,
         "orders": 2,
         "units": 2,
@@ -1893,7 +1893,7 @@
       {
         "date": "2026-05-08",
         "revenue": 30.44,
-        "cost": 28.32,
+        "cost": 11.16,
         "fees": 3.79,
         "orders": 2,
         "units": 6,
@@ -2961,7 +2961,7 @@
       {
         "date": "2026-11-10",
         "revenue": 172.53,
-        "cost": 127.02,
+        "cost": 122.73,
         "fees": 17.74,
         "orders": 3,
         "units": 9,
@@ -3469,7 +3469,7 @@
         "2025-11-05",
         0,
         5.38,
-        -1.62,
+        2.67,
         1
       ],
       [
@@ -4540,7 +4540,7 @@
         "2026-05-08",
         0,
         21.52,
-        -5.88,
+        11.28,
         4
       ],
       [
@@ -5471,7 +5471,7 @@
         "2026-11-10",
         0,
         5.38,
-        -1.62,
+        2.67,
         1
       ],
       [
