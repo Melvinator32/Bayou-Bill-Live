@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:13:13",
+  "generated_at": "2026-11-12T19:56:29",
   "currency": "USD",
   "window": {
     "start": "2026-10-16",
@@ -251,8 +251,8 @@
     }
   ],
   "fulfillment": {
-    "shipped": 11,
-    "paid": 2,
+    "shipped": 12,
+    "paid": 1,
     "unpaid": 0
   },
   "recent_orders": [
@@ -260,7 +260,7 @@
       "date": "2026-11-10",
       "products": "BMFS Goat Sticker",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 8.85
     },
     {
@@ -2966,8 +2966,8 @@
         "orders": 3,
         "units": 9,
         "unmapped_units": 0,
-        "shipped": 1,
-        "paid": 2,
+        "shipped": 2,
+        "paid": 1,
         "unpaid": 0
       }
     ],
@@ -5494,7 +5494,7 @@
         "date": "2026-11-10",
         "products": "BMFS Goat Sticker",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 8.85
       },
       {
