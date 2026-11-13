@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-11-12T19:56:29",
+  "generated_at": "2026-11-13T06:48:55",
   "currency": "USD",
   "window": {
-    "start": "2026-10-16",
-    "end": "2026-11-12",
+    "start": "2026-10-17",
+    "end": "2026-11-13",
     "days": 28
   },
   "kpis": {
     "revenue": {
-      "value": 276.74,
-      "prior": 231.38
+      "value": 237.69,
+      "prior": 246.03
     },
     "orders": {
-      "value": 13,
-      "prior": 10
+      "value": 12,
+      "prior": 11
     },
     "avg_order_value": {
-      "value": 21.29,
-      "prior": 23.14
+      "value": 19.81,
+      "prior": 22.37
     },
     "product_cost": {
-      "value": 173.3,
-      "prior": 126.86
+      "value": 163.57,
+      "prior": 128.78
     },
     "fees": {
-      "value": 32.14,
-      "prior": 26.68
+      "value": 27.98,
+      "prior": 28.52
     },
     "profit": {
-      "value": 71.3,
-      "prior": 77.84
+      "value": 46.14,
+      "prior": 88.73
     },
     "margin": {
-      "value": 25.8,
-      "prior": 33.6
+      "value": 19.4,
+      "prior": 36.1
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-10-16",
-      "revenue": 43.8
-    },
     {
       "date": "2026-10-17",
       "revenue": 0
@@ -148,13 +144,17 @@
     {
       "date": "2026-11-12",
       "revenue": 0
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 4.75
     }
   ],
   "monthly": [
     {
       "month": "2025-12",
       "revenue": 573.21,
-      "profit": 391.48
+      "profit": 382.3
     },
     {
       "month": "2026-01",
@@ -164,12 +164,12 @@
     {
       "month": "2026-02",
       "revenue": 188.93,
-      "profit": 98.2
+      "profit": 89.02
     },
     {
       "month": "2026-03",
       "revenue": 332.64,
-      "profit": 188.69
+      "profit": 179.51
     },
     {
       "month": "2026-04",
@@ -179,37 +179,37 @@
     {
       "month": "2026-05",
       "revenue": 268.89,
-      "profit": 163.33
+      "profit": 158.74
     },
     {
       "month": "2026-06",
       "revenue": 255.28,
-      "profit": 120.07
+      "profit": 83.35
     },
     {
       "month": "2026-07",
       "revenue": 355.04,
-      "profit": 175.89
+      "profit": 166.71
     },
     {
       "month": "2026-08",
       "revenue": 323.27,
-      "profit": 142.18
+      "profit": 105.46
     },
     {
       "month": "2026-09",
       "revenue": 171.01,
-      "profit": 58.11
+      "profit": 53.52
     },
     {
       "month": "2026-10",
       "revenue": 240.75,
-      "profit": 94.57
+      "profit": 89.98
     },
     {
       "month": "2026-11",
-      "revenue": 195.73,
-      "profit": 36.58
+      "revenue": 200.48,
+      "profit": 34.51
     }
   ],
   "top_products": [
@@ -220,12 +220,6 @@
       "units": 8
     },
     {
-      "name": "Best Clockmaker on Mars Shirt Comfort Colors",
-      "revenue": 38.22,
-      "profit": 15.9,
-      "units": 1
-    },
-    {
       "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
       "revenue": 21.3,
       "profit": 11.0,
@@ -233,29 +227,36 @@
     },
     {
       "name": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
-      "revenue": 15.91,
-      "profit": 8.22,
-      "units": 3
-    },
-    {
-      "name": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
-      "revenue": 10.33,
-      "profit": 5.37,
-      "units": 2
+      "revenue": 20.66,
+      "profit": 1.56,
+      "units": 4
     },
     {
       "name": "BMFS Goat Sticker",
       "revenue": 5.38,
       "profit": 2.67,
       "units": 1
+    },
+    {
+      "name": "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
+      "revenue": 4.75,
+      "profit": 2.52,
+      "units": 1
     }
   ],
   "fulfillment": {
-    "shipped": 12,
+    "shipped": 11,
     "paid": 1,
     "unpaid": 0
   },
   "recent_orders": [
+    {
+      "date": "2026-11-13",
+      "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+      "units": 1,
+      "status": "paid",
+      "amount": 9.64
+    },
     {
       "date": "2026-11-10",
       "products": "BMFS Goat Sticker",
@@ -267,7 +268,7 @@
       "date": "2026-11-10",
       "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
       "units": 7,
-      "status": "paid",
+      "status": "shipped",
       "amount": 207.0
     },
     {
@@ -318,13 +319,6 @@
       "units": 1,
       "status": "shipped",
       "amount": 9.79
-    },
-    {
-      "date": "2026-10-20",
-      "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
-      "units": 1,
-      "status": "shipped",
-      "amount": 9.33
     }
   ],
   "unmapped_units": 0,
@@ -1017,7 +1011,7 @@
       {
         "date": "2025-12-05",
         "revenue": 91.9,
-        "cost": 9.32,
+        "cost": 13.91,
         "fees": 10.93,
         "orders": 4,
         "units": 8,
@@ -1113,7 +1107,7 @@
       {
         "date": "2025-12-15",
         "revenue": 40.97,
-        "cost": 13.48,
+        "cost": 18.07,
         "fees": 6.74,
         "orders": 5,
         "units": 8,
@@ -1425,7 +1419,7 @@
       {
         "date": "2026-02-05",
         "revenue": 4.75,
-        "cost": 1.58,
+        "cost": 6.17,
         "fees": 0.9,
         "orders": 1,
         "units": 1,
@@ -1497,7 +1491,7 @@
       {
         "date": "2026-02-23",
         "revenue": 9.5,
-        "cost": 3.16,
+        "cost": 7.75,
         "fees": 1.8,
         "orders": 2,
         "units": 2,
@@ -1617,7 +1611,7 @@
       {
         "date": "2026-03-12",
         "revenue": 9.5,
-        "cost": 3.16,
+        "cost": 12.34,
         "fees": 1.35,
         "orders": 1,
         "units": 2,
@@ -2001,7 +1995,7 @@
       {
         "date": "2026-05-30",
         "revenue": 9.5,
-        "cost": 3.16,
+        "cost": 7.75,
         "fees": 1.8,
         "orders": 2,
         "units": 2,
@@ -2073,7 +2067,7 @@
       {
         "date": "2026-06-09",
         "revenue": 10.84,
-        "cost": 3.9,
+        "cost": 8.49,
         "fees": 1.93,
         "orders": 2,
         "units": 2,
@@ -2133,7 +2127,7 @@
       {
         "date": "2026-06-17",
         "revenue": 14.25,
-        "cost": 4.74,
+        "cost": 18.51,
         "fees": 2.25,
         "orders": 2,
         "units": 3,
@@ -2157,7 +2151,7 @@
       {
         "date": "2026-06-22",
         "revenue": 4.75,
-        "cost": 1.58,
+        "cost": 6.17,
         "fees": 0.9,
         "orders": 1,
         "units": 1,
@@ -2241,7 +2235,7 @@
       {
         "date": "2026-06-30",
         "revenue": 14.25,
-        "cost": 4.74,
+        "cost": 18.51,
         "fees": 1.8,
         "orders": 1,
         "units": 3,
@@ -2313,7 +2307,7 @@
       {
         "date": "2026-07-08",
         "revenue": 14.12,
-        "cost": 4.58,
+        "cost": 9.17,
         "fees": 2.69,
         "orders": 3,
         "units": 3,
@@ -2373,7 +2367,7 @@
       {
         "date": "2026-07-18",
         "revenue": 4.75,
-        "cost": 1.58,
+        "cost": 6.17,
         "fees": 0.9,
         "orders": 1,
         "units": 1,
@@ -2481,7 +2475,7 @@
       {
         "date": "2026-08-05",
         "revenue": 20.66,
-        "cost": 7.16,
+        "cost": 16.34,
         "fees": 2.61,
         "orders": 1,
         "units": 4,
@@ -2565,7 +2559,7 @@
       {
         "date": "2026-08-16",
         "revenue": 4.75,
-        "cost": 1.58,
+        "cost": 6.17,
         "fees": 0.9,
         "orders": 1,
         "units": 1,
@@ -2589,7 +2583,7 @@
       {
         "date": "2026-08-18",
         "revenue": 19.0,
-        "cost": 6.32,
+        "cost": 24.68,
         "fees": 2.25,
         "orders": 1,
         "units": 4,
@@ -2649,7 +2643,7 @@
       {
         "date": "2026-08-26",
         "revenue": 19.83,
-        "cost": 6.74,
+        "cost": 11.33,
         "fees": 3.23,
         "orders": 3,
         "units": 4,
@@ -2709,7 +2703,7 @@
       {
         "date": "2026-09-05",
         "revenue": 4.75,
-        "cost": 1.58,
+        "cost": 6.17,
         "fees": 0.9,
         "orders": 1,
         "units": 1,
@@ -2925,7 +2919,7 @@
       {
         "date": "2026-10-24",
         "revenue": 4.75,
-        "cost": 1.58,
+        "cost": 6.17,
         "fees": 0.9,
         "orders": 1,
         "units": 1,
@@ -2966,16 +2960,28 @@
         "orders": 3,
         "units": 9,
         "unmapped_units": 0,
-        "shipped": 2,
+        "shipped": 3,
+        "paid": 0,
+        "unpaid": 0
+      },
+      {
+        "date": "2026-11-13",
+        "revenue": 4.75,
+        "cost": 6.17,
+        "fees": 0.9,
+        "orders": 1,
+        "units": 1,
+        "unmapped_units": 0,
+        "shipped": 0,
         "paid": 1,
         "unpaid": 0
       }
     ],
     "products": [
+      "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
       "BMFS Goat Sticker",
       "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
       "Vinyl Yeti Stickers - Goose Band Inspired Deadhead Yeti Song Music Lover, Yeti Sticker, Laptop Decal, Vinyl Sticker, Water Bottle Sticker",
-      "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
       "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
       "Best Clockmaker on Mars Shirt Comfort Colors",
       "Sunwashed Phish Fish embroidered Rope Cap | Golf Hat | Fish Lover&#39;s Hat | Fishing hat | Trout / Redfish Hat",
@@ -3068,7 +3074,7 @@
       ],
       [
         "2025-08-03",
-        0,
+        1,
         8.25,
         4.07,
         2
@@ -3467,7 +3473,7 @@
       ],
       [
         "2025-11-05",
-        0,
+        1,
         5.38,
         2.67,
         1
@@ -3558,7 +3564,7 @@
       ],
       [
         "2025-11-16",
-        3,
+        0,
         34.76,
         18.42,
         6
@@ -3649,7 +3655,7 @@
       ],
       [
         "2025-12-02",
-        2,
+        3,
         4.75,
         2.52,
         1
@@ -3698,7 +3704,7 @@
       ],
       [
         "2025-12-04",
-        2,
+        3,
         9.5,
         5.04,
         2
@@ -3712,9 +3718,9 @@
       ],
       [
         "2025-12-05",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -3754,7 +3760,7 @@
       ],
       [
         "2025-12-07",
-        2,
+        3,
         6.22,
         3.11,
         1
@@ -3768,14 +3774,14 @@
       ],
       [
         "2025-12-08",
-        2,
+        3,
         4.75,
         2.52,
         1
       ],
       [
         "2025-12-09",
-        2,
+        3,
         5.58,
         2.85,
         1
@@ -3803,14 +3809,14 @@
       ],
       [
         "2025-12-10",
-        2,
+        3,
         5.58,
         2.85,
         1
       ],
       [
         "2025-12-11",
-        2,
+        3,
         4.75,
         2.52,
         1
@@ -3824,7 +3830,7 @@
       ],
       [
         "2025-12-12",
-        2,
+        3,
         10.33,
         5.37,
         2
@@ -3838,7 +3844,7 @@
       ],
       [
         "2025-12-13",
-        2,
+        3,
         9.5,
         5.24,
         2
@@ -3852,17 +3858,17 @@
       ],
       [
         "2025-12-15",
-        2,
-        10.33,
-        5.37,
-        2
+        0,
+        4.75,
+        -2.07,
+        1
       ],
       [
         "2025-12-15",
         3,
-        4.75,
-        2.52,
-        1
+        10.33,
+        5.37,
+        2
       ],
       [
         "2025-12-15",
@@ -3901,7 +3907,7 @@
       ],
       [
         "2025-12-16",
-        2,
+        3,
         6.22,
         3.11,
         1
@@ -3929,7 +3935,7 @@
       ],
       [
         "2025-12-18",
-        1,
+        2,
         23.2,
         3.77,
         1
@@ -4006,7 +4012,7 @@
       ],
       [
         "2026-01-12",
-        2,
+        3,
         4.75,
         2.52,
         1
@@ -4062,7 +4068,7 @@
       ],
       [
         "2026-01-19",
-        3,
+        0,
         5.58,
         2.85,
         1
@@ -4125,9 +4131,9 @@
       ],
       [
         "2026-02-05",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -4160,16 +4166,16 @@
       ],
       [
         "2026-02-19",
-        1,
+        2,
         69.6,
         11.72,
         3
       ],
       [
         "2026-02-23",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -4230,7 +4236,7 @@
       ],
       [
         "2026-03-08",
-        2,
+        3,
         9.5,
         5.24,
         2
@@ -4286,14 +4292,14 @@
       ],
       [
         "2026-03-12",
-        3,
+        0,
         9.5,
-        5.24,
+        -3.94,
         2
       ],
       [
         "2026-03-13",
-        2,
+        3,
         6.22,
         3.11,
         1
@@ -4377,7 +4383,7 @@
       ],
       [
         "2026-04-07",
-        2,
+        3,
         14.25,
         7.96,
         3
@@ -4447,7 +4453,7 @@
       ],
       [
         "2026-04-13",
-        2,
+        3,
         14.25,
         7.96,
         3
@@ -4461,7 +4467,7 @@
       ],
       [
         "2026-04-15",
-        3,
+        0,
         6.22,
         3.11,
         1
@@ -4503,7 +4509,7 @@
       ],
       [
         "2026-04-27",
-        1,
+        2,
         46.4,
         7.75,
         2
@@ -4538,7 +4544,7 @@
       ],
       [
         "2026-05-08",
-        0,
+        1,
         21.52,
         11.28,
         4
@@ -4552,7 +4558,7 @@
       ],
       [
         "2026-05-12",
-        0,
+        1,
         8.92,
         4.71,
         2
@@ -4650,9 +4656,9 @@
       ],
       [
         "2026-05-30",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -4713,9 +4719,9 @@
       ],
       [
         "2026-06-09",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -4748,7 +4754,7 @@
       ],
       [
         "2026-06-13",
-        3,
+        0,
         5.58,
         2.85,
         1
@@ -4769,14 +4775,14 @@
       ],
       [
         "2026-06-17",
-        3,
+        0,
         14.25,
-        7.76,
+        -6.01,
         3
       ],
       [
         "2026-06-21",
-        2,
+        3,
         5.58,
         2.85,
         1
@@ -4790,9 +4796,9 @@
       ],
       [
         "2026-06-22",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -4804,14 +4810,14 @@
       ],
       [
         "2026-06-25",
-        3,
+        0,
         5.58,
         2.85,
         1
       ],
       [
         "2026-06-26",
-        3,
+        0,
         11.8,
         5.96,
         2
@@ -4832,7 +4838,7 @@
       ],
       [
         "2026-06-28",
-        3,
+        0,
         5.58,
         2.85,
         1
@@ -4853,7 +4859,7 @@
       ],
       [
         "2026-06-29",
-        3,
+        0,
         5.58,
         2.85,
         1
@@ -4874,9 +4880,9 @@
       ],
       [
         "2026-06-30",
-        3,
+        0,
         14.25,
-        7.96,
+        -5.81,
         3
       ],
       [
@@ -4902,7 +4908,7 @@
       ],
       [
         "2026-07-05",
-        2,
+        3,
         4.75,
         2.52,
         1
@@ -4916,7 +4922,7 @@
       ],
       [
         "2026-07-06",
-        3,
+        0,
         11.16,
         5.9,
         2
@@ -4930,9 +4936,9 @@
       ],
       [
         "2026-07-08",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -4979,9 +4985,9 @@
       ],
       [
         "2026-07-18",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -5007,7 +5013,7 @@
       ],
       [
         "2026-07-23",
-        2,
+        3,
         4.75,
         2.52,
         1
@@ -5077,7 +5083,7 @@
       ],
       [
         "2026-07-28",
-        0,
+        1,
         4.11,
         2.1,
         1
@@ -5098,9 +5104,9 @@
       ],
       [
         "2026-08-05",
-        3,
+        0,
         20.66,
-        11.14,
+        1.96,
         4
       ],
       [
@@ -5161,14 +5167,14 @@
       ],
       [
         "2026-08-16",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
         "2026-08-17",
-        3,
+        0,
         5.58,
         2.85,
         1
@@ -5189,9 +5195,9 @@
       ],
       [
         "2026-08-18",
-        3,
+        0,
         19.0,
-        10.68,
+        -7.68,
         4
       ],
       [
@@ -5210,7 +5216,7 @@
       ],
       [
         "2026-08-22",
-        3,
+        0,
         5.58,
         2.85,
         1
@@ -5224,9 +5230,9 @@
       ],
       [
         "2026-08-26",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -5252,7 +5258,7 @@
       ],
       [
         "2026-08-29",
-        2,
+        3,
         6.22,
         3.11,
         1
@@ -5287,9 +5293,9 @@
       ],
       [
         "2026-09-05",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
@@ -5315,7 +5321,7 @@
       ],
       [
         "2026-09-13",
-        2,
+        3,
         4.75,
         2.52,
         1
@@ -5371,7 +5377,7 @@
       ],
       [
         "2026-10-08",
-        3,
+        0,
         6.22,
         3.11,
         1
@@ -5406,7 +5412,7 @@
       ],
       [
         "2026-10-16",
-        2,
+        3,
         5.58,
         2.85,
         1
@@ -5427,7 +5433,7 @@
       ],
       [
         "2026-10-20",
-        3,
+        0,
         5.58,
         2.85,
         1
@@ -5448,48 +5454,62 @@
       ],
       [
         "2026-10-24",
-        3,
+        0,
         4.75,
-        2.52,
+        -2.07,
         1
       ],
       [
         "2026-10-29",
-        3,
+        0,
         5.58,
         2.85,
         1
       ],
       [
         "2026-11-06",
-        1,
+        2,
         23.2,
         3.77,
         1
       ],
       [
         "2026-11-10",
-        0,
+        1,
         5.38,
         2.67,
         1
       ],
       [
         "2026-11-10",
-        1,
+        2,
         162.4,
         27.62,
         7
       ],
       [
         "2026-11-10",
-        2,
+        3,
         4.75,
         2.52,
+        1
+      ],
+      [
+        "2026-11-13",
+        0,
+        4.75,
+        -2.07,
         1
       ]
     ],
     "orders": [
+      {
+        "date": "2026-11-13",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "paid",
+        "amount": 9.64
+      },
       {
         "date": "2026-11-10",
         "products": "BMFS Goat Sticker",
@@ -5501,7 +5521,7 @@
         "date": "2026-11-10",
         "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
         "units": 7,
-        "status": "paid",
+        "status": "shipped",
         "amount": 207.0
       },
       {
@@ -7741,6 +7761,17 @@
   },
   "tax": {
     "orders": [
+      {
+        "date": "2026-11-13",
+        "state": "MA",
+        "country": "US",
+        "items": 4.75,
+        "discount": 0,
+        "shipping": 4.59,
+        "tax": 0.3,
+        "total": 9.64,
+        "refunds": 0
+      },
       {
         "date": "2026-11-10",
         "state": "MD",
