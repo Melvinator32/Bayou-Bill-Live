@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T06:48:55",
+  "generated_at": "2026-11-13T19:44:03",
   "currency": "USD",
   "window": {
     "start": "2026-10-17",
@@ -8,31 +8,31 @@
   },
   "kpis": {
     "revenue": {
-      "value": 237.69,
+      "value": 242.44,
       "prior": 246.03
     },
     "orders": {
-      "value": 12,
+      "value": 13,
       "prior": 11
     },
     "avg_order_value": {
-      "value": 19.81,
+      "value": 18.65,
       "prior": 22.37
     },
     "product_cost": {
-      "value": 163.57,
+      "value": 169.74,
       "prior": 128.78
     },
     "fees": {
-      "value": 27.98,
+      "value": 28.88,
       "prior": 28.52
     },
     "profit": {
-      "value": 46.14,
+      "value": 43.82,
       "prior": 88.73
     },
     "margin": {
-      "value": 19.4,
+      "value": 18.1,
       "prior": 36.1
     }
   },
@@ -147,7 +147,7 @@
     },
     {
       "date": "2026-11-13",
-      "revenue": 4.75
+      "revenue": 9.5
     }
   ],
   "monthly": [
@@ -169,7 +169,7 @@
     {
       "month": "2026-03",
       "revenue": 332.64,
-      "profit": 179.51
+      "profit": 182.2
     },
     {
       "month": "2026-04",
@@ -208,8 +208,8 @@
     },
     {
       "month": "2026-11",
-      "revenue": 200.48,
-      "profit": 34.51
+      "revenue": 205.23,
+      "profit": 32.44
     }
   ],
   "top_products": [
@@ -220,15 +220,15 @@
       "units": 8
     },
     {
+      "name": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+      "revenue": 25.41,
+      "profit": -0.51,
+      "units": 5
+    },
+    {
       "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
       "revenue": 21.3,
       "profit": 11.0,
-      "units": 4
-    },
-    {
-      "name": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
-      "revenue": 20.66,
-      "profit": 1.56,
       "units": 4
     },
     {
@@ -246,10 +246,17 @@
   ],
   "fulfillment": {
     "shipped": 11,
-    "paid": 1,
+    "paid": 2,
     "unpaid": 0
   },
   "recent_orders": [
+    {
+      "date": "2026-11-13",
+      "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+      "units": 1,
+      "status": "paid",
+      "amount": 10.6
+    },
     {
       "date": "2026-11-13",
       "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
@@ -312,13 +319,6 @@
       "units": 1,
       "status": "shipped",
       "amount": 8.58
-    },
-    {
-      "date": "2026-10-21",
-      "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
-      "units": 1,
-      "status": "shipped",
-      "amount": 9.79
     }
   ],
   "unmapped_units": 0,
@@ -1707,7 +1707,7 @@
       {
         "date": "2026-03-30",
         "revenue": 25.83,
-        "cost": 22.77,
+        "cost": 20.08,
         "fees": 2.9,
         "orders": 1,
         "units": 1,
@@ -2966,14 +2966,14 @@
       },
       {
         "date": "2026-11-13",
-        "revenue": 4.75,
-        "cost": 6.17,
-        "fees": 0.9,
-        "orders": 1,
-        "units": 1,
+        "revenue": 9.5,
+        "cost": 12.34,
+        "fees": 1.8,
+        "orders": 2,
+        "units": 2,
         "unmapped_units": 0,
         "shipped": 0,
-        "paid": 1,
+        "paid": 2,
         "unpaid": 0
       }
     ],
@@ -4371,7 +4371,7 @@
         "2026-03-30",
         35,
         25.83,
-        0.41,
+        3.1,
         1
       ],
       [
@@ -5497,12 +5497,19 @@
       [
         "2026-11-13",
         0,
-        4.75,
-        -2.07,
-        1
+        9.5,
+        -4.14,
+        2
       ]
     ],
     "orders": [
+      {
+        "date": "2026-11-13",
+        "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
+        "units": 1,
+        "status": "paid",
+        "amount": 10.6
+      },
       {
         "date": "2026-11-13",
         "products": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
@@ -7761,6 +7768,17 @@
   },
   "tax": {
     "orders": [
+      {
+        "date": "2026-11-13",
+        "state": "CO",
+        "country": "US",
+        "items": 4.75,
+        "discount": 0,
+        "shipping": 4.59,
+        "tax": 0.95,
+        "total": 10.6,
+        "refunds": 0
+      },
       {
         "date": "2026-11-13",
         "state": "MA",
