@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T07:10:49",
+  "generated_at": "2026-11-21T19:18:22",
   "currency": "USD",
   "window": {
     "start": "2026-10-25",
@@ -20,7 +20,7 @@
       "prior": 16.33
     },
     "product_cost": {
-      "value": 255.02,
+      "value": 250.07,
       "prior": 139.84
     },
     "fees": {
@@ -28,11 +28,11 @@
       "prior": 34.23
     },
     "profit": {
-      "value": 78.63,
+      "value": 83.58,
       "prior": 103.59
     },
     "margin": {
-      "value": 21.0,
+      "value": 22.3,
       "prior": 37.3
     }
   },
@@ -209,7 +209,7 @@
     {
       "month": "2026-11",
       "revenue": 369.06,
-      "profit": 78.78
+      "profit": 83.73
     }
   ],
   "top_products": [
@@ -228,7 +228,7 @@
     {
       "name": "BMFS Tie-Dye Tee",
       "revenue": 33.68,
-      "profit": 7.76,
+      "profit": 12.71,
       "units": 1
     },
     {
@@ -3009,7 +3009,7 @@
       {
         "date": "2026-11-20",
         "revenue": 98.67,
-        "cost": 68.5,
+        "cost": 63.55,
         "fees": 10.27,
         "orders": 2,
         "units": 2,
@@ -5570,7 +5570,7 @@
         "2026-11-20",
         0,
         33.68,
-        7.76,
+        12.71,
         1
       ],
       [
