@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-11-20T20:23:46",
+  "generated_at": "2026-11-21T07:10:49",
   "currency": "USD",
   "window": {
-    "start": "2026-10-24",
-    "end": "2026-11-20",
+    "start": "2026-10-25",
+    "end": "2026-11-21",
     "days": 28
   },
   "kpis": {
     "revenue": {
-      "value": 379.39,
-      "prior": 272.91
+      "value": 374.64,
+      "prior": 277.66
     },
     "orders": {
-      "value": 13,
-      "prior": 16
+      "value": 12,
+      "prior": 17
     },
     "avg_order_value": {
-      "value": 29.18,
-      "prior": 17.06
+      "value": 31.22,
+      "prior": 16.33
     },
     "product_cost": {
-      "value": 268.49,
-      "prior": 138.26
+      "value": 255.02,
+      "prior": 139.84
     },
     "fees": {
-      "value": 41.89,
-      "prior": 33.33
+      "value": 40.99,
+      "prior": 34.23
     },
     "profit": {
-      "value": 69.01,
-      "prior": 101.32
+      "value": 78.63,
+      "prior": 103.59
     },
     "margin": {
-      "value": 18.2,
-      "prior": 37.1
+      "value": 21.0,
+      "prior": 37.3
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-10-24",
-      "revenue": 4.75
-    },
     {
       "date": "2026-10-25",
       "revenue": 0
@@ -148,6 +144,10 @@
     {
       "date": "2026-11-20",
       "revenue": 98.67
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 0
     }
   ],
   "monthly": [
@@ -209,7 +209,7 @@
     {
       "month": "2026-11",
       "revenue": 369.06,
-      "profit": 66.89
+      "profit": 78.78
     }
   ],
   "top_products": [
@@ -222,7 +222,7 @@
     {
       "name": "Donut Pattern Pickleball Paddle | Phish Paddle Set with Balls",
       "revenue": 64.99,
-      "profit": 0.75,
+      "profit": 12.64,
       "units": 1
     },
     {
@@ -239,9 +239,9 @@
     },
     {
       "name": "Phish Donut Trout vinyl Stickers, Phish Concert Design, Vinyl Decal, Laptop Sticker, Water Bottle Decal, Music Festival",
-      "revenue": 19.83,
-      "profit": 10.41,
-      "units": 4
+      "revenue": 15.08,
+      "profit": 7.89,
+      "units": 3
     },
     {
       "name": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
@@ -252,7 +252,7 @@
   ],
   "fulfillment": {
     "shipped": 10,
-    "paid": 3,
+    "paid": 2,
     "unpaid": 0
   },
   "recent_orders": [
@@ -281,7 +281,7 @@
       "date": "2026-11-18",
       "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 32.87
     },
     {
@@ -3002,14 +3002,14 @@
         "orders": 2,
         "units": 2,
         "unmapped_units": 0,
-        "shipped": 1,
-        "paid": 1,
+        "shipped": 2,
+        "paid": 0,
         "unpaid": 0
       },
       {
         "date": "2026-11-20",
         "revenue": 98.67,
-        "cost": 80.39,
+        "cost": 68.5,
         "fees": 10.27,
         "orders": 2,
         "units": 2,
@@ -5577,7 +5577,7 @@
         "2026-11-20",
         1,
         64.99,
-        0.75,
+        12.64,
         1
       ]
     ],
@@ -5607,7 +5607,7 @@
         "date": "2026-11-18",
         "products": "Alligator Second Line New Orleans Glass, 10oz, Mardi Gras Gift, Bachelor party gift, Unique Gift for whiskey Lovers, Party Glass",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 32.87
       },
       {
