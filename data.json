@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:41:27",
+  "generated_at": "2026-11-23T23:55:50",
   "currency": "USD",
   "window": {
     "start": "2026-10-27",
@@ -251,8 +251,8 @@
     }
   ],
   "fulfillment": {
-    "shipped": 10,
-    "paid": 3,
+    "shipped": 11,
+    "paid": 2,
     "unpaid": 0
   },
   "recent_orders": [
@@ -260,7 +260,7 @@
       "date": "2026-11-22",
       "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 10.9
     },
     {
@@ -3026,8 +3026,8 @@
         "orders": 1,
         "units": 1,
         "unmapped_units": 0,
-        "shipped": 0,
-        "paid": 1,
+        "shipped": 1,
+        "paid": 0,
         "unpaid": 0
       }
     ],
@@ -5605,7 +5605,7 @@
         "date": "2026-11-22",
         "products": "Deadhead Bigfoot Kiss-Cut Stickers | Grateful Dead Inspired Vinyl Decals for Laptops, Water Bottles, Gifts, and Party Favors",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 10.9
       },
       {
