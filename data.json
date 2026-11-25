@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-24T22:28:31",
+  "generated_at": "2026-11-25T08:37:36",
   "currency": "USD",
   "window": {
-    "start": "2026-10-28",
-    "end": "2026-11-24",
+    "start": "2026-10-29",
+    "end": "2026-11-25",
     "days": 28
   },
   "kpis": {
@@ -37,10 +37,6 @@
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-10-28",
-      "revenue": 0
-    },
     {
       "date": "2026-10-29",
       "revenue": 5.58
@@ -148,6 +144,10 @@
     {
       "date": "2026-11-24",
       "revenue": 39.99
+    },
+    {
+      "date": "2026-11-25",
+      "revenue": 0
     }
   ],
   "monthly": [
@@ -251,8 +251,8 @@
     }
   ],
   "fulfillment": {
-    "shipped": 11,
-    "paid": 3,
+    "shipped": 12,
+    "paid": 2,
     "unpaid": 0
   },
   "recent_orders": [
@@ -281,7 +281,7 @@
       "date": "2026-11-20",
       "products": "Donut Pattern Pickleball Paddle | Phish Paddle Set with Balls",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 83.03
     },
     {
@@ -3014,8 +3014,8 @@
         "orders": 2,
         "units": 2,
         "unmapped_units": 0,
-        "shipped": 0,
-        "paid": 2,
+        "shipped": 1,
+        "paid": 1,
         "unpaid": 0
       },
       {
@@ -5645,7 +5645,7 @@
         "date": "2026-11-20",
         "products": "Donut Pattern Pickleball Paddle | Phish Paddle Set with Balls",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 83.03
       },
       {
