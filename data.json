@@ -1,46 +1,42 @@
 {
-  "generated_at": "2026-11-25T21:43:29",
+  "generated_at": "2026-11-26T08:21:02",
   "currency": "USD",
   "window": {
-    "start": "2026-10-29",
-    "end": "2026-11-25",
+    "start": "2026-10-30",
+    "end": "2026-11-26",
     "days": 28
   },
   "kpis": {
     "revenue": {
-      "value": 424.96,
-      "prior": 235.17
+      "value": 419.38,
+      "prior": 240.75
     },
     "orders": {
-      "value": 15,
-      "prior": 15
+      "value": 14,
+      "prior": 16
     },
     "avg_order_value": {
-      "value": 28.33,
-      "prior": 15.68
+      "value": 29.96,
+      "prior": 15.05
     },
     "product_cost": {
-      "value": 292.73,
-      "prior": 135.97
+      "value": 290.73,
+      "prior": 137.97
     },
     "fees": {
-      "value": 47.12,
-      "prior": 29.09
+      "value": 46.14,
+      "prior": 30.07
     },
     "profit": {
-      "value": 85.11,
-      "prior": 70.11
+      "value": 82.51,
+      "prior": 72.71
     },
     "margin": {
-      "value": 20.0,
-      "prior": 29.8
+      "value": 19.7,
+      "prior": 30.2
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-10-29",
-      "revenue": 5.58
-    },
     {
       "date": "2026-10-30",
       "revenue": 0
@@ -148,6 +144,10 @@
     {
       "date": "2026-11-25",
       "revenue": 4.75
+    },
+    {
+      "date": "2026-11-26",
+      "revenue": 0
     }
   ],
   "monthly": [
@@ -251,7 +251,7 @@
     }
   ],
   "fulfillment": {
-    "shipped": 12,
+    "shipped": 11,
     "paid": 3,
     "unpaid": 0
   },
