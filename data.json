@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T21:19:28",
+  "generated_at": "2026-11-28T07:51:58",
   "currency": "USD",
   "window": {
-    "start": "2026-10-31",
-    "end": "2026-11-27",
+    "start": "2026-11-01",
+    "end": "2026-11-28",
     "days": 28
   },
   "kpis": {
@@ -20,7 +20,7 @@
       "prior": 14.33
     },
     "product_cost": {
-      "value": 337.31,
+      "value": 333.32,
       "prior": 98.77
     },
     "fees": {
@@ -28,19 +28,15 @@
       "prior": 25.36
     },
     "profit": {
-      "value": 115.3,
+      "value": 119.29,
       "prior": 76.55
     },
     "margin": {
-      "value": 22.7,
+      "value": 23.5,
       "prior": 38.1
     }
   },
   "daily_revenue": [
-    {
-      "date": "2026-10-31",
-      "revenue": 0
-    },
     {
       "date": "2026-11-01",
       "revenue": 0
@@ -148,6 +144,10 @@
     {
       "date": "2026-11-27",
       "revenue": 59.98
+    },
+    {
+      "date": "2026-11-28",
+      "revenue": 0
     }
   ],
   "monthly": [
@@ -209,7 +209,7 @@
     {
       "month": "2026-11",
       "revenue": 508.08,
-      "profit": 119.3
+      "profit": 123.29
     }
   ],
   "top_products": [
@@ -251,8 +251,8 @@
     }
   ],
   "fulfillment": {
-    "shipped": 12,
-    "paid": 4,
+    "shipped": 13,
+    "paid": 3,
     "unpaid": 0
   },
   "recent_orders": [
@@ -295,7 +295,7 @@
       "date": "2026-11-20",
       "products": "BMFS Tie-Dye Tee",
       "units": 1,
-      "status": "paid",
+      "status": "shipped",
       "amount": 41.66
     },
     {
@@ -3014,8 +3014,8 @@
         "orders": 2,
         "units": 2,
         "unmapped_units": 0,
-        "shipped": 1,
-        "paid": 1,
+        "shipped": 2,
+        "paid": 0,
         "unpaid": 0
       },
       {
@@ -3057,7 +3057,7 @@
       {
         "date": "2026-11-26",
         "revenue": 28.72,
-        "cost": 17.88,
+        "cost": 13.89,
         "fees": 3.18,
         "orders": 1,
         "units": 1,
@@ -5666,7 +5666,7 @@
         "2026-11-26",
         1,
         28.72,
-        7.91,
+        11.9,
         1
       ],
       [
@@ -5717,7 +5717,7 @@
         "date": "2026-11-20",
         "products": "BMFS Tie-Dye Tee",
         "units": 1,
-        "status": "paid",
+        "status": "shipped",
         "amount": 41.66
       },
       {
